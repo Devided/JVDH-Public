@@ -278,12 +278,9 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        echo Excel::fromArray($excel);
+        Excel::fromArray($excel)->save('/home/vagrant/Code/TSJH/public/temp/inschrijvingen-'. $clubid .'.xls');
 
-        header("Content-Disposition: attachment; filename=\"inschrijvingen-". $clubid .".xls\"");
-        header("Content-Type: application/vnd.ms-excel");
-
-        return;
+        return Redirect::to('/temp/inschrijvingen-'. $clubid .'.xls');
 
         //dd($excel);
     }
@@ -331,12 +328,9 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        echo Excel::fromArray($excel);
+        Excel::fromArray($excel)->save('/home/vagrant/Code/TSJH/public/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'.xls');
 
-        header("Content-Disposition: attachment; filename=\"inschrijvingen-". $onderdeel->seizoen . "-". $onderdeel->grootte ."-". $onderdeel->clubid .".xls\"");
-        header("Content-Type: application/vnd.ms-excel");
-
-        return;
+        return Redirect::to('/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'.xls');
 
         //dd($excel);
     }
@@ -466,12 +460,9 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        echo Excel::fromArray($excel);
+        Excel::fromArray($excel)->save('/home/vagrant/Code/TSJH/public/temp/tenniskamp.xls');
 
-        header("Content-Disposition: attachment; filename=\"tenniskamp.xls\"");
-        header("Content-Type: application/vnd.ms-excel");
-
-        return;
+        return Redirect::to('/temp/tenniskamp.xls');
     }
 
     public function downloadKampClub($club)
@@ -507,12 +498,9 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        echo Excel::fromArray($excel);
+        Excel::fromArray($excel)->save('/home/vagrant/Code/TSJH/public/temp/tenniskamp-'.$club.'.xls');
 
-        header("Content-Disposition: attachment; filename=\"tenniskamp-".$club.".xls\"");
-        header("Content-Type: application/vnd.ms-excel");
-
-        return;
+        return Redirect::to('/temp/tenniskamp-'.$club.'.xls');
     }
 
 

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" afterPath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InschrijvenController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="InschrijvenController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="473" column="14" selection-start="14798" selection-end="14798" vertical-scroll-proportion="-16.916666" vertical-offset="6689" max-vertical-offset="8430">
+            <state line="506" column="38" selection-start="15965" selection-end="15966" vertical-scroll-proportion="5.0014577" vertical-offset="4159" max-vertical-offset="8250">
               <folding />
             </state>
           </provider>
@@ -70,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="39" selection-start="5313" selection-end="5313" vertical-scroll-proportion="0.88670695" vertical-offset="838" max-vertical-offset="1560">
+            <state line="95" column="39" selection-start="5313" selection-end="5313" vertical-scroll-proportion="-24.458334" vertical-offset="838" max-vertical-offset="1560">
               <folding />
             </state>
           </provider>
@@ -82,7 +83,7 @@
       <file leaf-file-name="events-voordaan.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="43" selection-start="2134" selection-end="2134" vertical-scroll-proportion="-11.25" vertical-offset="135" max-vertical-offset="1245">
+            <state line="27" column="43" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
@@ -176,9 +177,9 @@
         <option value="$PROJECT_DIR$/app/controllers/EventController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
       </list>
     </option>
   </component>
@@ -213,6 +214,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -487,7 +489,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -791,9 +792,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/emails/event.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
-          <folding />
-        </state>
+        <state line="8" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/emails/forgot.blade.php">
@@ -824,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="52" selection-start="2774" selection-end="2774" vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="3690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="38" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="720">
@@ -845,23 +837,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="473" column="14" selection-start="14798" selection-end="14798" vertical-scroll-proportion="-16.916666" vertical-offset="6689" max-vertical-offset="8430">
+        <state line="27" column="43" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="43" selection-start="2134" selection-end="2134" vertical-scroll-proportion="-11.25" vertical-offset="135" max-vertical-offset="1245">
+        <state line="82" column="52" selection-start="2774" selection-end="2774" vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="3690">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="39" selection-start="5313" selection-end="5313" vertical-scroll-proportion="0.88670695" vertical-offset="838" max-vertical-offset="1560">
+        <state line="95" column="39" selection-start="5313" selection-end="5313" vertical-scroll-proportion="-24.458334" vertical-offset="838" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="506" column="38" selection-start="15965" selection-end="15966" vertical-scroll-proportion="5.0014577" vertical-offset="4159" max-vertical-offset="8250">
           <folding />
         </state>
       </provider>
