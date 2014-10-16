@@ -45,19 +45,19 @@
     <div class="header_container" style="height:98px;">
         <div class="header clearfix">
             <div class="header_left" style="float:left;margin-top:-40px;margin-left:-20px; margin-bottom:-50px;">
-                <a href="?page=home" title="TSJH">
+                <a href="{{ action('home') }}" title="TSJH">
                     <img src="{{ asset('img/logo.png') }}" alt="logo" style="height:80px; margin-top: 10px;" />
                     <span class="logo"></span>
                 </a>
             </div>
             <ul class="sf-menu header_right">
-                <li class=" selected">
-                    <a href="#">
+                <li class="{{ HTML::check_active('/') }}">
+                    <a href="{{ action('home') }}">
                         HOME
                     </a>
                 </li>
-                <li class="">
-                    <a href="#">
+                <li class="{{ HTML::check_active('trainingen') }}">
+                    <a href="{{ action('trainingen') }}">
                         TRAININGEN
                     </a>
                 </li>
@@ -76,8 +76,8 @@
                         INSCHRIJVEN
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="{{ HTML::check_active('contact') }}">
+                    <a href="{{ action('contact') }}">
                         CONTACT
                     </a>
                 </li>

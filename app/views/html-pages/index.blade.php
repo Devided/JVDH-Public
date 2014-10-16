@@ -67,22 +67,28 @@
                 <div class="sidebar_box first">
                     <h3 class="box_header">
                         INLOGGEN				</h3>
-                    <br><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet asperiores assumenda consequuntur debitis dolor dolorem ex, excepturi, fuga in neque odio omnis possimus quibusdam repellendus veniam veritatis voluptatum?</p>
-                    <a class="more blue icon_small_arrow margin_right_white" href="?page=formulieren" style="float:right; margin-top:20px;" title="Details">Inloggen</a>
+                    <form class="contact_form" id="contact_form" method="post" action="">
+                        <fieldset class="left">
+                            <label>Gebruikersnaam</label>
+                            <div class="block">
+                                <input class="text_input"type="text">
+                            </div>
+                            <label>Wachtwoord</label>
+                            <div class="block">
+                                <input class="text_input" type="password" value="">
+                            </div>
+                        </fieldset>
+                    </form>
+
+
+
+
+
+                    <a class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;" title="Details">Inloggen</a>
                 </div>
             </div>
         </div>
 
-    </div>			<div class="footer_container">
-        <div class="footer">
-            <div class="copyright_area clearfix">
-                <div class="copyright_left">
-                    &copy; Copyright {{ date('Y') }} TSJH.nl - Tennisshool Jeroen van den Heuvel - Alle rechten voorbehouden.
-                </div>
-            </div>
-        </div>
     </div>
-</div>
-</body>
-</html>
+
+@include('html-pages.partials._footer')

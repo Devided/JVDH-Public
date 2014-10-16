@@ -1589,8 +1589,7 @@ a.social_icon:hover
 	color: #000;
 	margin: 0;
 	background: #F0F0F0;
-	border: none;
-	border-top: 1px solid #E0E0E0;
+	border: 1px solid #E0E0E0;
 }
 .comment_form .text_input:focus, .comment_form textarea:focus,
 .contact_form .text_input:focus, .contact_form textarea:focus
