@@ -18,6 +18,7 @@
                     //google map
                     var coordinate = new google.maps.LatLng(52.238369, 5.109133);
                     var mapOptions = {
+                        scrollwheel: false,
                         zoom: 14,
                         center: coordinate,
                         mapTypeId: google.maps.MapTypeId.ROADMAP,

@@ -968,15 +968,11 @@ a.social_icon:hover
 /* --- home box --- */
 .home_box
 {
-    margin-right:-45px;
-    width: 100%;
+    float:left;
+    width:270px;
 	height: 159px;
 	padding: 21px 30px 30px;
 
-}
-.home_box:first-of-type {
-    margin-left: -45px;
-    margin-right: 0px;
 }
 .home_box h2,
 .home_box h2 a
@@ -995,7 +991,7 @@ a.social_icon:hover
 }
 .home_box.blue
 {
-	background-color: #ff5a00;
+	background-color: #ff6511;
 }
 .home_box.dark_blue
 {

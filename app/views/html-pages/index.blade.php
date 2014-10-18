@@ -15,19 +15,31 @@
         </div>
 
         <!-- home box -->
-        <ul class="home_box_container clearfix columns full_width">
-            <li class="home_box light_blue column_left">
+        <ul class="home_box_container clearfix">
+            <li class="home_box light_blue">
                 <h2>
-                    <a href="?page=contact" title="Emergency Case">
-                        Al klaar voor het nieuwe seizoen?	</a>
+                    <a href="?page=contact" title="Emergency Case">Klaar voor het nieuwe seizoen?</a>
                 </h2>
                 <div class="news clearfix">
                     <p class="text">
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet animi commodi cupiditate deserunt dolorem doloremque eius facilis, laborum laudantium officiis optio quis reiciendis sequi totam ut voluptatem! Aliquam, molestias?				</p>
-                    <a class="more light icon_small_arrow margin_right_white" href="?page=contact" title="Contactgegevens">Inschrijven</a>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br>
+                       <a class="more light icon_small_arrow margin_right_white" href="?page=contact" title="Contactgegevens">Inschrijven</a>
                 </div>
             </li>
-            <li class="home_box dark_blue column_right">
+            <li class="home_box blue">
+                <h2>
+                    <a href="#" title="Doctors Timetable">
+                        Club advies/consultancy				</a>
+                </h2>
+                <div class="news clearfix">
+                    <h5 style="color:#fff; margin-top:-5px;"><b>Clubscan</b> - <span style="font-size:12px;"><em>hoe staat jouw tennisclub ervoor en punten die verbeterd kunnen worden</em></span></h5><br>
+
+                    <h5 style="color:#fff;"><b>Detachering</b> - <span style="font-size:12px;"><em>Op korte termijn een tennisleraar nodig met de juiste papieren en diploma's</em></span></h5>
+                    <a class="more light icon_small_arrow margin_right_white" style="margin-top: 11px;" href="#" title="Meer Informatie">Meer Informatie</a>
+                </div>
+            </li>
+            <li class="home_box dark_blue">
                 <h2>
                     Agenda			</h2>
                 <ul class="items_list thin dark_blue opening_hours">
@@ -80,15 +92,31 @@
                         </fieldset>
                     </form>
 
-
-
-
-
                     <a class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;" title="Details">Inloggen</a>
                 </div>
             </div>
         </div>
 
+        <ul class="columns_3 page_margin_top clearfix">
+            <li class="column">
+                <center>
+                    <img src="{{ asset('img/logos/babolat.jpg') }}" style="width:150px;">
+                </center>
+            </li>
+            <li class="column">
+                <center>
+                    <img src="{{ asset('img/logos/kloosterman.jpg') }}" style="width:150px;">
+                </center>
+            </li>
+            <li class="column">
+                <center>
+                    <img src="{{ asset('img/logos/silica.jpg') }}" style="width:150px;">
+                </center>
+            </li>
+        </ul>
+
     </div>
+
+
 
 @include('html-pages.partials._footer')
