@@ -28,8 +28,8 @@
                                 </p>
                             <br></div>
                         </div>
-                        <div class="column_right">
-                            <img src="http://www.lorempixel.com/450/300" width="450px" alt="" style="float:right;margin-top:10px;"/>
+                        <div class="column_right" style="padding-top: 50px;">
+                            <iframe width="450" height="253" src="//www.youtube.com/embed/PfDMXw2eBRs?modestbranding&showinfo=0" frameborder="0" allowfullscreen></iframe>
                         </div>
 
                     </div>

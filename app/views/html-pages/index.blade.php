@@ -67,8 +67,9 @@
         <div class="page_layout page_margin_top clearfix">
             <div class="page_left">
                 <h3 class="box_header">
-                    OVER ONS			</h3>
+                    OVER TENNISSCHOOL JEROEN VAN DEN HEUVEL			</h3>
                 <div class="columns clearfix">
+
                     <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken. Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis. Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).
 <br><br>
                     Eigenaar Jeroen van den Heuvel is een gepassioneerd tennisser en heeft een aantal jaren in de top 50 van Nederland meegespeeld. Hij is in het bezit van de KNLTB licenties A/B/C. De afgelopen jaren is Jeroen als hoofdtrainer werkzaam geweest bij diverse verenigingen in het Gooi/Amsterdam en Utrecht.Verder is hij gedurende drie jaar als hoofdcoach betrokken geweest bij het Hilverheide Eredivisie team met topspelers als Martin Verkerk, Michaela Krajicek, Peter Wessels en Melle van Gemerden. Het team van Hilverheide is onder leiding van Jeroen twee keer landskampioen geworden.
