@@ -17,8 +17,20 @@ Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 // trainingen
 Route::get('/trainingen', ['as' => 'trainingen', 'uses' => 'TrainingController@index']);
 
-// training
-Route::get('/contact', ['as' => 'contact', 'uses' => function()
-{
-    return View::make('html-pages.contact');
-}]);
+// events
+Route::get('/events', ['as' => 'events', 'uses' => 'EventController@index']);
+
+// lesdata
+Route::get('/lesdata', ['as' => 'lesdata', 'uses' => 'LesdataController@index']);
+
+// inschrijven
+Route::get('/inschrijven', ['as' => 'inschrijven', 'uses' => 'InschrijvenController@index', 'before' => 'auth']);
+
+// contact
+Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);
+
+// register
+Route::get('/registreren', ['as' => 'registreren', 'uses' => 'UsersController@register']);
+
+// login
+Route::get('/login', ['as' => 'login', 'uses' => 'UsersController@login']);

@@ -61,18 +61,18 @@
                         TRAININGEN
                     </a>
                 </li>
-                <li class="">
-                    <a href="#">
+                <li class="{{ HTML::check_active('events') }}">
+                    <a href="{{ action('events') }}">
                         EVENTS
                     </a>
                 </li>
-                <li class="">
-                    <a href="#">
+                <li class="{{ HTML::check_active('lesdata') }}">
+                    <a href="{{ action('lesdata') }}">
                         LESDATA
                     </a>
                 </li>
-                <li class="">
-                    <a href="#">
+                <li class="{{ HTML::check_active('inschrijven') }}">
+                    <a href="{{ action('inschrijven') }}">
                         INSCHRIJVEN
                     </a>
                 </li>
