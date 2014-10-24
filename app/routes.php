@@ -1,5 +1,6 @@
 <?php
 
+// set active page on menu
 HTML::macro('check_active', function($route) {
     if( Request::path() == $route ) {
         $active = "selected";
@@ -10,16 +11,13 @@ HTML::macro('check_active', function($route) {
     return $active;
 });
 
-Route::get('/', ['as' => 'home', 'uses' => function()
-{
-    return View::make('html-pages.index');
-}]);
+// home
+Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
-Route::get('/trainingen', ['as' => 'trainingen', 'uses' =>function()
-{
-    return View::make('html-pages.trainingen');
-}]);
+// trainingen
+Route::get('/trainingen', ['as' => 'trainingen', 'uses' => 'TrainingController@index']);
 
+// training
 Route::get('/contact', ['as' => 'contact', 'uses' => function()
 {
     return View::make('html-pages.contact');
