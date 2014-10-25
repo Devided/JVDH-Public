@@ -24,7 +24,7 @@
                     <p class="text">
                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         <br>
-                       <a class="more light icon_small_arrow margin_right_white" href="?page=contact" title="Contactgegevens">Inschrijven</a>
+                       <a class="more light icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" title="Contactgegevens">Inschrijven</a>
                 </div>
             </li>
             <li class="home_box blue">

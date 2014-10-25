@@ -33,4 +33,5 @@ Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index'])
 Route::get('/registreren', ['as' => 'registreren', 'uses' => 'UsersController@register']);
 
 // login
-Route::get('/login', ['as' => 'login', 'uses' => 'UsersController@login']);
+Route::get('/login', ['as' => 'login', 'uses' => 'UsersController@getLogin']);
+Route::post('/login', ['as' => '', 'uses' => 'UsersController@postLogin']);

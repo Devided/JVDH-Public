@@ -2,85 +2,63 @@
 
 class UsersController extends \BaseController {
 
-	/**
-	 * Display a listing of the resource.
-	 * GET /users
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		//
-	}
+    /**
+     * Show the login form.
+     * @return Response
+     */
+    public function getLogin()
+    {
+        return View::make('html-pages.login');
+    }
 
-	/**
-	 * Show the form for creating a new resource.
-	 * GET /users/create
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
-	}
+    /**
+     * Log the user in.
+     * @return Response
+     */
+    public function postLogin()
+    {
 
-	/**
-	 * Store a newly created resource in storage.
-	 * POST /users
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		//
-	}
+        // Validate the login request
+        $rules = array(
+            'username'    => 'required|alphaNum|min:3',
+            'password' => 'required|min:3'
+        );
 
-	/**
-	 * Display the specified resource.
-	 * GET /users/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
+        $validator = Validator::make(Input::all(), $rules);
+        // If the validator fails, redirect back to the form
+        if ($validator->fails()) {
+            return Redirect::to('login')
+                ->withErrors($validator) // send back all errors to the login form
+                ->withInput(Input::except('password')); // send back the input (not the password) so that we can repopulate the form
+        } else {
+            // create our user data for the authentication
+            $userdata = array(
+                'username' 	=> Input::get('username'),
+                'password' 	=> Input::get('password')
+            );
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /users/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
+            // attempt to do the login
+            if (Auth::attempt($userdata)) {
+                return Redirect::action('dashboard');
+            } else {
+                // validation not successful, send back to form
+                return Redirect::to('login')->withErrors('Gebruikersnaam of wachtwoord onjuist.');
+            }
 
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /users/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
+        }
 
-	/**
-	 * Remove the specified resource from storage.
-	 * DELETE /users/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
+    }
 
+    /**
+     * Remove the specified resource from storage.
+     * DELETE /sessions/{id}
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function destroy()
+    {
+        Auth::logout();
+        return Redirect::to('/');
+    }
 }
