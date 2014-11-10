@@ -30,7 +30,7 @@ Route::get('/inschrijven', ['as' => 'inschrijven', 'uses' => 'InschrijvenControl
 Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);
 
 // register
-Route::get('/registreren', ['as' => 'registreren', 'uses' => 'UsersController@register']);
+Route::get('/registreren', ['as' => 'registreren', 'uses' => 'UsersController@getRegister']);
 
 // login
 Route::get('/login', ['as' => 'login', 'uses' => 'UsersController@getLogin']);

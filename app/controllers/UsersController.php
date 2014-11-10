@@ -85,4 +85,14 @@ class UsersController extends \BaseController {
         $s = "Uw wachtwoord is verzonden naar <b>" . $email . "</b>.";
         return View::action('html-pages.login')->withSuccess($s);
     }
+
+    /**
+     * Show the register page
+     * GET /registreren
+     *
+     */
+    public function getRegister()
+    {
+        return View::make('html-pages.register');
+    }
 }
