@@ -34,4 +34,6 @@ Route::get('/registreren', ['as' => 'registreren', 'uses' => 'UsersController@re
 
 // login
 Route::get('/login', ['as' => 'login', 'uses' => 'UsersController@getLogin']);
-Route::post('/login', ['as' => '', 'uses' => 'UsersController@postLogin']);
+Route::post('/login', ['as' => 'login.post', 'uses' => 'UsersController@postLogin']);
+Route::get('/login/vergeten', ['as' => 'login.forgot', 'uses' => 'UsersController@getForgotPassword']);
+Route::post('/login/vergeten', ['as' => 'login.forgot.post', 'uses' => 'UsersController@postForgotPassword']);

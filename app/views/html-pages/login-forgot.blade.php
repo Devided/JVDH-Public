@@ -16,7 +16,7 @@
                         <div class="column_left">
                             <div class="details_box">
                                 <h2>
-                                    Inloggen
+                                    Wachtwoord vergeten
                                 </h2>
                                 <form class="contact_form" id="contact_form" method="post" action="">
                                     <fieldset class="left">
@@ -24,34 +24,19 @@
                                         <div class="block">
                                             <input class="text_input"type="text" id="emailadres" placeholder="voorbeeld@gmail.com">
                                         </div>
-                                        <label>Wachtwoord</label>
-                                        <div class="block">
-                                            <input class="text_input" type="password" value="" placeholder="wachtwoord">
-                                        </div>
                                     </fieldset>
                                 </form>
 
-                                <a class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;margin-bottom:40px;" title="Details">Inloggen</a>
+                                <a class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;margin-bottom:40px;" title="Details">Versturen</a>
 
                                 <div style="clear:both;"></div>
-
-                                <a href="{{ action('login.forgot') }}">Wachtwoord vergeten?</a>
                             </div>
                         </div>
                         <div class="column_right">
                             <div class="details_box">
-                                <h2>Waarom moet ik inloggen?</h2>
+                                <h2>Hoe achterhaal ik mijn wachtwoord?</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus eveniet iure, maiores nobis perferendis quo. Cupiditate delectus dicta dolore earum, ex harum laudantium maiores omnis perspiciatis quae recusandae similique. Cupiditate delectus dicta dolore earum, ex harum laudantium maiores omnis perspiciatis quae recusandae similique.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column_right" style="margin:25px auto;">
-                            <div class="details_box">
-                                <h2>Heeft u nog geen account?</h2>
-                                <p>
-                                    Het aanmaken van een account is vereist om u of meerdere personen in te schrijven. Dit duurt nog geen twee minuten om aan te maken.<br />
-                                    <a  href="{{ action('registreren') }}"class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;" title="Details">Registreren</a>
                                 </p>
                             </div>
                         </div>

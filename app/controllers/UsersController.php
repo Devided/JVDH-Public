@@ -61,4 +61,28 @@ class UsersController extends \BaseController {
         Auth::logout();
         return Redirect::to('/');
     }
+
+    /**
+     * Show the forgot password page
+     * GET /login/vergeten
+     *
+     */
+    public function getForgotPassword()
+    {
+        return View::make('html-pages.login-forgot');
+    }
+
+    /**
+     * Email the users password based on emailadress
+     * POST /login/vergeten
+     *
+     */
+    public function postForgotPassword()
+    {
+        // TODO MAIL PASSWORD
+
+        $email = "test@test.com";
+        $s = "Uw wachtwoord is verzonden naar <b>" . $email . "</b>.";
+        return View::action('html-pages.login')->withSuccess($s);
+    }
 }
