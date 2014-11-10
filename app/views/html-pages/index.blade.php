@@ -41,22 +41,28 @@
             </li>
             <li class="home_box dark_blue">
                 <h2>
-                    Agenda			</h2>
+                    Event van de week
+                </h2>
                 <ul class="items_list thin dark_blue opening_hours">
                     <li class="clearfix">
 					    <span>Zondag - Maandag</span>
                         <div class="value">Gesloten</div>
                     </li>
                     <li class="clearfix">
-					<span>Dinsdag - Vrijdag</span>
-                        <div class="value">
-                            9.30 - 17.30 uur					</div>
+					<span>
+                        Dinsdag - Vrijdag
+                    </span>
+                    <div class="value">
+                        9.30 - 17.30 uur
+                    </div>
                     </li>
                     <li class="clearfix">
 					<span>
-						Zaterdag					</span>
-                        <div class="value">
-                            9.30 - 16.30 uur					</div>
+						Zaterdag
+                    </span>
+                    <div class="value">
+                        9.30 - 16.30 uur
+                    </div>
                     </li>
                 </ul>
             </li>
