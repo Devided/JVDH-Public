@@ -92,7 +92,8 @@
                     </form>
 
                     <a class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;" title="Details">Inloggen</a>
-
+                    <div style="display: inline-block; margin: 27px 0px 0px 25px;"><a class="btn btn-text" href="#" style="text-align: right;">Heeft u nog geen account?</a></div>
+    <!--
                     <div class="sidebar_box second">
                         <h3>
                             Heeft u nog geen account?
@@ -102,11 +103,12 @@
                         </p>
                         <a  href="{{ action('registreren') }}"class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;" title="Details">Registreren</a>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
 
-        <ul class="columns_3 page_margin_top clearfix">
+        <ul class="columns_3 page_margin_top clearfix" style="margin-top:50px;">
             <li class="column">
                 <center>
                     <img src="{{ asset('img/logos/babolat.jpg') }}" style="width:150px;">
