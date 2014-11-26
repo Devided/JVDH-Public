@@ -14,8 +14,8 @@ class InschrijvenController extends \BaseController {
 
         $user = Auth::user();
 
-
-        return View::make('html-pages.inschrijven-index');
+        $inschrijvingen = $user->subscriptions();
+        return View::make('html-pages.inschrijven-index')->with(['inschrijvingen' => $inschrijvingen]);
 	}
 
 	/**
@@ -24,10 +24,15 @@ class InschrijvenController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create1()
 	{
-		//
+        return View::make('html-pages.inschrijven-new-1');
 	}
+
+	public function create2($clubid)
+	{
+        	return View::make('html-pages.inschrijven-new-2');
+    	}
 
 	/**
 	 * Store a newly created resource in storage.
