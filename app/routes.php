@@ -2,7 +2,7 @@
 
 // set active page on menu
 HTML::macro('check_active', function($route) {
-    if( Request::path() == $route ) {
+    if(str_contains(Request::path(),$route) == true) {
         $active = "selected";
     }
     else {
@@ -25,6 +25,8 @@ Route::get('/lesdata', ['as' => 'lesdata', 'uses' => 'LesdataController@index'])
 
 // inschrijven
 Route::get('/inschrijven', ['as' => 'inschrijven', 'uses' => 'InschrijvenController@index', 'before' => 'auth']);
+Route::get('/inschrijven/nieuw', ['as' => 'inschrijven.nieuw.1', 'uses' => 'InschrijvenController@create1', 'before' => 'auth']);
+Route::get('/inschrijven/nieuw/{clubid}', ['as' => 'inschrijven.nieuw.2', 'uses' => 'InschrijvenController@create2', 'before' => 'auth']);
 
 // contact
 Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);

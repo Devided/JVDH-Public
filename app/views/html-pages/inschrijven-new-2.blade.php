@@ -16,7 +16,7 @@
                         <div class="column">
                             <div class="details_box">
                                 <h2>
-                                    Stap 1: Kies de club
+                                    Stap 2: Persoonlijke gegevens invullen
                                 </h2>
                                 <p>
                                     form hier...

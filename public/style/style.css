@@ -2000,6 +2000,33 @@ a.social_icon:hover
 {
 	width: 310px;
 }
+
+/* --- columns_4 --- */
+.columns_4 .column
+{
+    float: left;
+    width: 220px;
+    margin-left: 30px;
+}
+.columns_4 .column:first-child
+{
+    margin-left: 0;
+}
+.columns_4 .item_content .features_image, .columns_4 .features_image img,
+.features_icons_small .features_image, .features_icons_small .features_image img
+{
+    width: 57px;
+    height: 66px;
+}
+.columns_4 .item_content .text
+{
+    width: 220px;
+}
+.columns_4 .item_content .noicon
+{
+    width: 220px;
+}
+
 /* --- dropcap --- */
 .dropcap
 {
