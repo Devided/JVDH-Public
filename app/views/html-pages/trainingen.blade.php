@@ -56,8 +56,9 @@
                 <li class="item_content clearfix">
                     <div class="text noicon">
                         <h3>
-                            Advies														</h3>
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis cupiditate delectus eligendi harum illum iste nulla officia quam repellat! Atque debitis deserunt dicta, dolor exercitationem fugit hic quisquam rerum!</ul>
+                            Inschrijven?</h3>
+                        <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" style="margin-top:20px;" title="Details">Inschrijven voor tennisles</a>
+            </ul>
         </div>
     </div>
 

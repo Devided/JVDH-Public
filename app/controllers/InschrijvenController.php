@@ -11,6 +11,11 @@ class InschrijvenController extends \BaseController {
 	public function index()
 	{
 		//
+
+        $user = Auth::user();
+
+
+        return View::make('html-pages.inschrijven-index');
 	}
 
 	/**

@@ -18,20 +18,24 @@
                                 <h2>
                                     Inloggen
                                 </h2>
-                                <form class="contact_form" id="contact_form" method="post" action="">
+                                {{ Form::open(['url' => 'login', 'class' => 'contact_form']) }}
+
+                                @include('html-pages.partials._errors')
+
                                     <fieldset class="left">
                                         <label>Emailadres</label>
                                         <div class="block">
-                                            <input class="text_input"type="text" id="emailadres" placeholder="voorbeeld@gmail.com">
+                                            {{ Form::text('emailadres', null, ['id' => 'emailadres', 'class' => 'text_input', 'placeholder' => 'voorbeeld@example.com']) }}
                                         </div>
                                         <label>Wachtwoord</label>
                                         <div class="block">
-                                            <input class="text_input" type="password" value="" placeholder="wachtwoord">
+                                            {{ Form::password('password', ['class' => 'text_input', 'placeholder' => 'Wachtwoord']) }}
                                         </div>
                                     </fieldset>
-                                </form>
 
-                                <a class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;margin-bottom:40px;" title="Details">Inloggen</a>
+                                {{ Form::button('Inloggen', ['class' => 'more blue icon_small_arrow margin_right_white','style' => 'margin-top:20px;margin-bottom:40px;', 'type' => 'submit']) }}
+
+                                {{ Form::close() }}
 
                                 <div style="clear:both;"></div>
 

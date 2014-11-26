@@ -71,39 +71,47 @@
             <div class="page_left">
                 <h3 class="box_header">OVER TENNISSCHOOL JEROEN VAN DEN HEUVEL</h3>
                 <div class="columns clearfix">
-                    <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken. Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis. Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).</p>
+                    <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken. Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis.</p><p>Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).</p>
                 </div>
             </div>
             <div class="page_right">
                 <div class="sidebar_box first">
+                    @if(!Auth::user())
                     <h3 class="box_header">
-                        INLOGGEN OM IN TE SCHRIJVEN				</h3>
-                    <form class="contact_form" id="contact_form" method="post" action="">
-                        <fieldset class="left">
-                            <label>Emailadres</label>
-                            <div class="block">
-                                <input class="text_input"type="text">
-                            </div>
-                            <label>Wachtwoord</label>
-                            <div class="block">
-                                <input class="text_input" type="password" value="">
-                            </div>
-                        </fieldset>
-                    </form>
+                        INLOGGEN OM IN TE SCHRIJVEN
+                    </h3>
 
-                    <a class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;" title="Details">Inloggen</a>
-                    <div style="display: inline-block; margin: 27px 0px 0px 25px;"><a class="btn btn-text" href="#" style="text-align: right;">Heeft u nog geen account?</a></div>
-    <!--
-                    <div class="sidebar_box second">
-                        <h3>
-                            Heeft u nog geen account?
-                        </h3>
-                        <p>
-                            Om in te schrijven voor tennisles heeft u een account nodig.<br />Dit duurt nog geen twee minuten om aan te maken.
-                        </p>
-                        <a  href="{{ action('registreren') }}"class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;" title="Details">Registreren</a>
-                    </div>
-                    -->
+                    {{ Form::open(['url' => 'login', 'class' => 'contact_form']) }}
+
+                    @include('html-pages.partials._errors')
+
+                    <fieldset class="left">
+                        <label>Emailadres</label>
+                        <div class="block">
+                            {{ Form::text('emailadres', null, ['id' => 'emailadres', 'class' => 'text_input', 'placeholder' => 'voorbeeld@example.com']) }}
+                        </div>
+                        <label>Wachtwoord</label>
+                        <div class="block">
+                            {{ Form::password('password', ['class' => 'text_input', 'placeholder' => 'Wachtwoord']) }}
+                        </div>
+                    </fieldset>
+
+                    {{ Form::button('Inloggen', ['class' => 'more blue icon_small_arrow margin_right_white','style' => 'margin-top:20px;margin-bottom:40px;', 'type' => 'submit']) }}
+
+                    {{ Form::close() }}
+
+                    <hr style="margin-right:30px;">
+
+                    <div style="display: inline-block; margin: 0px;"><p>Om in te schrijven voor tennisles heeft u een account nodig.</p><a class="btn btn-text" href="#" style="text-align: right;">Heeft u nog geen account?</a></div>
+                    @else
+                    <h3 class="box_header">
+                        Welkom, {{{ Auth::user()->naam }}}
+                    </h3>
+
+                    <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" style="margin-top:20px;" title="Details">Bekijk mijn inschrijvingen</a>
+
+                    <div style="display: inline-block; margin: 27px 0px 0px 0px;">Bent u niet {{{ Auth::user()->naam }}}? <a class="btn btn-text" href="{{ action('logout') }}" style="text-align: right;">Uitloggen</a></div>
+                    @endif
                 </div>
             </div>
         </div>

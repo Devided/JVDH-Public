@@ -20,7 +20,7 @@ class UsersController extends \BaseController {
 
         // Validate the login request
         $rules = array(
-            'username'    => 'required|alphaNum|min:3',
+            'emailadres'    => 'required|email|min:3',
             'password' => 'required|min:3'
         );
 
@@ -33,20 +33,18 @@ class UsersController extends \BaseController {
         } else {
             // create our user data for the authentication
             $userdata = array(
-                'username' 	=> Input::get('username'),
+                'email' 	=> Input::get('emailadres'),
                 'password' 	=> Input::get('password')
             );
 
             // attempt to do the login
             if (Auth::attempt($userdata)) {
-                return Redirect::action('dashboard');
+                return Redirect::action('inschrijven');
             } else {
                 // validation not successful, send back to form
                 return Redirect::to('login')->withErrors('Gebruikersnaam of wachtwoord onjuist.');
             }
-
         }
-
     }
 
     /**
