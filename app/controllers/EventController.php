@@ -10,7 +10,7 @@ class EventController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		return View::make('html-pages.events');
 	}
 
 	/**
