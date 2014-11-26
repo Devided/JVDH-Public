@@ -16,34 +16,41 @@
                         <div class="column_left">
                             <div class="details_box">
                                 <h2>
-                                    Lorem ipsum								</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur debitis dicta eius facere illo laboriosam laborum nisi nostrum, quos, reprehenderit temporibus, veniam veritatis! Facere iste minus nulla praesentium tempora?
-                                    <br><br>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolore dolores ipsa necessitatibus quia quisquam tempora vero. Accusantium asperiores id incidunt iure provident unde vel? Autem debitis est laboriosam ut.
-                                    <br><br>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti, iste magnam mollitia nam perferendis reiciendis. Adipisci assumenda, ducimus est harum illo ipsam pariatur perferendis perspiciatis sequi sunt, tempore voluptas.
-                                    <br><br>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid aperiam commodi culpa delectus deleniti dolor eos et id inventore laboriosam molestiae nulla perspiciatis provident quaerat saepe, sequi, vero?
+                                    Jeugd tennislessen- en trainingen							</h2>
+                                <p style="text-align: justify">
+                                    Voor les kunnen kinderen meestal vanaf een jaar of 5/6 terecht bij een tennisvereniging. De allerkleinsten beginnen met de cursus "kidstennis". Hier maken de kinderen op de juiste manier kennis met het boeiende en veelzijdige spelletje tennis. Met aangepast spelmateriaal wordt spelenderwijs het balgevoel, het anticipatie- en orientatievermogen verbeterd. Daarna stromen ze door naar de cursussen voor beginners en gevorderden. Voor de groepslessen wordt er om praktische redenen op leeftijd en beschikbaarheid ingedeeld. Wij gaan het liefst zo veel mogelijk uit van het niveau en instelling van het kind. Eventueel kunnen kinderen uitgenodigd worden door de tennisvereniging voor selectie trainingen.Een intensieve trainingscursus (2 x in de week) voor de jeugd en competitie spelers met meer dan gemiddelde aanleg en ambitie voor tennis.
                                 </p>
-                            <br></div>
+                                <h2>Senioren tennislessen</h2>
+                                   <p style="text-align: justify">
+                                    De tennistrainers van Tennisschool Jeroen van den Heuvel vormen een enthousiast team, dat zich kenmerkt door een deskundige en persoonsgebonden aanpak. Wij bieden tenniscursussen voor beginners, gevorderden en competitiespelers aan.
+                                    Naast het feit dat de beheersing van een goede techniek van de slagen meer speelplezier geeft vormt juist deze techniek de basis om blessure vrij te kunnen spelen. Techniek behoort ten alle tijde functioneel te worden ingepast in de spelopvatting van de speler en derhalve ook zo te worden gedoceerd door de betreffende trainer.
+                                </p>
+                                 <br></div>
                         </div>
                         <div class="column_right" style="padding-top: 50px;">
                             <iframe width="450" height="253" src="//www.youtube.com/embed/PfDMXw2eBRs?modestbranding&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                           <br><br>
+                            <div class="details_box">
+                                <br>
+                                <h2>Privé les</h2>
+                                <p style="text-align: justify">Kiest u voor de voordelen van onverdeelde aandacht dan is privé les de beste optie alleen of met zijn twee-en. We zijn immers niet allemaal hetzelfde en spelen het spel nu eenmaal op een manier, die bij je past met je sterke en met je zwakke punten, die beide aandacht vragen. De leraar zal na het intake gesprek met een persoonlijk advies komen waarna het programma wordt opgesteld.</p>
+
+                            </div>
+
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
+        <!--
         <div class="columns columns_3 page_margin_top clearfix">
             <ul class="column">
                 <li class="item_content clearfix">
                     <div class="text noicon">
                         <h3>
-                            Waarschuwingen														</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus eveniet iure, maiores nobis perferendis quo. Cupiditate delectus dicta dolore earum, ex harum laudantium maiores omnis perspiciatis quae recusandae similique.</li>
-            </ul>
+                            Afzeggingen														</h3>
+                        Groepslessen gaan, bij afzegging van een gedeelte van de groep altijd door. De afzeggers hebben geen recht op inhalen en/of vergoeding van de betreffende les.</ul>
             <ul class="column">
                 <li class="item_content clearfix">
                     <div class="text noicon">
@@ -59,6 +66,7 @@
                             Advies														</h3>
                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis cupiditate delectus eligendi harum illum iste nulla officia quam repellat! Atque debitis deserunt dicta, dolor exercitationem fugit hic quisquam rerum!</ul>
         </div>
+        !-->
     </div>
 
 </div>
