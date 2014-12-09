@@ -45,7 +45,7 @@
                 </h2>
                 <div class="news clearfix">
                     <p class="text">
-                        <b>Conditietraining</b><br>Maandag 15 December
+                        <b><u>Conditietraining</u></b><br>Maandag 15 December
                         <br>
                         <a class="more light icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" title="Contactgegevens">Inschrijven</a>
                 </div>
