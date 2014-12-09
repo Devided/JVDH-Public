@@ -43,28 +43,12 @@
                 <h2>
                     Event van de week
                 </h2>
-                <ul class="items_list thin dark_blue opening_hours">
-                    <li class="clearfix">
-					    <span>Zondag - Maandag</span>
-                        <div class="value">Gesloten</div>
-                    </li>
-                    <li class="clearfix">
-					<span>
-                        Dinsdag - Vrijdag
-                    </span>
-                    <div class="value">
-                        9.30 - 17.30 uur
-                    </div>
-                    </li>
-                    <li class="clearfix">
-					<span>
-						Zaterdag
-                    </span>
-                    <div class="value">
-                        9.30 - 16.30 uur
-                    </div>
-                    </li>
-                </ul>
+                <div class="news clearfix">
+                    <p class="text">
+                        <b>Conditietraining</b><br>Maandag 15 December
+                        <br>
+                        <a class="more light icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" title="Contactgegevens">Inschrijven</a>
+                </div>
             </li>
         </ul>
         <div class="page_layout page_margin_top clearfix">
