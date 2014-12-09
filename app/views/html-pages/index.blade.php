@@ -22,7 +22,7 @@
                 </h2>
                 <div class="news clearfix">
                     <p class="text">
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                       Schrijf je alvast in voor tennisles voor het aankomende seizoen.
                         <br>
                        <a class="more light icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" title="Contactgegevens">Inschrijven</a>
                 </div>
@@ -71,7 +71,8 @@
             <div class="page_left">
                 <h3 class="box_header">OVER TENNISSCHOOL JEROEN VAN DEN HEUVEL</h3>
                 <div class="columns clearfix">
-                    <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken. Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis.</p><p>Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).</p>
+                    <img style="margin-top:30px;" src="{{ asset('img/home_bal.jpg') }}">
+                    <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken.<br>Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis.<br><br>Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).</p>
                 </div>
             </div>
             <div class="page_right">
@@ -102,7 +103,7 @@
 
                     <hr style="margin-right:30px;">
 
-                    <div style="display: inline-block; margin: 0px;"><p>Om in te schrijven voor tennisles heeft u een account nodig.</p><a class="btn btn-text" href="#" style="text-align: right;">Heeft u nog geen account?</a></div>
+                    <div style="display: inline-block; margin: 0px;"><p>Om in te schrijven voor tennisles heeft u een account nodig.</p><a class="btn btn-text" href="#" style="text-align: right;">Een account aanmaken</a></div>
                     @else
                     <h3 class="box_header">
                         Welkom, {{{ Auth::user()->naam }}}
