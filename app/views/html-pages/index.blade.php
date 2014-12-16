@@ -47,7 +47,7 @@
                     <p class="text">
                         <b><u>Conditietraining</u></b><br>Maandag 15 December
                         <br>
-                        <a class="more light icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" title="Contactgegevens">Inschrijven</a>
+                        <a class="more light icon_small_arrow margin_right_white" href="{{ action('events') }}" title="Contactgegevens">Events</a>
                 </div>
             </li>
         </ul>
