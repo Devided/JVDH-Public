@@ -55,7 +55,7 @@
             <div class="page_left">
                 <h3 class="box_header">OVER DE TENNISSCHOOL</h3>
                 <div class="columns clearfix">
-                    <img style="margin-top:30px;" src="{{ asset('img/home_bal.jpg') }}">
+                    <img style="margin-top:30px;" src="{{ asset('img/home_bal_nw.jpg') }}">
                     <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken.<br>Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis.<br><br>Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).
                     <br><br>
                     <img src="{{ asset('img/fb.png') }}" height="20"> <a href="https://www.facebook.com/tennisschooljvandenh">Volg TSJH op Facebook</a>
