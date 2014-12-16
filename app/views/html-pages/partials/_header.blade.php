@@ -66,9 +66,9 @@
                         EVENTS
                     </a>
                 </li>
-                <li class="{{ HTML::check_active('lesdata') }}">
-                    <a href="{{ action('lesdata') }}">
-                        LESDATA
+                <li class="{{ HTML::check_active('consultancy') }}">
+                    <a href="{{ action('consultancy') }}">
+                        CONSULTANCY
                     </a>
                 </li>
                 <li class="{{ HTML::check_active('inschrijven') }}">
@@ -87,7 +87,7 @@
                     <option value="#" selected='selected'>HOME</option>
                     <option value="#">TRAININGEN</option>
                     <option value="#">EVENTS</option>
-                    <option value="#">LESDATA</option>
+                    <option value="#">CONSULTANCY</option>
                     <option value="#">INSCHRIJVEN</option>
                     <option value="#">CONTACT</option>
                 </select>

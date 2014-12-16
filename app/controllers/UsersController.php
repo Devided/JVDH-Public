@@ -93,4 +93,48 @@ class UsersController extends \BaseController {
     {
         return View::make('html-pages.register');
     }
+
+    /**
+     * post the register page
+     * POST /registreren
+     *
+     */
+    public function postRegister()
+    {
+        // Validate the login request
+        $rules = array(
+            'emailadres'    => 'required|email|min:3',
+            'password' => 'required|min:3'
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+        // If the validator fails, redirect back to the form
+        if ($validator->fails()) {
+            return Redirect::to('registreren')
+                ->withErrors($validator) // send back all errors to the login form
+                ->withInput(Input::except('password')); // send back the input (not the password) so that we can repopulate the form
+        } else {
+            // create our user data for the authentication
+            $userdata = array(
+                'email' 	=> Input::get('emailadres'),
+                'password' 	=> Input::get('password')
+            );
+
+            // attempt to do the login
+            if (Auth::attempt($userdata)) {
+                Auth::logout();
+                return Redirect::to('login')->withErrors('Onder dit emailadres is al een account aangemaakt, bent u uw wachtwoord vergeten?');
+            } else {
+                // validation not successful, send back to form
+                $user = new User();
+                $user->email = Input::get('emailadres');
+                $user->password = Hash::make(Input::get('password'));
+                $user->save();
+
+                Auth::loginUsingId($user->id);
+
+                return Redirect::action('inschrijven');
+            }
+        }
+    }
 }

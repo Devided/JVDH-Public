@@ -20,8 +20,8 @@ Route::get('/trainingen', ['as' => 'trainingen', 'uses' => 'TrainingController@i
 // events
 Route::get('/events', ['as' => 'events', 'uses' => 'EventController@index']);
 
-// lesdata
-Route::get('/lesdata', ['as' => 'lesdata', 'uses' => 'LesdataController@index']);
+// consultancy
+Route::get('/consultancy', ['as' => 'consultancy', 'uses' => 'ConsultancyController@index']);
 
 // inschrijven
 Route::get('/inschrijven', ['as' => 'inschrijven', 'uses' => 'InschrijvenController@index', 'before' => 'auth']);
@@ -33,6 +33,7 @@ Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index'])
 
 // register
 Route::get('/registreren', ['as' => 'registreren', 'uses' => 'UsersController@getRegister']);
+Route::post('/registreren', ['as' => 'registreren.post', 'uses' => 'UsersController@postRegister']);
 
 // login
 Route::get('/login', ['as' => 'login', 'uses' => 'UsersController@getLogin']);

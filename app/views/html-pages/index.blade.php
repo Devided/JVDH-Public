@@ -36,7 +36,7 @@
                     <h5 style="color:#fff; margin-top:-5px;"><b>Clubscan</b> - <span style="font-size:12px;"><em>hoe staat jouw tennisclub ervoor en punten die verbeterd kunnen worden</em></span></h5><br>
 
                     <h5 style="color:#fff;"><b>Detachering</b> - <span style="font-size:12px;"><em>Op korte termijn een tennisleraar nodig met de juiste papieren en diploma's</em></span></h5>
-                    <a class="more light icon_small_arrow margin_right_white" style="margin-top: 11px;" href="#" title="Meer Informatie">Meer Informatie</a>
+                    <a class="more light icon_small_arrow margin_right_white" style="margin-top: 11px;" href="{{ action('consultancy') }}" title="Meer Informatie">Meer Informatie</a>
                 </div>
             </li>
             <li class="home_box dark_blue">
@@ -53,10 +53,14 @@
         </ul>
         <div class="page_layout page_margin_top clearfix">
             <div class="page_left">
-                <h3 class="box_header">OVER TENNISSCHOOL JEROEN VAN DEN HEUVEL</h3>
+                <h3 class="box_header">OVER DE TENNISSCHOOL</h3>
                 <div class="columns clearfix">
                     <img style="margin-top:30px;" src="{{ asset('img/home_bal.jpg') }}">
-                    <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken.<br>Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis.<br><br>Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).</p>
+                    <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken.<br>Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis.<br><br>Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).
+                    <br><br>
+                    <img src="{{ asset('img/fb.png') }}" height="20"> <a href="https://www.facebook.com/tennisschooljvandenh">Volg TSJH op Facebook</a>
+                    <img src="{{ asset('img/tw.png') }}" height="20" style="margin-left:20px;"> <a href="https://www.twitter.com/tennisschooljvandenh">Volg TSJH op Twitter</a>
+                    </p>
                 </div>
             </div>
             <div class="page_right">
@@ -87,7 +91,7 @@
 
                     <hr style="margin-right:30px;">
 
-                    <div style="display: inline-block; margin: 0px;"><p>Om in te schrijven voor tennisles heeft u een account nodig.</p><a class="btn btn-text" href="#" style="text-align: right;">Een account aanmaken</a></div>
+                    <div style="display: inline-block; margin: 0px;"><p>Om in te schrijven voor tennisles heeft u een account nodig.</p><a class="btn btn-text" href="{{ action('registreren') }}" style="text-align: right;">Een account aanmaken</a></div>
                     @else
                     <h3 class="box_header">
                         Welkom, {{{ Auth::user()->naam }}}
@@ -101,7 +105,7 @@
             </div>
         </div>
 
-        <ul class="columns_3 page_margin_top clearfix" style="margin-top:50px;">
+        <ul class="columns_3 page_margin_top clearfix" style="margin-top:10px;">
             <li class="column">
                 <center>
                     <img src="{{ asset('img/logos/babolat.jpg') }}" style="width:150px;">
