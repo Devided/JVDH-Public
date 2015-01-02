@@ -23,7 +23,7 @@
                                     Momenteel heeft u nog niemand ingeschreven, klik hieronder om de eerste persoon in te schrijven.
                                 </p>
                                 @endif
-                                <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-top:20px;margin-bottom:40px;" title="Details">Nieuwe persoon inschrijven</a>
+                                <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-top:20px;margin-bottom:40px;" title="Details">Nieuw persoon inschrijven</a>
 
                                 <div style="clear:both;"></div>
                             </div>

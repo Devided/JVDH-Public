@@ -49,7 +49,7 @@
                 <div class="text noicon">
                     <h3>
                         Contact opnemen?</h3>
-                    <a class="more blue icon_small_arrow margin_right_white" href="{{ action('contact') }}" style="margin-top:20px;" title="Details">Contactformulier</a>
+                    <a class="more blue icon_small_arrow margin_right_white" href="{{ action('contact') }}" style="margin-top:20px;" title="Details">Ga naar de contactpagina</a>
         </ul>
     </div>
 </div>

@@ -104,7 +104,8 @@ class UsersController extends \BaseController {
         // Validate the login request
         $rules = array(
             'emailadres'    => 'required|email|min:3',
-            'password' => 'required|min:3'
+            'password' => 'required|min:3',
+            'naam' => 'required|min:3'
         );
 
         $validator = Validator::make(Input::all(), $rules);
@@ -123,13 +124,17 @@ class UsersController extends \BaseController {
             // attempt to do the login
             if (Auth::attempt($userdata)) {
                 Auth::logout();
-                return Redirect::to('login')->withErrors('Onder dit emailadres is al een account aangemaakt, bent u uw wachtwoord vergeten?');
+                return Redirect::to('registreren')->withErrors('Onder dit emailadres is al een account aangemaakt.');
             } else {
                 // validation not successful, send back to form
                 $user = new User();
                 $user->email = Input::get('emailadres');
                 $user->password = Hash::make(Input::get('password'));
+                $user->naam = Input::get('naam');
                 $user->save();
+
+                //TODO: send activation email
+                //TODO: add email to mailchimp
 
                 Auth::loginUsingId($user->id);
 

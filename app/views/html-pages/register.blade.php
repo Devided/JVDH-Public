@@ -23,6 +23,10 @@
                                 @include('html-pages.partials._errors')
 
                                 <fieldset class="left">
+                                    <label>Volledige naam</label>
+                                    <div class="block">
+                                        {{ Form::text('naam', null, ['id' => 'naam', 'class' => 'text_input', 'placeholder' => 'Volledige naam']) }}
+                                    </div>
                                     <label>Emailadres</label>
                                     <div class="block">
                                         {{ Form::text('emailadres', null, ['id' => 'emailadres', 'class' => 'text_input', 'placeholder' => 'voorbeeld@example.com']) }}
@@ -71,6 +75,6 @@
     </div>
 </div>
 <script>
-    $('#emailadres').focus();
+    $('#naam').focus();
 </script>
 @include('html-pages.partials._footer')

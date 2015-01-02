@@ -34,7 +34,7 @@
                                         <br />
 
                                         <div style="padding-left: 25%; min-width: 100%;">
-                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-bottom:40px;" title="Details">Kies</a>
+                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.2',['clubid' => 'melkhuisje']) }}" style="margin-bottom:40px;" title="Details">Kies</a>
                                         </div>
                                 </li>
                             </ul>
@@ -50,7 +50,7 @@
                                         <br />
 
                                         <div style="padding-left: 25%; min-width: 100%;">
-                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-bottom:40px;" title="Details">Kies</a>
+                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.2',['clubid' => 'abcoude']) }}" style="margin-bottom:40px;" title="Details">Kies</a>
                                         </div>
                                 </li>
                             </ul>
@@ -66,7 +66,7 @@
                                         <br />
 
                                         <div style="padding-left: 25%; min-width: 100%;">
-                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-bottom:40px;" title="Details">Kies</a>
+                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.2',['clubid' => 'voordaan']) }}" style="margin-bottom:40px;" title="Details">Kies</a>
                                         </div>
                                 </li>
                             </ul>
@@ -84,7 +84,7 @@
                                         <br />
 
                                         <div style="padding-left: 25%; min-width: 100%; margin-top:-40px;">
-                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-bottom:40px;" title="Details">Kies</a>
+                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.2',['clubid' => 'overig']) }}" style="margin-bottom:40px;" title="Details">Kies</a>
                                         </div>
                                 </li>
                             </ul>

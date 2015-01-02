@@ -15,6 +15,12 @@ class UpdateSubscriptionsTable extends Migration {
 		Schema::table('subscriptions', function(Blueprint $table)
 		{
 			$table->string('user_id');
+            $table->integer("partid");
+
+            $table->string("opmerking");
+            $table->string("club");
+
+            $table->string('telefoon');
 		});
 	}
 
@@ -29,6 +35,12 @@ class UpdateSubscriptionsTable extends Migration {
 		Schema::table('subscriptions', function(Blueprint $table)
 		{
 			$table->dropColumn('user_id');
+            $table->dropColumn("partid");
+
+            $table->dropColumn("opmerking");
+            $table->dropColumn("club");
+
+            $table->dropColumn('telefoon');
 		});
 	}
 
