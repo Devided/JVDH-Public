@@ -25,7 +25,7 @@ Route::get('/consultancy', ['as' => 'consultancy', 'uses' => 'ConsultancyControl
 
 // inschrijven
 Route::get('/inschrijven', ['as' => 'inschrijven', 'uses' => 'InschrijvenController@index', 'before' => 'auth']);
-Route::post('/inschrijven', ['as' => 'inschrijven.post', 'uses' => 'InschrijvenController@store', 'before' => 'auth']);
+Route::post('/inschrijven', ['as' => 'inschrijven.post', 'uses' => 'InschrijvenController@store', 'before' => 'auth|csrf']);
 Route::get('/inschrijven/nieuw', ['as' => 'inschrijven.nieuw.1', 'uses' => 'InschrijvenController@create1', 'before' => 'auth']);
 Route::get('/inschrijven/nieuw/{clubid}', ['as' => 'inschrijven.nieuw.2', 'uses' => 'InschrijvenController@create2', 'before' => 'auth']);
 

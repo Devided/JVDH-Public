@@ -52,6 +52,21 @@
                                                 {{ Form::text('opmerking', null, ['id' => 'opmerking', 'class' => 'text_input', 'placeholder' => 'Bijv. bij wie in de groep.']) }}
                                             </div>
                                             <br><br><br>
+                                            <label>Inschrijven voor:</label>
+                                            <div class="block">
+                                                <select name="onderdeel">
+                                                    @foreach($parts as $part)
+                                                    <option value="{{ $part->id }}">
+                                                        @if($part->grootte == 1)
+                                                            {{ $part->seizoen }}, privéles, €{{ $part->prijs }}
+                                                        @else
+                                                            {{ $part->seizoen }}, groep van {{ $part->grootte }} personen, €{{ $part->prijs }}
+                                                        @endif
+                                                    </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                            <br><br><br>
                                             <label>Telefoonnummer</label>
                                             <div class="block">
                                                 {{ Form::text('telefoon', null, ['id' => 'telefoon', 'class' => 'text_input', 'placeholder' => '06-12345678']) }}
