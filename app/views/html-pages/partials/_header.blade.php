@@ -84,12 +84,12 @@
             </ul>
             <div class="mobile_menu">
                 <select>
-                    <option value="#" selected='selected'>HOME</option>
-                    <option value="#">TRAININGEN</option>
-                    <option value="#">EVENTS</option>
-                    <option value="#">CONSULTANCY</option>
-                    <option value="#">INSCHRIJVEN</option>
-                    <option value="#">CONTACT</option>
+                    <option value="{{ action('home') }}" selected='selected'>HOME</option>
+                    <option value="{{ action('trainingen') }}">TRAININGEN</option>
+                    <option value="{{ action('events') }}">EVENTS</option>
+                    <option value="{{ action('consultancy') }}">CONSULTANCY</option>
+                    <option value="{{ action('inschrijven') }}">INSCHRIJVEN</option>
+                    <option value="{{ action('contact') }}">CONTACT</option>
                 </select>
             </div>				</div>
     </div>
