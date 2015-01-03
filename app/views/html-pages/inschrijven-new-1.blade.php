@@ -29,7 +29,7 @@
                                             H.L.T.C. 't Melkhuisje
                                         </h3>
                                         <div style="margin-top: 20px; height:190px;">
-                                            <img src="{{ asset('/img/clublogo/melkhuisje.jpg') }}" style="margin-top:60px; width: 230px;">
+                                            <img src="{{ asset('/img/clublogo/melkhuisje.jpg') }}" style="margin:auto; margin-top:60px; width: 80%;">
                                         </div>
                                         <br />
 
@@ -45,7 +45,7 @@
                                             A.L.T.C. Abcoude
                                         </h3>
                                         <div style="margin-top: 20px; height: 190px;">
-                                            <img src="{{ asset('/img/clublogo/abcoude.png') }}" style="margin-top:10px;">
+                                            <img src="{{ asset('/img/clublogo/abcoude.png') }}" style="margin:auto; margin-top:10px; width:80%;">
                                         </div>
                                         <br />
 
@@ -61,7 +61,7 @@
                                             T.C. Voordaan
                                         </h3>
                                         <div style="margin-top: 20px; height: 190px;">
-                                            <img src="{{ asset('/img/clublogo/voordaan.png') }}" style="margin-top:55px; width: 230px;">
+                                            <img src="{{ asset('/img/clublogo/voordaan.png') }}" style="margin:auto; margin-top:55px; width: 80%;">
                                         </div>
                                         <br />
 

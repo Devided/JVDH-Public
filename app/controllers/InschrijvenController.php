@@ -14,7 +14,8 @@ class InschrijvenController extends \BaseController {
 
         $user = Auth::user();
 
-        $inschrijvingen = $user->subscriptions();
+        $inschrijvingen = $user->subscriptions->all();
+
         return View::make('html-pages.inschrijven-index')->with(['inschrijvingen' => $inschrijvingen]);
 	}
 

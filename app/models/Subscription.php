@@ -4,6 +4,10 @@ class Subscription extends \Eloquent {
 	protected $fillable = [];
 
     public function user(){
-        $this->belongsTo('User');
+        return $this->belongsTo('User');
+    }
+
+    public function part() {
+        return $this->belongsTo('Part');
     }
 }
