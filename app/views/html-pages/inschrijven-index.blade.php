@@ -1,13 +1,14 @@
 @include('html-pages.partials._header')
 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 {{ HTML::style('style/table.css') }}
 
 <div class="page relative">
-    <div class="page_layout page_margin_top clearfix">
-        <div class="page_header clearfix">
-            <div class="page_header_left">
-                <h1 class="page_title">Inschrijven voor tennisles</h1>
-            </div>
+    <div class="page_layout page_margin_top clearfix" style="margin-top:0px">
+        <div class="page_header clearfix" style="background: url({{ asset("img/bg_top.jpg") }});height: 90px;padding-top: 30px;margin-bottom: 30px;">
+        <div class="page_header_left">
+            <h1 class="page_title" style="margin-left: 20px;margin-top:-5px; color:white;">Inschrijven tennisles</h1>
+        </div>
             <div class="page_header_right">
             </div>
         </div>
@@ -20,13 +21,13 @@
                                 <h2>
                                     Ingeschreven personen
                                 </h2>
-                                @if(is_null($inschrijvingen))
+                                @if(empty($inschrijvingen))
                                 <p>
                                     Momenteel heeft u nog niemand ingeschreven, klik hieronder om de eerste persoon in te schrijven.
                                 </p>
                                 @else
                                 <br><br>
-                                <table class="table table-striped" style="width:80%; margin-top:50px; margin-bottom: 75px;">
+                                <table class="table table-striped" style="width:100%; margin-top:50px; margin-bottom: 75px;">
                                     <thead>
                                     <tr>
                                         <th>Naam</th>
@@ -46,7 +47,7 @@
                                         @else
                                         <td>{{ $part->seizoen }}, groep van {{ $part->grootte }} personen, €{{ $part->prijs }}</td>
                                         @endif
-                                        <td>actions</td>
+                                        <td><a href="javascript:alert('De lesdata is nog niet beschikbaar.')"><i class="fa fa-calendar"> lesdata</i></a> | <a href="{{ action('uitschrijven',['id' => $inschrijving->id]) }}"><i class="fa fa-ban"> uitschrijven</i></a></td>
                                     </tr>
                                     @endforeach
                                     </tbody>

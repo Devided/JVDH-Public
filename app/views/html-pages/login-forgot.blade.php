@@ -1,11 +1,11 @@
 @include('html-pages.partials._header')
 
 <div class="page relative">
-    <div class="page_layout page_margin_top clearfix">
-        <div class="page_header clearfix">
-            <div class="page_header_left">
-                <h1 class="page_title">Inschrijven voor tennisles</h1>
-            </div>
+    <div class="page_layout page_margin_top clearfix" style="margin-top:0px">
+        <div class="page_header clearfix" style="background: url({{ asset("img/bg_top.jpg") }});padding-top: 30px;margin-bottom: 30px;">
+        <div class="page_header_left">
+            <h1 class="page_title" style="margin-left: 20px; color:white;">Inschrijven tennisles</h1>
+        </div>
             <div class="page_header_right">
             </div>
         </div>
@@ -36,7 +36,7 @@
                             <div class="details_box">
                                 <h2>Hoe achterhaal ik mijn wachtwoord?</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus eveniet iure, maiores nobis perferendis quo. Cupiditate delectus dicta dolore earum, ex harum laudantium maiores omnis perspiciatis quae recusandae similique. Cupiditate delectus dicta dolore earum, ex harum laudantium maiores omnis perspiciatis quae recusandae similique.
+                                    Vul hiernaast het emailadres in dat u heeft gebruikt tijdens het maken van uw account. Wij sturen u daarna een email met een link om het wachtwoord opnieuw in te stellen.
                                 </p>
                             </div>
                         </div>

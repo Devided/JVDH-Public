@@ -32,7 +32,7 @@
                             <br></div>
                     </div>
                     <div class="column_right" style="padding-top: 15px;">
-                        <img src="{{ asset('img/jeroenvandenheuvel.jpg') }}">
+                        <img src="{{ asset('img/jeroen.jpg') }}">
                         <br><br>
                         <div class="details_box">
                         </div>

@@ -20,11 +20,12 @@
                 <h2>
                     <a href="?page=contact" title="Emergency Case">Klaar voor het nieuwe seizoen?</a>
                 </h2>
-                <div class="news clearfix">
+                <div class="news clearfix" style="height:106px;">
                     <p class="text">
                        Schrijf je alvast in voor tennisles voor het aankomende seizoen.
                         <br>
-                       <a class="more light icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" title="Contactgegevens">Inschrijven</a>
+                    </p>
+                    <a class="more light icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" title="Contactgegevens" style="margin-top:38px;">Inschrijven</a>
                 </div>
             </li>
             <li class="home_box blue">
@@ -43,11 +44,12 @@
                 <h2>
                     Event van de week
                 </h2>
-                <div class="news clearfix">
+                <div class="news clearfix" style="height:106px;">
                     <p class="text">
                         <b><u>Conditietraining</u></b><br>Maandag 15 December
                         <br>
-                        <a class="more light icon_small_arrow margin_right_white" href="{{ action('events') }}" title="Contactgegevens">Events</a>
+                    </p>
+                    <a class="more light icon_small_arrow margin_right_white" href="{{ action('events') }}" title="Contactgegevens" style="margin-top:63px;">Events</a>
                 </div>
             </li>
         </ul>

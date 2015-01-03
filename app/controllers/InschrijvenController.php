@@ -74,7 +74,7 @@ class InschrijvenController extends \BaseController {
             $subscription->verhindering = Input::get('verhindering');
             $subscription->opmerking = Input::get('opmerking');
             $subscription->telefoon = Input::get('telefoon');
-            $subscription->partid = Input::get('onderdeel');
+            $subscription->part_id = Input::get('onderdeel');
             $subscription->user_id = Auth::user()->id;
             $subscription->save();
 
@@ -125,9 +125,16 @@ class InschrijvenController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function delete($id)
 	{
-		//
+		if($subscription = Subscription::find($id)){
+            if($subscription->user_id == Auth::user()->id){
+                // subscription is owned by the current user and we can delete it
+                $subscription->delete();
+            }
+        }
+
+        return Redirect::action('inschrijven');
 	}
 
 }
