@@ -84,7 +84,8 @@
             </ul>
             <div class="mobile_menu">
                 <select>
-                    <option value="{{ action('home') }}" selected='selected'>HOME</option>
+                    <option value="#" selected='selected'>MENU</option>
+                    <option value="{{ action('home') }}">HOME</option>
                     <option value="{{ action('trainingen') }}">TRAININGEN</option>
                     <option value="{{ action('events') }}">EVENTS</option>
                     <option value="{{ action('consultancy') }}">CONSULTANCY</option>
