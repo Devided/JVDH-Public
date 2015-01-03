@@ -36,7 +36,7 @@
                 <div class="news clearfix">
                     <h5 style="color:#fff; margin-top:-5px;"><b>Clubscan</b> - <span style="font-size:12px;"><em>hoe staat jouw tennisclub ervoor en punten die verbeterd kunnen worden</em></span></h5><br>
 
-                    <h5 style="color:#fff;"><b>Detachering</b> - <span style="font-size:12px;"><em>Op korte termijn een tennisleraar nodig met de juiste papieren en diploma's</em></span></h5>
+                    <h5 style="color:#fff;"><b>Detachering</b> - <span style="font-size:12px;"><em>Op korte termijn een tennisleraar nodig met de juiste papieren.</em></span></h5>
                     <a class="more light icon_small_arrow margin_right_white" style="margin-top: 11px;" href="{{ action('consultancy') }}" title="Meer Informatie">Meer Informatie</a>
                 </div>
             </li>
@@ -46,7 +46,7 @@
                 </h2>
                 <div class="news clearfix" style="height:106px;">
                     <p class="text">
-                        <b><u>Conditietraining</u></b><br>Maandag 15 December
+                        <b>Conditietraining</b><br><i>Maandag 15 December</i>
                         <br>
                     </p>
                     <a class="more light icon_small_arrow margin_right_white" href="{{ action('events') }}" title="Contactgegevens" style="margin-top:63px;">Events</a>
