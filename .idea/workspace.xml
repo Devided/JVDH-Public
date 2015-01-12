@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/html-pages/inschrijven-voorwaarden.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/html-pages/inschrijven-wijzig.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" afterPath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inschrijven-voorwaarden.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inschrijven-voorwaarden.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-voorwaarden.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="72" selection-start="3507" selection-end="3507" vertical-scroll-proportion="0.5135135" vertical-offset="0" max-vertical-offset="1110">
+            <state line="38" column="72" selection-start="3507" selection-end="3507" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="930">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -110,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="48" selection-start="669" selection-end="680" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="825">
+            <state line="30" column="81" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.40071237" vertical-offset="0" max-vertical-offset="1123">
               <folding />
             </state>
           </provider>
@@ -158,10 +153,10 @@
         <option value="$PROJECT_DIR$/app/views/html-pages/partials/_header.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-wijzig.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-voorwaarden.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
       </list>
     </option>
   </component>
@@ -671,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="48" selection-start="669" selection-end="680" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="0" selection-start="3878" selection-end="3878" vertical-scroll-proportion="-33.75" vertical-offset="105" max-vertical-offset="1290">
@@ -705,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-voorwaarden.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="72" selection-start="3507" selection-end="3507" vertical-scroll-proportion="0.5135135" vertical-offset="0" max-vertical-offset="1110">
+        <state line="38" column="72" selection-start="3507" selection-end="3507" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="930">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -713,6 +701,13 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="81" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.40071237" vertical-offset="0" max-vertical-offset="1123">
+          <folding />
         </state>
       </provider>
     </entry>
