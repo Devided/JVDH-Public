@@ -29,6 +29,9 @@ Route::post('/inschrijven', ['as' => 'inschrijven.post', 'uses' => 'InschrijvenC
 Route::get('/inschrijven/nieuw', ['as' => 'inschrijven.nieuw.1', 'uses' => 'InschrijvenController@create1', 'before' => 'auth']);
 Route::get('/inschrijven/nieuw/{clubid}', ['as' => 'inschrijven.nieuw.2', 'uses' => 'InschrijvenController@create2', 'before' => 'auth']);
 Route::get('/uitschrijven/{id}', ['as' => 'uitschrijven', 'uses' => 'Inschrijvencontroller@delete', 'before' => 'auth']);
+Route::get('/inschrijven/wijzig', ['as' => 'inschrijven.wijzig', 'uses' => 'InschrijvenController@showWijzig', 'before' => 'auth']);
+Route::post('/inschrijven/wijzig', ['as' => 'inschrijven.wijzig.post', 'uses' => 'InschrijvenController@update', 'before' => 'auth']);
+Route::get('/inschrijven/voorwaarden', ['as' => 'inschrijven.voorwaarden', 'uses' => 'InschrijvenController@showVoorwaarden', 'before' => 'auth']);
 
 // contact
 Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);

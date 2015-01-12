@@ -16,7 +16,7 @@ class InschrijvenController extends \BaseController {
 
         $inschrijvingen = $user->subscriptions->all();
 
-        return View::make('html-pages.inschrijven-index')->with(['inschrijvingen' => $inschrijvingen]);
+        return View::make('html-pages.inschrijven-index')->with(['inschrijvingen' => $inschrijvingen, 'user' => $user]);
 	}
 
 	/**
@@ -113,9 +113,27 @@ class InschrijvenController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update()
 	{
-		//
+        $user = Auth::user();
+        // Validate the login request
+        $rules = array(
+            'emailadres'    => 'required|email|min:3',
+            'naam' => 'required|min:3'
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+        // If the validator fails, redirect back to the form
+        if ($validator->fails()) {
+            return Redirect::to('inschrijven.wijzig')
+                ->withErrors($validator) // send back all errors to the login form
+                ->withInput(Input::all()); // send back the input (not the password) so that we can repopulate the form
+        } else {
+            $user->naam = Input::get('naam');
+            $user->email = Input::get('emailadres');
+            $user->save();
+            return Redirect::action('inschrijven');
+        }
 	}
 
 	/**
@@ -136,5 +154,13 @@ class InschrijvenController extends \BaseController {
 
         return Redirect::action('inschrijven');
 	}
+
+    public function showWijzig(){
+        return View::make('html-pages.inschrijven-wijzig')->with(['user' => Auth::user()]);
+    }
+
+    public function showVoorwaarden(){
+        return View::make('html-pages.inschrijven-voorwaarden');
+    }
 
 }

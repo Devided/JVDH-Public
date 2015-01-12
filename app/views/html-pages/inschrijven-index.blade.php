@@ -21,13 +21,18 @@
                                 <h2>
                                     Ingeschreven personen
                                 </h2>
+                                <p style="margin-top:20px;">
+                                    <b>Uw gegevens (<a href="{{ action('inschrijven.wijzig') }}">wijzigen</a>)</b><br>
+                                    {{{ $user->naam }}}<br>
+                                    {{{ $user->email }}}
+                                </p>
                                 @if(empty($inschrijvingen))
                                 <p>
                                     Momenteel heeft u nog niemand ingeschreven, klik hieronder om de eerste persoon in te schrijven.
                                 </p>
                                 @else
                                 <br><br>
-                                <table class="table table-striped" style="width:100%; margin-top:50px; margin-bottom: 75px;">
+                                <table class="table table-striped" style="width:100%; margin-top:0px; margin-bottom: 75px;">
                                     <thead>
                                     <tr>
                                         <th>Naam</th>
@@ -54,6 +59,10 @@
                                 </table>
                                 @endif
                                 <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-top:20px;margin-bottom:40px;" title="Details">Nieuw persoon inschrijven</a>
+
+                                <p>
+                                    Als u inschrijft, gaat u akkoord met de <a href="{{ action('inschrijven.voorwaarden') }}">voorwaarden</a>.
+                                </p>
 
                                 <div style="clear:both;"></div>
                             </div>
