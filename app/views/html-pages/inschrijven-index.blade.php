@@ -52,7 +52,7 @@
                                         @else
                                         <td>{{ $part->seizoen }}, groep van {{ $part->grootte }} personen, €{{ $part->prijs }}</td>
                                         @endif
-                                        <td><a href="javascript:alert('De lesdata is nog niet beschikbaar.')"><i class="fa fa-calendar"> lesdata</i></a> | <a href="{{ action('uitschrijven',['id' => $inschrijving->id]) }}"><i class="fa fa-ban"> uitschrijven</i></a></td>
+                                        <td><a href="{{ action('uitschrijven',['id' => $inschrijving->id]) }}"><i class="fa fa-ban"> uitschrijven</i></a></td>
                                     </tr>
                                     @endforeach
                                     </tbody>

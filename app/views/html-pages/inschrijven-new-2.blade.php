@@ -33,6 +33,13 @@
                                             <div class="block">
                                                 {{ Form::text('leeftijd', null, ['id' => 'leeftijd', 'class' => 'text_input', 'placeholder' => 'Leeftijd']) }}
                                             </div>
+                                            <label>Geslacht</label>
+                                            <div class="block">
+                                                <select name="geslacht">
+                                                    <option value="man">Man</option>
+                                                    <option value="vrouw">Vrouw</option>
+                                                </select>
+                                            </div>
                                             <br><br><br>
                                             <label>Aantal jaar ervaring</label>
                                             <div class="block">

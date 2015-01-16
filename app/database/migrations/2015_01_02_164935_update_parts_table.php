@@ -15,6 +15,7 @@ class UpdatePartsTable extends Migration {
 		Schema::table('parts', function(Blueprint $table)
 		{
 			$table->boolean("active");
+            $table->string('clubid');
 		});
 	}
 
@@ -29,6 +30,7 @@ class UpdatePartsTable extends Migration {
 		Schema::table('parts', function(Blueprint $table)
 		{
 			$table->dropColumn("active");
+            $table->dropColumn('clubid');
 		});
 	}
 

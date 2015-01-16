@@ -32,7 +32,7 @@ class InschrijvenController extends \BaseController {
 
 	public function create2($clubid)
 	{
-        $parts = Part::where('active','=','1')->orderBy('grootte','DESC')->get();
+        $parts = Part::where('active','=','1')->where('clubid','=',$clubid)->orderBy('grootte','DESC')->get();
         return View::make('html-pages.inschrijven-new-2')->with(['clubid' => $clubid, 'parts' => $parts]);
     }
 
@@ -54,7 +54,8 @@ class InschrijvenController extends \BaseController {
             'verhindering' => 'min:1',
             'opmerking' => 'min:1',
             'telefoon' => 'required:min:7',
-            'onderdeel' => 'required'
+            'onderdeel' => 'required',
+            'geslacht' => 'required'
         );
 
         $validator = Validator::make(Input::all(), $rules);
@@ -76,6 +77,12 @@ class InschrijvenController extends \BaseController {
             $subscription->telefoon = Input::get('telefoon');
             $subscription->part_id = Input::get('onderdeel');
             $subscription->user_id = Auth::user()->id;
+
+            if(Input::get('geslacht') == 'man' || Input::get('geslacht') == 'vrouw') {
+                $subscription->geslacht = Input::get('geslacht');
+            } else {
+                return Redirect::action('inschrijven.nieuw.2',['clubid' => Input::get('clubid')])->withInput(Input::all());
+            }
             $subscription->save();
 
             return Redirect::action('inschrijven');

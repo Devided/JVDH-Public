@@ -19,6 +19,7 @@ class UpdateSubscriptionsTable extends Migration {
             $table->string("opmerking");
             $table->string("club");
             $table->string('telefoon');
+            $table->string("geslacht");
 		});
 	}
 
@@ -37,6 +38,7 @@ class UpdateSubscriptionsTable extends Migration {
             $table->dropColumn("opmerking");
             $table->dropColumn("club");
             $table->dropColumn('telefoon');
+            $table->dropColumn("geslacht");
 		});
 	}
 
