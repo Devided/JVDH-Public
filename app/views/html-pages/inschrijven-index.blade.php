@@ -38,7 +38,8 @@
                                         <th>Naam</th>
                                         <th>Club</th>
                                         <th>Type</th>
-                                        <th>Acties</th>
+                                        <th>Lesdata</th>
+                                        <th>Uitschrijven</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -52,7 +53,8 @@
                                         @else
                                         <td>{{ $part->seizoen }}, groep van {{ $part->grootte }} personen, €{{ $part->prijs }}</td>
                                         @endif
-                                        <td><a href="{{ action('uitschrijven',['id' => $inschrijving->id]) }}"><i class="fa fa-ban"> uitschrijven</i></a></td>
+                                        <td><a href="{{ action('lesdata.get',['clubid' => $inschrijving->club]) }}"><i class="fa fa-calendar"> lesdata</i></a></td>
+                                        <td><a href="{{ action('uitschrijven',['id' => $inschrijving->id]) }}"><i class="fa fa-ban" style="color: darkred"> uitschrijven</i></a></td>
                                     </tr>
                                     @endforeach
                                     </tbody>

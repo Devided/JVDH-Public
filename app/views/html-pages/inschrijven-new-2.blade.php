@@ -18,6 +18,7 @@
                                 <h2>
                                     Stap 2: Inschrijving compleet maken
                                 </h2>
+                                @if($parts->count() > 0)
                                 <div class="column_left">
                                     <div class="details_box">
                                         {{ Form::open(['url' => 'inschrijven', 'class' => 'contact_form']) }}
@@ -87,6 +88,9 @@
                                         {{ Form::close() }}
                                     </div>
                                 </div>
+                                @else
+                                <p><b>Momenteel zijn er voor deze club geen onderdelen waarop ingeschreven kan worden.</b><br><br><a href="{{ action('inschrijven') }}">Klik hier</a> om terug te gaan.</p>
+                                @endif
                                 <div style="clear:both;"></div>
                             </div>
                         </div>

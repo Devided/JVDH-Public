@@ -10,8 +10,13 @@ class EventController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('html-pages.events');
+		return View::make('html-pages.events-overzicht');
 	}
+
+    public function detail($clubid)
+    {
+        return View::make('html-pages.events')->with(['clubid' => $clubid]);
+    }
 
 	/**
 	 * Show the form for creating a new resource.

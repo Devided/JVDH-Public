@@ -19,6 +19,7 @@ Route::get('/trainingen', ['as' => 'trainingen', 'uses' => 'TrainingController@i
 
 // events
 Route::get('/events', ['as' => 'events', 'uses' => 'EventController@index']);
+Route::get('/events/{clubid}', ['as' => 'events.detail', 'uses' => 'EventController@detail']);
 
 // consultancy
 Route::get('/consultancy', ['as' => 'consultancy', 'uses' => 'ConsultancyController@index']);
@@ -32,6 +33,9 @@ Route::get('/uitschrijven/{id}', ['as' => 'uitschrijven', 'uses' => 'Inschrijven
 Route::get('/inschrijven/wijzig', ['as' => 'inschrijven.wijzig', 'uses' => 'InschrijvenController@showWijzig', 'before' => 'auth']);
 Route::post('/inschrijven/wijzig', ['as' => 'inschrijven.wijzig.post', 'uses' => 'InschrijvenController@update', 'before' => 'auth']);
 Route::get('/inschrijven/voorwaarden', ['as' => 'inschrijven.voorwaarden', 'uses' => 'InschrijvenController@showVoorwaarden', 'before' => 'auth']);
+
+// lesdata
+Route::get('/lesdata/{clubid}', ['as' => 'lesdata.get']);
 
 // contact
 Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);
