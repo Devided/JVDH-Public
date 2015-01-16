@@ -15,7 +15,7 @@ class EventController extends \BaseController {
 
     public function detail($clubid)
     {
-        return View::make('html-pages.events')->with(['clubid' => $clubid]);
+        return View::make('html-pages.events-'.$clubid)->with(['clubid' => $clubid]);
     }
 
 	/**

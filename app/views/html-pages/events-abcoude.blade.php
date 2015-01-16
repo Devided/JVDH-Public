@@ -20,6 +20,10 @@
                                     Een sportieve vakantieweek voor kinderen tussen de 6 en 12 jaar. Het uitgebreide sportpakket met de elke dag terugkerende tennislessen en een uitgebreide lunch vormen de rode draad in het 5 daagse weekprogramma.<br><br>In de middag staat het gevarieerde programma bol van creativiteit in combinatie met spelsporten, golfen, mountainebiken, squashen, zwemmen, klimmen en nog diverse andere spellen. Naast leerzaam is het kamp vooral recreatief en gezellig.<br>Er wordt regelmatig voor drankjes gezorgd. Om 9.00 kunnen de kinderen worden gebracht en om 17.00 uur weer worden opgehaald.<br><br>Een uitkomst voor werkende ouders.
                                 </p>
                                 <br><br>
+                                <h2>Tenniskamp Abcoude</h2>
+                                <p>
+
+                                </p>
                                 <h2>Aankomende events</h2>
                                 <table style="width:400px; margin-top:20px; margin-bottom:20px;">
                                     <tr>
