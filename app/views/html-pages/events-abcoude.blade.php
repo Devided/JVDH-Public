@@ -22,7 +22,28 @@
                                 <br><br>
                                 <h2>Tenniskamp Abcoude</h2>
                                 <p>
+                                    Voor kinderen van 6 t/m 12 jaar<br>
+                                    Maandag t/m vrijdag van 09:00-17:00<br>
+                                    Week 28 (maandag 6 juli t/m vrijdag 10 juli)<br><br>
 
+                                    <b>Onderdelen:</b><br>
+                                    3 uur per dag tennissen<br>
+                                    Golfen met gediplomeerde leraren<br>
+                                    Zeilen<br>
+                                    Klimwand<br>
+                                    Conditie trainen<br>
+                                    Wedstrijden spelen<br>
+                                    Iedere dag uitgebreid lunchen<br>
+                                    Afsluiting met barbecue voor alle kinderen met een drankje voor de ouders<br><br>
+
+                                    <b>Leraren:</b><br>
+                                    Koen en nog 3 andere leraren<br><br>
+
+                                    <b>Kosten:</b><br>
+                                    265 Euro p.p  ( hier zit alles bij inbegrepen)<br>
+                                    Minimaal 20 cursisten<br><br>
+
+                                    <a href="{{ action('tenniskamp', ['clubid' => $clubid]) }}">Klik hier</a> om in te schrijven.
                                 </p>
                                 <h2>Aankomende events</h2>
                                 <table style="width:400px; margin-top:20px; margin-bottom:20px;">

@@ -22,7 +22,26 @@
                                 <br><br>
                                 <h2>Tenniskamp T.C. Voordaan</h2>
                                 <p>
+                                    Voor kinderen van 6 t/m 11 jaar<br>
+                                    Maandag,woensdag en vrijdag van 09:00-17:00 Dinsdag en donderdag van 09:00-12:00<br>
+                                    Week 30 (maandag 13 juli t/m vrijdag 17 juli)<br><br>
 
+                                    <b>Onderdelen:</b><br>
+                                    3 uur per dag tennissen<br>
+                                    Pretpark<br>
+                                    Zwemmen<br>
+                                    Klimbos (Lage Vuursche)<br>
+                                    Wedstrijden spelen<br>
+                                    3 dagen uitgebreid lunchen<br><br>
+
+                                    <b>Leraren:</b><br>
+                                    Rogier en Roelof <br><br>
+
+                                    <b>Kosten:</b><br>
+                                    149,-  Euro p.p (hier zit alles bij inbegrepen)<br>
+                                    Minimaal 14 cursisten<br><br>
+
+                                    <a href="{{ action('tenniskamp', ['clubid' => $clubid]) }}">Klik hier</a> om in te schrijven.
                                 </p>
                                 <h2>Aankomende events</h2>
                                 <table style="width:400px; margin-top:20px; margin-bottom:20px;">

@@ -59,6 +59,10 @@
                                                 {{ Form::text('opmerking', null, ['id' => 'opmerking', 'class' => 'text_input', 'placeholder' => 'Bijv. bij wie in de groep.']) }}
                                             </div>
                                             <br><br><br>
+                                            <label>Emailadres</label>
+                                            <div class="block">
+                                                {{ Form::text('email', null, ['id' => 'email', 'class' => 'text_input', 'placeholder' => 'test@voorbeeld.nl']) }}
+                                            </div>
                                             <label>Telefoonnummer</label>
                                             <div class="block">
                                                 {{ Form::text('telefoon', null, ['id' => 'telefoon', 'class' => 'text_input', 'placeholder' => '06-12345678']) }}

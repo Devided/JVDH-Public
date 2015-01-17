@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EventController.php" afterPath="$PROJECT_DIR$/app/controllers/EventController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/events.jpg" afterPath="$PROJECT_DIR$/public/img/events.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/kamp.jpg" afterPath="$PROJECT_DIR$/public/img/kamp.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tenniskamp-inschrijven.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tenniskamp-inschrijven.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="40" selection-start="250" selection-end="250" vertical-scroll-proportion="16.291666" vertical-offset="481" max-vertical-offset="1425">
+            <state line="63" column="155" selection-start="4421" selection-end="4421" vertical-scroll-proportion="0.22507553" vertical-offset="796" max-vertical-offset="1485">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -66,10 +68,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events-melkhuisje.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="events-melkhuisje.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="69" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.46478873" vertical-offset="0" max-vertical-offset="930">
+            <state line="46" column="36" selection-start="1766" selection-end="3109" vertical-scroll-proportion="-24.375" vertical-offset="105" max-vertical-offset="1245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events-overzicht.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-overzicht.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="28" selection-start="956" selection-end="956" vertical-scroll-proportion="-8.75" vertical-offset="120" max-vertical-offset="1305">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events-abcoude.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="36" selection-start="2626" selection-end="2927" vertical-scroll-proportion="-17.25" vertical-offset="156" max-vertical-offset="1245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events-voordaan.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="47" selection-start="2769" selection-end="2769" vertical-scroll-proportion="-21.958334" vertical-offset="88" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -119,12 +148,12 @@
         <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-new-2.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/events.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/EventController.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php" />
       </list>
     </option>
@@ -258,6 +287,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
+    <property name="SearchEverywhereHistory" value="onde" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -571,27 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-overzicht.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="956" selection-end="956" vertical-scroll-proportion="-8.75" vertical-offset="120" max-vertical-offset="1305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="60" selection-start="1719" selection-end="1719" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="54" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.2972973" vertical-offset="0" max-vertical-offset="1110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
@@ -613,19 +622,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="250" selection-end="250" vertical-scroll-proportion="16.291666" vertical-offset="481" max-vertical-offset="1425">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="38" column="36" selection-start="2626" selection-end="2927" vertical-scroll-proportion="-17.25" vertical-offset="156" max-vertical-offset="1245">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="69" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.46478873" vertical-offset="0" max-vertical-offset="930">
+        <state line="46" column="36" selection-start="1766" selection-end="3109" vertical-scroll-proportion="-24.375" vertical-offset="105" max-vertical-offset="1245">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-overzicht.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="28" selection-start="956" selection-end="956" vertical-scroll-proportion="-8.75" vertical-offset="120" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="47" selection-start="2769" selection-end="2769" vertical-scroll-proportion="-21.958334" vertical-offset="88" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="155" selection-start="4421" selection-end="4421" vertical-scroll-proportion="0.22507553" vertical-offset="796" max-vertical-offset="1485">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
