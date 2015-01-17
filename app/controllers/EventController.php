@@ -24,9 +24,10 @@ class EventController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function showTenniskamp($clubid)
 	{
 		//
+        return View::make('html-pages.tenniskamp-inschrijven')->with(['clubid' => $clubid]);
 	}
 
 	/**

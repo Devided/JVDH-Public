@@ -34,6 +34,10 @@ Route::get('/inschrijven/wijzig', ['as' => 'inschrijven.wijzig', 'uses' => 'Insc
 Route::post('/inschrijven/wijzig', ['as' => 'inschrijven.wijzig.post', 'uses' => 'InschrijvenController@update', 'before' => 'auth']);
 Route::get('/inschrijven/voorwaarden', ['as' => 'inschrijven.voorwaarden', 'uses' => 'InschrijvenController@showVoorwaarden', 'before' => 'auth']);
 
+// tenniskamp
+Route::get('/tenniskamp/{clubid}', ['as' => 'tenniskamp', 'uses' => 'EventController@showTenniskamp']);
+Route::post('/tenniskamp/{clubid}', ['as' => 'tenniskamp.post', 'uses' => 'EventController@postTenniskamp']);
+
 // lesdata
 Route::get('/lesdata/{clubid}', ['as' => 'lesdata.get']);
 
