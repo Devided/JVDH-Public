@@ -15,7 +15,7 @@
                 <div class="columns no_width">
                     <div class="column_left">
                         <div class="details_box">
-                        
+
                             <p style="text-align: justify">
                                 Een aantal maatschappelijke ontwikkelingen dwingt tennisverenigingen er toe ander club management te
 
