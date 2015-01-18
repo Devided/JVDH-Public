@@ -73,10 +73,9 @@
       <file leaf-file-name="inschrijven-index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="59" selection-start="4226" selection-end="4226" vertical-scroll-proportion="0.45335278" vertical-offset="679" max-vertical-offset="1365">
+            <state line="66" column="55" selection-start="4222" selection-end="4222" vertical-scroll-proportion="0.45335278" vertical-offset="679" max-vertical-offset="1365">
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -818,10 +817,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="59" selection-start="4226" selection-end="4226" vertical-scroll-proportion="0.45335278" vertical-offset="679" max-vertical-offset="1365">
+        <state line="66" column="55" selection-start="4222" selection-end="4222" vertical-scroll-proportion="0.45335278" vertical-offset="679" max-vertical-offset="1365">
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
