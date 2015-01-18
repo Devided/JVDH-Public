@@ -273,7 +273,7 @@ class InschrijvenController extends \BaseController {
             return Redirect::back();
         }
 
-        $inschrijvingen = Subscription::where('part_id','=', $id);
+        $inschrijvingen = Subscription::where('part_id','=', $id)->get();
         $onderdeel = Part::find($id);
 
         $excel = [];
