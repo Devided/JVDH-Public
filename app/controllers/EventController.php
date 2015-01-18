@@ -52,7 +52,16 @@ class EventController extends \BaseController {
                 ->withErrors($validator) // send back all errors to the login form
                 ->withInput(Input::all()); // send back the input (not the password) so that we can repopulate the form
         } else {
-            Mail::send('emails.tenniskamp', array('data' => Input::all()), function($message)
+            Mail::send('emails.tenniskamp', [
+                'naam' => Input::get('naam'),
+                'leeftijd' => Input::get('leeftijd'),
+                'geslacht' => Input::get('geslacht'),
+                'ervaring' => Input::get('ervaring'),
+                'opmerking' => Input::get('opmerking'),
+                'email' => Input::get('email'),
+                'club' => Input::get('clubid'),
+                'telefoon' => Input::get('telefoon')
+            ], function($message)
             {
                 $message->to('duco@devided.com', 'Duco Visbeen')->subject('[tsjh.nl] Nieuwe inschrijving tenniskamp');
             });
@@ -162,5 +171,39 @@ class EventController extends \BaseController {
 	{
 		//
 	}
+
+    public function showInschrijven($id)
+    {
+        return View::make('html-pages.event-inschrijven');
+    }
+
+    public function postInschrijven($id)
+    {
+        $rules = array(
+            'email'    => 'required|min:1'
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+        // If the validator fails, redirect back to the form
+        if ($validator->fails()) {
+            return Redirect::action('event.inschrijven', ['id' => $id])
+                ->withErrors($validator) // send back all errors to the login form
+                ->withInput(Input::all()); // send back the input (not the password) so that we can repopulate the form
+        } else {
+            $event = Tennisevent::find($id);
+
+            Mail::send('emails.event', [
+                'email' => Input::get('email'),
+                'club' => $event->club,
+                'eventnaam' => $event->naam,
+                'eventdatum' => $event->datum
+            ], function($message)
+            {
+                $message->to('duco@devided.com', 'Duco Visbeen')->subject('[tsjh.nl] Nieuwe inschrijving tenniskamp');
+            });
+
+            return View::make('html-pages.bedankt-tenniskamp');
+        }
+    }
 
 }

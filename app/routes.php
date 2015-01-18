@@ -20,7 +20,8 @@ Route::get('/trainingen', ['as' => 'trainingen', 'uses' => 'TrainingController@i
 // events
 Route::get('/events', ['as' => 'events', 'uses' => 'EventController@index']);
 Route::get('/events/{clubid}', ['as' => 'events.detail', 'uses' => 'EventController@detail']);
-Route::get('/events/inschrijven/{id}', ['as' => 'event.inschrijven']);
+Route::get('/events/inschrijven/{id}', ['as' => 'event.inschrijven', 'uses' => 'EventController@showInschrijven']);
+Route::post('/events/inschrijven/{id}', ['uses' => 'EventController@postInschrijven']);
 
 Route::get('/event/{id}/delete', ['as' => 'event.delete', 'uses' => 'EventController@delete', 'before' => 'auth']);
 Route::get('/event/add', ['as' => 'event.add', 'uses' => 'EventController@showAdd', 'before' => 'auth']);
