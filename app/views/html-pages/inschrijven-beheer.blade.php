@@ -5,7 +5,7 @@
     <div class="page_layout page_margin_top clearfix" style="margin-top:0px">
         <div class="page_header clearfix" style="background: url({{ asset("img/bg_top.jpg") }});padding-top: 30px;margin-bottom: 30px;">
         <div class="page_header_left">
-            <h1 class="page_title" style="margin-left: 20px; color:white;">Voorwaarden</h1>
+            <h1 class="page_title" style="margin-left: 20px; color:white;">Beheer</h1>
         </div>
         <div class="page_header_right">
         </div>

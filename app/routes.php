@@ -62,4 +62,5 @@ Route::get('/logout', ['as' => 'logout', 'uses' => 'UsersController@destroy', 'b
 Route::get('/beheer/download/{clubid}', ['as' => 'beheer.download', 'uses' => 'InschrijvenController@download', 'before' => 'auth']);
 Route::get('/beheer/toggle/{id}', ['as' => 'beheer.toggle', 'uses' => 'InschrijvenController@togglePart', 'before' => 'auth']);
 Route::get('/beheer/delete/{id}', ['as' => 'beheer.delete', 'uses' => 'InschrijvenController@deletePart', 'before' => 'auth']);
-Route::get('/beheer/add', ['as' => 'beheer.add']);
+Route::get('/beheer/add', ['as' => 'beheer.add', 'uses' => 'InschrijvenController@showAdd', 'before' => 'auth']);
+Route::post('/beheer/add', ['uses' => 'InschrijvenController@postAdd', 'before' => 'auth']);

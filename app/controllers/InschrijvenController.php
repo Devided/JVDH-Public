@@ -280,4 +280,46 @@ class InschrijvenController extends \BaseController {
             return Redirect::back();
         }
     }
+
+    public function showAdd()
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        return View::make('html-pages.beheer-add');
+    }
+
+    public function postAdd()
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $rules = array(
+            'club'    => 'required|min:1',
+            'seizoen' => 'required|min:1',
+            'aantal' => 'required|min:1',
+            'prijs' => 'required|min:1'
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+        // If the validator fails, redirect back to the form
+        if ($validator->fails()) {
+            return Redirect::action('beheer.add')
+                ->withErrors($validator) // send back all errors to the login form
+                ->withInput(Input::all()); // send back the input (not the password) so that we can repopulate the form
+        } else {
+            $part = new Part();
+            $part->seizoen = Input::get('seizoen');
+            $part->grootte = Input::get('aantal');
+            $part->prijs = Input::get('prijs');
+            $part->clubid = Input::get('club');
+            $part->save();
+
+            return Redirect::action('inschrijven.beheren');
+        }
+    }
 }
