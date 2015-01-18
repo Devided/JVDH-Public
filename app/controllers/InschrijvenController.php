@@ -298,7 +298,7 @@ class InschrijvenController extends \BaseController {
         {
             return Redirect::back();
         } else {
-            $subscriptions = Subscription::where('part_id', '=', $id);
+            $subscriptions = Subscription::where('part_id', '=', $id)->get();
             foreach($subscriptions as $subscription)
             {
                 $subscription->delete();

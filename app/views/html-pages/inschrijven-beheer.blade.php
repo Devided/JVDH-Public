@@ -48,10 +48,12 @@
                                         <td>{{ $onderdeel->clubid }}</td>
                                         @if($onderdeel->active)
                                         <td>Actief (<a href="{{ action('beheer.toggle',['onderdeel' => $onderdeel->id]) }}">wijzig</a>)</td>
+                                        <td><a href="javascript:alert('Het onderdeel kan alleen verwijderd worden als het niet actief is.')"><i class="fa fa-ban" style="color: darkred"> verwijderen</i></a></td>
                                         @else
                                         <td>Inactief (<a href="{{ action('beheer.toggle',['id' => $onderdeel->id]) }}">wijzig</a>)</td>
-                                        @endif
                                         <td><a href="{{ action('beheer.delete',['id' => $onderdeel->id]) }}"><i class="fa fa-ban" style="color: darkred"> verwijderen</i></a></td>
+                                        @endif
+
                                     </tr>
                                     @endforeach
                                     </tbody>
