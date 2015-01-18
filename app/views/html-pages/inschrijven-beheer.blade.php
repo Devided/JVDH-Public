@@ -3,9 +3,9 @@
 {{ HTML::style('style/table.css') }}
 <div class="page relative">
     <div class="page_layout page_margin_top clearfix" style="margin-top:0px">
-        <div class="page_header clearfix" style="background: url({{ asset("img/bg_top.jpg") }});padding-top: 30px;margin-bottom: 30px;">
+        <div class="page_header clearfix" style="background: url({{ asset("img/bg_top.jpg") }});height: 90px;padding-top: 30px;margin-bottom: 30px;">
         <div class="page_header_left">
-            <h1 class="page_title" style="margin-left: 20px; color:white;">Beheer</h1>
+            <h1 class="page_title" style="margin-left: 20px; margin-top:-5px;color:white;">Beheer</h1>
         </div>
         <div class="page_header_right">
         </div>
@@ -29,6 +29,7 @@
                                     <a href="{{ action('beheer.download', ['clubid' => 'overig']) }}">Download inschrijvingen (overig)</a><br>
                                     <a href="{{ action('beheer.download', ['clubid' => 'all']) }}">Download inschrijvingen (alle clubs)</a><br><br>
                                     <b>Onderdelen:</b><br>
+                                    <a href="{{ action('beheer.add') }}">Nieuw onderdeel aanmaken</a><br>
                                 <table class="table table-striped" style="width:100%; margin-top:0px; margin-bottom: 75px;">
                                     <thead>
                                     <tr>
@@ -54,9 +55,7 @@
                                     </tr>
                                     @endforeach
                                     </tbody>
-                                </table><br>
-                                <a href="{{ action('beheer.add') }}">Nieuw onderdeel aanmaken</a><br><br>
-
+                                </table>
 
                                 <a href="{{ action('inschrijven') }}">Terug naar inschrijvingen</a>
                                 </p>

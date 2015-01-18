@@ -197,44 +197,71 @@ class InschrijvenController extends \BaseController {
         if($clubid == 'all')
         {
             foreach($inschrijvingen as $inschrijving) {
-                $excel['Persoon'] = $inschrijving->naam;
-                $excel['Leeftijd'] = $inschrijving->geboortedatum;
-                $excel['Ervaring'] = $inschrijving->ervaring;
-                $excel['knltb'] = $inschrijving->knltb;
-                $excel['Verhindering'] = $inschrijving->verhindering;
-                $excel['Opmerking'] = $inschrijving->opmerking;
-                $excel['Club'] = $inschrijving->club;
-                $excel['Telefoon'] = $inschrijving->telefoon;
-                $excel['Geslacht'] = $inschrijving->geslacht;
                 $onderdeel = Part::where('id', '=', $inschrijving->part_id)->first();
-                $excel['Onderdeel'] = $onderdeel->seizoen . ' (' . $onderdeel->grootte . ')';
                 $user = User::where('id','=', $inschrijving->user_id)->first();
-                $excel['Accountnaam'] = $user->naam;
-                $excel['Accountemail'] = $user->email;
+
+                $excel[] = [
+                    'Persoon' => $inschrijving->naam,
+                    'Leeftijd' => $inschrijving->geboortedatum,
+                    'Ervaring' => $inschrijving->ervaring,
+                    'knltb' => $inschrijving->knltb,
+                    'Verhindering' => $inschrijving->verhindering,
+                    'Opmerking' => $inschrijving->opmerking,
+                    'Club' => $inschrijving->club,
+                    'Telefoon' => $inschrijving->telefoon,
+                    'Geslacht' => $inschrijving->geslacht,
+                    'Onderdeel' => ($onderdeel->seizoen . " (" . $onderdeel->grootte . ")"),
+                    'Accountnaam' => $user->naam,
+                    'Accountemail' => $user->email
+                ];
             }
         } else {
             foreach($inschrijvingen as $inschrijving) {
                 if($inschrijving->club == $clubid)
                 {
-                    $excel['Persoon'] = $inschrijving->naam;
-                    $excel['Leeftijd'] = $inschrijving->geboortedatum;
-                    $excel['Ervaring'] = $inschrijving->ervaring;
-                    $excel['knltb'] = $inschrijving->knltb;
-                    $excel['Verhindering'] = $inschrijving->verhindering;
-                    $excel['Opmerking'] = $inschrijving->opmerking;
-                    $excel['Club'] = $inschrijving->club;
-                    $excel['Telefoon'] = $inschrijving->telefoon;
-                    $excel['Geslacht'] = $inschrijving->geslacht;
                     $onderdeel = Part::where('id', '=', $inschrijving->part_id)->first();
-                    $excel['Onderdeel'] = $onderdeel->seizoen . ' (' . $onderdeel->grootte . ')';
-                    $user = User::where('id','=', $inschrijving->user_id);
-                    $excel['Accountnaam'] = $user->naam;
-                    $excel['Accountemail'] = $user->email;
+                    $user = User::where('id','=', $inschrijving->user_id)->first();
+
+                    $excel[] = [
+                        'Persoon' => $inschrijving->naam,
+                        'Leeftijd' => $inschrijving->geboortedatum,
+                        'Ervaring' => $inschrijving->ervaring,
+                        'knltb' => $inschrijving->knltb,
+                        'Verhindering' => $inschrijving->verhindering,
+                        'Opmerking' => $inschrijving->opmerking,
+                        'Club' => $inschrijving->club,
+                        'Telefoon' => $inschrijving->telefoon,
+                        'Geslacht' => $inschrijving->geslacht,
+                        'Onderdeel' => ($onderdeel->seizoen . " (" . $onderdeel->grootte . ")"),
+                        'Accountnaam' => $user->naam,
+                        'Accountemail' => $user->email
+                    ];
                 }
             }
         }
 
-        dd($excel);
+        $flag = false;
+        foreach($excel as $row) {
+            if(!$flag) {
+                // display field/column names as first row
+                echo implode("\t", array_keys($row)) . "\r\n";
+                $flag = true;
+            }
+            echo implode("\t", array_values($row)) . "\r\n";
+        }
+
+        header("Content-Disposition: attachment; filename=\"inschrijvingen-". $clubid .".xls\"");
+        header("Content-Type: application/vnd.ms-excel");
+
+        return;
+
+        //dd($excel);
+    }
+
+    public function cleanData($str)
+    {
+        $str = preg_replace("/\t/", "\\t", $str);
+        $str = preg_replace("/\r?\n/", "\\n", $str);
     }
 
     public function togglePart($id)
