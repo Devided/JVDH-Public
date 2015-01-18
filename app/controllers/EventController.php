@@ -15,7 +15,8 @@ class EventController extends \BaseController {
 
     public function detail($clubid)
     {
-        return View::make('html-pages.events-'.$clubid)->with(['clubid' => $clubid]);
+        $events = Tennisevent::where('club','=',$clubid)->get();
+        return View::make('html-pages.events-'.$clubid)->with(['clubid' => $clubid, 'events' => $events]);
     }
 
 	/**
@@ -30,15 +31,53 @@ class EventController extends \BaseController {
         return View::make('html-pages.tenniskamp-inschrijven')->with(['clubid' => $clubid]);
 	}
 
+    public function postTenniskamp($clubid)
+    {
+        // Validate the login request
+        $rules = array(
+            'naam'    => 'required|min:3',
+            'clubid' => 'required',
+            'leeftijd' => 'required|min:1',
+            'ervaring' => 'required|min:1',
+            'opmerking' => 'min:1',
+            'telefoon' => 'required:min:7',
+            'geslacht' => 'required',
+            'email' =>  'required'
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+        // If the validator fails, redirect back to the form
+        if ($validator->fails()) {
+            return Redirect::action('tenniskamp',['clubid' => Input::get('clubid')])
+                ->withErrors($validator) // send back all errors to the login form
+                ->withInput(Input::all()); // send back the input (not the password) so that we can repopulate the form
+        } else {
+            Mail::send('emails.tenniskamp', array('data' => Input::all()), function($message)
+            {
+                $message->to('duco@devided.com', 'Duco Visbeen')->subject('[tsjh.nl] Nieuwe inschrijving tenniskamp');
+            });
+
+            return View::make('html-pages.bedankt-tenniskamp');
+        }
+    }
+
 	/**
 	 * Store a newly created resource in storage.
 	 * POST /event
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function delete($id)
 	{
-		//
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $event = Tennisevent::find($id);
+        $event->delete();
+
+        return Redirect::back();
 	}
 
 	/**
@@ -48,10 +87,45 @@ class EventController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function showAdd()
 	{
-		//
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        return View::make('html-pages.event-add');
 	}
+
+    public function postAdd()
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $rules = array(
+            'club'    => 'required|min:1',
+            'naam' => 'required|min:1',
+            'datum' => 'required|min:1'
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+        // If the validator fails, redirect back to the form
+        if ($validator->fails()) {
+            return Redirect::action('event.add')
+                ->withErrors($validator) // send back all errors to the login form
+                ->withInput(Input::all()); // send back the input (not the password) so that we can repopulate the form
+        } else {
+            $event = new Tennisevent();
+            $event->naam = Input::get('naam');
+            $event->datum = Input::get('datum');
+            $event->club = Input::get('club');
+            $event->save();
+
+            return Redirect::action('inschrijven.beheren');
+        }
+    }
 
 	/**
 	 * Show the form for editing the specified resource.

@@ -1,4 +1,6 @@
 @include('html-pages.partials._header')
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+{{ HTML::style('style/table.css') }}
 
 <div class="page relative">
     <div class="page_layout page_margin_top clearfix" style="margin-top:0px">
@@ -46,22 +48,23 @@
                                     <a href="{{ action('tenniskamp', ['clubid' => $clubid]) }}">Klik hier</a> om in te schrijven.
                                 </p>
                                 <h2>Aankomende events</h2>
-                                <table style="width:400px; margin-top:20px; margin-bottom:20px;">
+                                <table class="table table-striped" style="width:100%; margin-top:0px; margin-bottom: 75px;">
+                                    <thead>
                                     <tr>
-                                        <td>Conditietraining</td>
-                                        <td>15-12-2014</td>
-                                        <td><a href="#">inschrijven</a></td>
+                                        <th>Naam</th>
+                                        <th>Datum</th>
+                                        <th>Inschrijven</th>
                                     </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($events as $event)
                                     <tr>
-                                        <td>Dubbel clinic</td>
-                                        <td>19-12-2014</td>
-                                        <td><a href="#">inschrijven</a></td>
+                                        <td>{{ $event->naam }}</td>
+                                        <td>{{ $event->datum }}</td>
+                                        <td><a href="{{ action('event.inschrijven', ['id' => $event->id]) }}">Inschrijven</a></td>
                                     </tr>
-                                    <tr>
-                                        <td>Conditietraining</td>
-                                        <td>7-1-2015</td>
-                                        <td><a href="#">inschrijven</a></td>
-                                    </tr>
+                                    @endforeach
+                                    </tbody>
                                 </table>
                             </div>
                         </div>

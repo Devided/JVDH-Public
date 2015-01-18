@@ -65,6 +65,7 @@
                                 <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-top:20px;margin-bottom:40px;" title="Details">Nieuw persoon inschrijven</a>
 
                                 <p>
+                                    Inschrijven voor tenniskamp? <a href="{{ action('events') }}">Klik hier</a><br><br>
                                     Als u inschrijft, gaat u akkoord met de <a href="{{ action('inschrijven.voorwaarden') }}">voorwaarden</a>.
                                 </p>
 

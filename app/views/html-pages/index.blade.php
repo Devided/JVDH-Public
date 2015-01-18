@@ -42,11 +42,11 @@
             </li>
             <li class="home_box dark_blue">
                 <h2>
-                    Event van de week
+                    Aankomende events
                 </h2>
                 <div class="news clearfix" style="height:106px;">
                     <p class="text">
-                        <b>Conditietraining</b><br><i>Maandag 15 December</i>
+                        <b>Overzicht</b><br><i>Bekijk hier de laatste events voor uw club.</i>
                         <br>
                     </p>
                     <a class="more light icon_small_arrow margin_right_white" href="{{ action('events') }}" title="Contactgegevens" style="margin-top:63px;">Events</a>

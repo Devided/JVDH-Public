@@ -26,7 +26,8 @@ class InschrijvenController extends \BaseController {
         if($user->admin)
         {
             $onderdelen = Part::all();
-            return View::make('html-pages.inschrijven-beheer')->with(['onderdelen' => $onderdelen]);
+            $events = Tennisevent::all();
+            return View::make('html-pages.inschrijven-beheer')->with(['onderdelen' => $onderdelen, 'events' => $events]);
         }
 
         return Redirect::action('inschrijven');

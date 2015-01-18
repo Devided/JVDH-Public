@@ -29,7 +29,7 @@
                                     <a href="{{ action('beheer.download', ['clubid' => 'overig']) }}">Download inschrijvingen (overig)</a><br>
                                     <a href="{{ action('beheer.download', ['clubid' => 'all']) }}">Download inschrijvingen (alle clubs)</a><br><br>
                                     <b>Onderdelen:</b><br>
-                                    <a href="{{ action('beheer.add') }}">Nieuw onderdeel aanmaken</a><br>
+                                    <a href="{{ action('beheer.add') }}">Nieuw onderdeel aanmaken</a>
                                 <table class="table table-striped" style="width:100%; margin-top:0px; margin-bottom: 75px;">
                                     <thead>
                                     <tr>
@@ -54,6 +54,29 @@
                                         <td><a href="{{ action('beheer.delete',['id' => $onderdeel->id]) }}"><i class="fa fa-ban" style="color: darkred"> verwijderen</i></a></td>
                                         @endif
 
+                                    </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
+
+                                <b>Events:</b><br>
+                                <a href="{{ action('event.add') }}">Nieuw event aanmaken</a>
+                                <table class="table table-striped" style="width:100%; margin-top:0px; margin-bottom: 75px;">
+                                    <thead>
+                                    <tr>
+                                        <th>Naam</th>
+                                        <th>Datum</th>
+                                        <th>Club</th>
+                                        <th>Verwijderen</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($events as $event)
+                                    <tr>
+                                        <td>{{ $event->naam }}</td>
+                                        <td>{{ $event->datum }}</td>
+                                        <td>{{ $event->club }}</td>
+                                        <td><a href="{{ action('event.delete',['id' => $event->id]) }}"><i class="fa fa-ban" style="color: darkred"> verwijder</i></a></td>
                                     </tr>
                                     @endforeach
                                     </tbody>

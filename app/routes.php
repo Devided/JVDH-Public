@@ -20,6 +20,11 @@ Route::get('/trainingen', ['as' => 'trainingen', 'uses' => 'TrainingController@i
 // events
 Route::get('/events', ['as' => 'events', 'uses' => 'EventController@index']);
 Route::get('/events/{clubid}', ['as' => 'events.detail', 'uses' => 'EventController@detail']);
+Route::get('/events/inschrijven/{id}', ['as' => 'event.inschrijven']);
+
+Route::get('/event/{id}/delete', ['as' => 'event.delete', 'uses' => 'EventController@delete', 'before' => 'auth']);
+Route::get('/event/add', ['as' => 'event.add', 'uses' => 'EventController@showAdd', 'before' => 'auth']);
+Route::post('/event/add', ['uses' => 'EventController@postAdd', 'before' => 'auth']);
 
 // consultancy
 Route::get('/consultancy', ['as' => 'consultancy', 'uses' => 'ConsultancyController@index']);
@@ -37,10 +42,10 @@ Route::get('/inschrijven/beheren', ['as' => 'inschrijven.beheren', 'uses' => 'In
 
 // tenniskamp
 Route::get('/events/{clubid}/tenniskamp', ['as' => 'tenniskamp', 'uses' => 'EventController@showTenniskamp']);
-Route::post('/events/{clubid}/tenniskamp', ['as' => 'tenniskamp.post', 'uses' => 'EventController@postTenniskamp']);
+Route::post('/events/{clubid}/tenniskamp', ['uses' => 'EventController@postTenniskamp']);
 
 // lesdata
-Route::get('/lesdata/{clubid}', ['as' => 'lesdata.get']);
+Route::get('/lesdata/{clubid}.pdf', ['as' => 'lesdata.get']);
 
 // contact
 Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);

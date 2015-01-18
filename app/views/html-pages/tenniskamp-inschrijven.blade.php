@@ -20,7 +20,7 @@
                                 </h2>
                                 <div class="column_left">
                                     <div class="details_box">
-                                        {{ Form::open(['action' => 'tenniskamp.post', 'class' => 'contact_form']) }}
+                                        {{ Form::open(['class' => 'contact_form']) }}
 
                                         @include('html-pages.partials._errors')
                                         <input type="hidden" name="clubid" value="{{{ $clubid }}}">
@@ -44,15 +44,6 @@
                                             <label>Aantal jaar ervaring</label>
                                             <div class="block">
                                                 {{ Form::text('ervaring', null, ['id' => 'ervaring', 'class' => 'text_input', 'placeholder' => 'Ervaring']) }}
-                                            </div>
-                                            <label>KNLTB nummer (optioneel)</label>
-                                            <div class="block">
-                                                {{ Form::text('knltb', null, ['id' => 'knltb', 'class' => 'text_input', 'placeholder' => 'KNLTB nummer']) }}
-                                            </div>
-                                            <br><br><br>
-                                            <label>Verhindering (optioneel)</label>
-                                            <div class="block">
-                                                {{ Form::text('verhindering', null, ['id' => 'verhindering', 'class' => 'text_input', 'placeholder' => 'verhindering']) }}
                                             </div>
                                             <label>Opmerking (optioneel)</label>
                                             <div class="block">
