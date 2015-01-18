@@ -33,10 +33,11 @@ Route::get('/uitschrijven/{id}', ['as' => 'uitschrijven', 'uses' => 'Inschrijven
 Route::get('/inschrijven/wijzig', ['as' => 'inschrijven.wijzig', 'uses' => 'InschrijvenController@showWijzig', 'before' => 'auth']);
 Route::post('/inschrijven/wijzig', ['as' => 'inschrijven.wijzig.post', 'uses' => 'InschrijvenController@update', 'before' => 'auth']);
 Route::get('/inschrijven/voorwaarden', ['as' => 'inschrijven.voorwaarden', 'uses' => 'InschrijvenController@showVoorwaarden', 'before' => 'auth']);
+Route::get('/inschrijven/beheren', ['as' => 'inschrijven.beheren', 'uses' => 'InschrijvenController@showBeheer', 'before' => 'auth']);
 
 // tenniskamp
-Route::get('/tenniskamp/{clubid}', ['as' => 'tenniskamp', 'uses' => 'EventController@showTenniskamp']);
-Route::post('/tenniskamp/{clubid}', ['as' => 'tenniskamp.post', 'uses' => 'EventController@postTenniskamp']);
+Route::get('/events/{clubid}/tenniskamp', ['as' => 'tenniskamp', 'uses' => 'EventController@showTenniskamp']);
+Route::post('/events/{clubid}/tenniskamp', ['as' => 'tenniskamp.post', 'uses' => 'EventController@postTenniskamp']);
 
 // lesdata
 Route::get('/lesdata/{clubid}', ['as' => 'lesdata.get']);
@@ -56,3 +57,9 @@ Route::post('/login/vergeten', ['as' => 'login.forgot.post', 'uses' => 'UsersCon
 
 // logout
 Route::get('/logout', ['as' => 'logout', 'uses' => 'UsersController@destroy', 'before' => 'auth']);
+
+// beheer
+Route::get('/beheer/download/{clubid}', ['as' => 'beheer.download', 'uses' => 'InschrijvenController@download', 'before' => 'auth']);
+Route::get('/beheer/toggle/{id}', ['as' => 'beheer.toggle', 'uses' => 'InschrijvenController@togglePart', 'before' => 'auth']);
+Route::get('/beheer/delete/{id}', ['as' => 'beheer.delete', 'uses' => 'InschrijvenController@deletePart', 'before' => 'auth']);
+Route::get('/beheer/add', ['as' => 'beheer.add']);

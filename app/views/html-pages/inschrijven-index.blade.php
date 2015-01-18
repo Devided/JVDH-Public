@@ -19,7 +19,9 @@
                         <div class="column">
                             <div class="details_box" style="width:100%">
                                 <h2>
-                                    Ingeschreven personen
+                                    Ingeschreven personen @if($admin)
+                                    (<a href="{{ action('inschrijven.beheren') }}">beheren</a>)
+                                    @endif
                                 </h2>
                                 <p style="margin-top:20px;">
                                     <b>Uw gegevens (<a href="{{ action('inschrijven.wijzig') }}">wijzigen</a>)</b><br>

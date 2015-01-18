@@ -16,8 +16,21 @@ class InschrijvenController extends \BaseController {
 
         $inschrijvingen = $user->subscriptions->all();
 
-        return View::make('html-pages.inschrijven-index')->with(['inschrijvingen' => $inschrijvingen, 'user' => $user]);
+        return View::make('html-pages.inschrijven-index')->with(['inschrijvingen' => $inschrijvingen, 'user' => $user, 'admin' => $user->admin]);
 	}
+
+    public function showBeheer()
+    {
+        $user = Auth::user();
+
+        if($user->admin)
+        {
+            $onderdelen = Part::all();
+            return View::make('html-pages.inschrijven-beheer')->with(['onderdelen' => $onderdelen]);
+        }
+
+        return Redirect::action('inschrijven');
+    }
 
 	/**
 	 * Show the form for creating a new resource.
@@ -170,4 +183,101 @@ class InschrijvenController extends \BaseController {
         return View::make('html-pages.inschrijven-voorwaarden');
     }
 
+    public function download($clubid)
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $inschrijvingen = Subscription::all();
+
+        $excel = [];
+
+        if($clubid == 'all')
+        {
+            foreach($inschrijvingen as $inschrijving) {
+                $excel['Persoon'] = $inschrijving->naam;
+                $excel['Leeftijd'] = $inschrijving->geboortedatum;
+                $excel['Ervaring'] = $inschrijving->ervaring;
+                $excel['knltb'] = $inschrijving->knltb;
+                $excel['Verhindering'] = $inschrijving->verhindering;
+                $excel['Opmerking'] = $inschrijving->opmerking;
+                $excel['Club'] = $inschrijving->club;
+                $excel['Telefoon'] = $inschrijving->telefoon;
+                $excel['Geslacht'] = $inschrijving->geslacht;
+                $onderdeel = Part::where('id', '=', $inschrijving->part_id)->first();
+                $excel['Onderdeel'] = $onderdeel->seizoen . ' (' . $onderdeel->grootte . ')';
+                $user = User::where('id','=', $inschrijving->user_id)->first();
+                $excel['Accountnaam'] = $user->naam;
+                $excel['Accountemail'] = $user->email;
+            }
+        } else {
+            foreach($inschrijvingen as $inschrijving) {
+                if($inschrijving->club == $clubid)
+                {
+                    $excel['Persoon'] = $inschrijving->naam;
+                    $excel['Leeftijd'] = $inschrijving->geboortedatum;
+                    $excel['Ervaring'] = $inschrijving->ervaring;
+                    $excel['knltb'] = $inschrijving->knltb;
+                    $excel['Verhindering'] = $inschrijving->verhindering;
+                    $excel['Opmerking'] = $inschrijving->opmerking;
+                    $excel['Club'] = $inschrijving->club;
+                    $excel['Telefoon'] = $inschrijving->telefoon;
+                    $excel['Geslacht'] = $inschrijving->geslacht;
+                    $onderdeel = Part::where('id', '=', $inschrijving->part_id)->first();
+                    $excel['Onderdeel'] = $onderdeel->seizoen . ' (' . $onderdeel->grootte . ')';
+                    $user = User::where('id','=', $inschrijving->user_id);
+                    $excel['Accountnaam'] = $user->naam;
+                    $excel['Accountemail'] = $user->email;
+                }
+            }
+        }
+
+        dd($excel);
+    }
+
+    public function togglePart($id)
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $part = Part::find($id);
+
+        if($part->active)
+        {
+            $part->active = false;
+        } else {
+            $part->active = true;
+        }
+
+        $part->save();
+
+        return Redirect::back();
+    }
+
+    public function deletePart($id)
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $part = Part::find($id);
+
+        if($part->active)
+        {
+            return Redirect::back();
+        } else {
+            $subscriptions = Subscription::where('part_id', '=', $id);
+            foreach($subscriptions as $subscription)
+            {
+                $subscription->delete();
+            }
+            $part->delete();
+            return Redirect::back();
+        }
+    }
 }
