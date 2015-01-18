@@ -70,3 +70,4 @@ Route::get('/beheer/toggle/{id}', ['as' => 'beheer.toggle', 'uses' => 'Inschrijv
 Route::get('/beheer/delete/{id}', ['as' => 'beheer.delete', 'uses' => 'InschrijvenController@deletePart', 'before' => 'auth']);
 Route::get('/beheer/add', ['as' => 'beheer.add', 'uses' => 'InschrijvenController@showAdd', 'before' => 'auth']);
 Route::post('/beheer/add', ['uses' => 'InschrijvenController@postAdd', 'before' => 'auth']);
+Route::get('/beheer/download/onderdeel/{id}', ['as' => 'beheer.onderdeel.download','uses' => 'InschrijvenController@downloadOnderdeel', 'before' => 'auth']);

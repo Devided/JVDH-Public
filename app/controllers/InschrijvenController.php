@@ -26,6 +26,13 @@ class InschrijvenController extends \BaseController {
         if($user->admin)
         {
             $onderdelen = Part::all();
+
+            foreach($onderdelen as $onderdeel)
+            {
+                $inschrijvingen = Subscription::where('part_id','=',$onderdeel->id)->get();
+                $onderdeel->inschrijvingen = count($inschrijvingen);
+            }
+
             $events = Tennisevent::all();
             return View::make('html-pages.inschrijven-beheer')->with(['onderdelen' => $onderdelen, 'events' => $events]);
         }
@@ -252,6 +259,57 @@ class InschrijvenController extends \BaseController {
         }
 
         header("Content-Disposition: attachment; filename=\"inschrijvingen-". $clubid .".xls\"");
+        header("Content-Type: application/vnd.ms-excel");
+
+        return;
+
+        //dd($excel);
+    }
+
+    public function downloadOnderdeel($id)
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $inschrijvingen = Subscription::where('part_id','=', $id);
+        $onderdeel = Part::find($id);
+
+        $excel = [];
+
+        foreach($inschrijvingen as $inschrijving) {
+            $onderdeel = Part::where('id', '=', $inschrijving->part_id)->first();
+            $user = User::where('id','=', $inschrijving->user_id)->first();
+
+            $excel[] = [
+                'Persoon' => $inschrijving->naam,
+                'Leeftijd' => $inschrijving->geboortedatum,
+                'Ervaring' => $inschrijving->ervaring,
+                'knltb' => $inschrijving->knltb,
+                'Verhindering' => $inschrijving->verhindering,
+                'Opmerking' => $inschrijving->opmerking,
+                'Club' => $inschrijving->club,
+                'Telefoon' => $inschrijving->telefoon,
+                'Geslacht' => $inschrijving->geslacht,
+                'Onderdeel' => ($onderdeel->seizoen . " (" . $onderdeel->grootte . ")"),
+                'Accountnaam' => $user->naam,
+                'Accountemail' => $user->email
+            ];
+        }
+
+
+        $flag = false;
+        foreach($excel as $row) {
+            if(!$flag) {
+                // display field/column names as first row
+                echo implode("\t", array_keys($row)) . "\r\n";
+                $flag = true;
+            }
+            echo implode("\t", array_values($row)) . "\r\n";
+        }
+
+        header("Content-Disposition: attachment; filename=\"inschrijvingen-". $onderdeel->seizoen . "-". $onderdeel->grootte ."-". $onderdeel->clubid .".xls\"");
         header("Content-Type: application/vnd.ms-excel");
 
         return;

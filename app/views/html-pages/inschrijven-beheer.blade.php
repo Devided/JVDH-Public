@@ -14,8 +14,8 @@
         <div class="gallery_item_details_list clearfix page_margin_top" style="border-bottom: none;">
             <div class="gallery_item_details clearfix">
                 <div class="columns no_width">
-                    <div class="column_left">
-                        <div class="details_box">
+                    <div class="column">
+                        <div class="details_box" style="width:100%">
                             <h2>
                                 Beheer
                             </h2>
@@ -23,27 +23,31 @@
                             <fieldset class="left">
                                 <p>
                                     <b>Inschrijvingen:</b><br>
-                                    <a href="{{ action('beheer.download', ['clubid' => 'melkhuisje']) }}">Download inschrijvingen (melkhuisje)</a><br>
-                                    <a href="{{ action('beheer.download', ['clubid' => 'abcoude']) }}">Download inschrijvingen (abcoude)</a><br>
-                                    <a href="{{ action('beheer.download', ['clubid' => 'voordaan']) }}">Download inschrijvingen (voordaan)</a><br>
-                                    <a href="{{ action('beheer.download', ['clubid' => 'overig']) }}">Download inschrijvingen (overig)</a><br>
-                                    <a href="{{ action('beheer.download', ['clubid' => 'all']) }}">Download inschrijvingen (alle clubs)</a><br><br>
+                                    <a href="{{ action('beheer.download', ['clubid' => 'melkhuisje']) }}">Download alle inschrijvingen (melkhuisje)</a><br>
+                                    <a href="{{ action('beheer.download', ['clubid' => 'abcoude']) }}">Download alle inschrijvingen (abcoude)</a><br>
+                                    <a href="{{ action('beheer.download', ['clubid' => 'voordaan']) }}">Download alle inschrijvingen (voordaan)</a><br>
+                                    <a href="{{ action('beheer.download', ['clubid' => 'overig']) }}">Download alle inschrijvingen (overig)</a><br>
+                                    <a href="{{ action('beheer.download', ['clubid' => 'all']) }}">Download alle inschrijvingen (alle clubs)</a><br><br>
                                     <b>Onderdelen:</b><br>
                                     <a href="{{ action('beheer.add') }}">Nieuw onderdeel aanmaken</a>
                                 <table class="table table-striped" style="width:100%; margin-top:0px; margin-bottom: 75px;">
                                     <thead>
                                     <tr>
                                         <th>Seizoen</th>
-                                        <th>Aantal</th>
+                                        <th>Prijs</th>
+                                        <th>Groepgrootte</th>
                                         <th>Club</th>
                                         <th>Status</th>
                                         <th>Verwijderen</th>
+                                        <th>Inschrijvingen</th>
+                                        <th>Download</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($onderdelen as $onderdeel)
                                     <tr>
                                         <td>{{ $onderdeel->seizoen }}</td>
+                                        <td>{{ $onderdeel->prijs }}</td>
                                         <td>{{ $onderdeel->grootte }}</td>
                                         <td>{{ $onderdeel->clubid }}</td>
                                         @if($onderdeel->active)
@@ -53,7 +57,8 @@
                                         <td>Inactief (<a href="{{ action('beheer.toggle',['id' => $onderdeel->id]) }}">wijzig</a>)</td>
                                         <td><a href="{{ action('beheer.delete',['id' => $onderdeel->id]) }}"><i class="fa fa-ban" style="color: darkred"> verwijderen</i></a></td>
                                         @endif
-
+                                        <td>{{ $onderdeel->inschrijvingen }}</td>
+                                        <td><a href="{{ action('beheer.onderdeel.download', ['id' => $onderdeel->id]) }}">Download</a></td>
                                     </tr>
                                     @endforeach
                                     </tbody>
