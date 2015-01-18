@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="consultancy.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="consultancy.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="114" selection-start="5361" selection-end="5361" vertical-scroll-proportion="-27.333334" vertical-offset="829" max-vertical-offset="1905">
+            <state line="17" column="24" selection-start="820" selection-end="820" vertical-scroll-proportion="0.23469388" vertical-offset="94" max-vertical-offset="1875">
               <folding />
             </state>
           </provider>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inschrijven-index.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inschrijven-index.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="100" selection-start="575" selection-end="575" vertical-scroll-proportion="0.17492712" vertical-offset="15" max-vertical-offset="1365">
+            <state line="9" column="100" selection-start="575" selection-end="575" vertical-scroll-proportion="-5.0" vertical-offset="15" max-vertical-offset="1365">
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -176,8 +176,8 @@
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" />
       </list>
     </option>
   </component>
@@ -805,19 +805,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="114" selection-start="5361" selection-end="5361" vertical-scroll-proportion="-27.333334" vertical-offset="829" max-vertical-offset="1905">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="100" selection-start="575" selection-end="575" vertical-scroll-proportion="0.17492712" vertical-offset="15" max-vertical-offset="1365">
+        <state line="9" column="100" selection-start="575" selection-end="575" vertical-scroll-proportion="-5.0" vertical-offset="15" max-vertical-offset="1365">
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="24" selection-start="820" selection-end="820" vertical-scroll-proportion="0.23469388" vertical-offset="94" max-vertical-offset="1875">
+          <folding />
         </state>
       </provider>
     </entry>
