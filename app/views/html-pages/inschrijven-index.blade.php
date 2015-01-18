@@ -62,7 +62,7 @@
                                     </tbody>
                                 </table>
                                 @endif
-                                <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-top:20px;margin-bottom:40px;" title="Details">Nieuw persoon inschrijven</a>
+                                <a class="more blue icon_small_arrow margin_right_white" href="{{ action('inschrijven.nieuw.1') }}" style="margin-top:20px;margin-bottom:40px;" title="Details">Nieuw persoon inschrijven tennisles</a>
                                 <br><b>Inschrijven voor tenniskamp? <a href="{{ action('events') }}">Klik hier</a><b/>
                                 <p>
                                     <br><br>

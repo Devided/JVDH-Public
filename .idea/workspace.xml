@@ -73,7 +73,7 @@
       <file leaf-file-name="inschrijven-index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="118" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.62827986" vertical-offset="544" max-vertical-offset="1365">
+            <state line="64" column="227" selection-start="4161" selection-end="4161" vertical-scroll-proportion="0.5408163" vertical-offset="589" max-vertical-offset="1365">
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#b#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -817,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="118" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.62827986" vertical-offset="544" max-vertical-offset="1365">
+        <state line="64" column="227" selection-start="4161" selection-end="4161" vertical-scroll-proportion="0.5408163" vertical-offset="589" max-vertical-offset="1365">
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#b#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
