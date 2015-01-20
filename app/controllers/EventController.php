@@ -38,8 +38,6 @@ class EventController extends \BaseController {
             'naam'    => 'required|min:3',
             'clubid' => 'required',
             'leeftijd' => 'required|min:1',
-            'ervaring' => 'required|min:1',
-            'opmerking' => 'min:1',
             'telefoon' => 'required:min:7',
             'geslacht' => 'required',
             'email' =>  'required'
@@ -52,7 +50,7 @@ class EventController extends \BaseController {
                 ->withErrors($validator) // send back all errors to the login form
                 ->withInput(Input::all()); // send back the input (not the password) so that we can repopulate the form
         } else {
-            Mail::send('emails.tenniskamp', [
+            /*Mail::send('emails.tenniskamp', [
                 'naam' => Input::get('naam'),
                 'leeftijd' => Input::get('leeftijd'),
                 'geslacht' => Input::get('geslacht'),
@@ -64,7 +62,18 @@ class EventController extends \BaseController {
             ], function($message)
             {
                 $message->to('duco@devided.com', 'Duco Visbeen')->subject('[tsjh.nl] Nieuwe inschrijving tenniskamp');
-            });
+            });*/
+
+            $camp = new Campsubscription();
+
+            $camp->club = Input::get('clubid');
+            $camp->naam = Input::get('naam');
+            $camp->leeftijd = Input::get('leeftijd');
+            $camp->geslacht = Input::get('geslacht');
+            $camp->emailadres = Input::get('email');
+            $camp->telefoon = Input::get('telefoon');
+
+            $camp->save();
 
             return View::make('html-pages.bedankt-tenniskamp');
         }
