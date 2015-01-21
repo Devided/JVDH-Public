@@ -47,13 +47,12 @@
                                     <tbody>
                                     @foreach($inschrijvingen as $inschrijving)
                                     <tr>
-                                        <?php $part = $inschrijving->part->first(); ?>
                                         <td>{{ $inschrijving->naam }}</td>
                                         <td>{{ $inschrijving->club }}</td>
-                                        @if($part->grootte == 1)
-                                        <td>{{ $part->seizoen }}, privéles, €{{ $part->prijs }}</td>
+                                        @if($inschrijving->part_grootte == 1)
+                                        <td>{{ $inschrijving->part_seizoen }}, privéles, €{{ $inschrijving->part_prijs }}</td>
                                         @else
-                                        <td>{{ $part->seizoen }}, groep van {{ $part->grootte }} personen, €{{ $part->prijs }}</td>
+                                        <td>{{ $inschrijving->part_seizoen }}, groep van {{ $inschrijving->part_grootte }} personen, €{{ $inschrijving->part_prijs }}</td>
                                         @endif
                                         <td><a href="{{ action('lesdata.get',['clubid' => $inschrijving->club]) }}"><i class="fa fa-calendar"> lesdata</i></a></td>
                                         <td><a href="{{ action('uitschrijven',['id' => $inschrijving->id]) }}"><i class="fa fa-ban" style="color: darkred"> uitschrijven</i></a></td>

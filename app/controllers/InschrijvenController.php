@@ -15,6 +15,13 @@ class InschrijvenController extends \BaseController {
         $user = Auth::user();
 
         $inschrijvingen = $user->subscriptions->all();
+        foreach($inschrijvingen as $inschrijving)
+        {
+            $part = Part::find($inschrijving->part_id);
+            $inschrijving->part_seizoen = $part->seizoen;
+            $inschrijving->part_prijs = $part->prijs;
+            $inschrijving->part_grootte = $part->grootte;
+        }
 
         return View::make('html-pages.inschrijven-index')->with(['inschrijvingen' => $inschrijvingen, 'user' => $user, 'admin' => $user->admin]);
 	}
