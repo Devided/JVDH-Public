@@ -88,7 +88,10 @@
                                 </table>
 
                                 <b>Tenniskamp:</b><br>
-                                <a href="{{ action('beheer.tenniskamp.download') }}">Download alle tenniskamp inschrijvingen</a> (totaal {{ $campamount }} inschrijving(en))
+                                <a href="{{ action('beheer.tenniskamp.download') }}">Download alle tenniskamp inschrijvingen</a> (totaal {{ $campamount }} inschrijving(en))<br>
+                                <a href="{{ action('beheer.tenniskamp.download.club, ['club' => 'abcoude']) }}">Download abcoude inschrijvingen</a>
+                                <a href="{{ action('beheer.tenniskamp.download.club, ['club' => 'melkhuisje']) }}">Download melkhuisje inschrijvingen</a>
+                                <a href="{{ action('beheer.tenniskamp.download.club, ['club' => 'voordaan']) }}">Download voordaan inschrijvingen</a>
 
                                 <br><br>
 

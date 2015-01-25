@@ -456,4 +456,43 @@ class InschrijvenController extends \BaseController {
 
         return;
     }
+
+    public function downloadKampClub($club)
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $inschrijvingen = Campsubscription::where('club', '=', $club);
+        $excel = [];
+
+        foreach($inschrijvingen as $inschrijving) {
+
+            $excel[] = [
+                'Persoon' => $inschrijving->naam,
+                'Leeftijd' => $inschrijving->geboortedatum,
+                'Club' => $inschrijving->club,
+                'Email' => $inschrijving->emailadres,
+                'Telefoon' => $inschrijving->telefoon,
+                'Geslacht' => $inschrijving->geslacht,
+            ];
+        }
+
+
+        $flag = false;
+        foreach($excel as $row) {
+            if(!$flag) {
+                // display field/column names as first row
+                echo implode("\t", array_keys($row)) . "\r\n";
+                $flag = true;
+            }
+            echo implode("\t", array_values($row)) . "\r\n";
+        }
+
+        header("Content-Disposition: attachment; filename=\"tenniskamp-".$club.".xls\"");
+        header("Content-Type: application/vnd.ms-excel");
+
+        return;
+    }
 }
