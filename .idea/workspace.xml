@@ -91,8 +91,12 @@
       <file leaf-file-name="_header.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/partials/_header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.36040145" vertical-offset="190" max-vertical-offset="1515">
-              <folding />
+            <state line="39" column="150" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.3740876" vertical-offset="175" max-vertical-offset="1515">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -822,8 +826,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/partials/_header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.36040145" vertical-offset="190" max-vertical-offset="1515">
-          <folding />
+        <state line="39" column="150" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.3740876" vertical-offset="175" max-vertical-offset="1515">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

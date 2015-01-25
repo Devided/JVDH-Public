@@ -35,9 +35,9 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     {{ HTML::script('js/main.js') }}
 
-    <link rel="stylesheet" type="text/css" href="http://www.hwcc.nl/beheer/css/colorbox/colorbox.css">
-    <script src="http://www.hwcc.nl/beheer/js/jquery.js"></script>
-    <script>$(document).ready(function(){ $("a[rel='lightbox']").colorbox({maxWidth: '90%', maxHeight: '90%', scalePhotos: true}); });</script>
+    <!--<script src="http://www.hwcc.nl/beheer/js/jquery.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--<script>$(document).ready(function(){ $("a[rel='lightbox']").colorbox({maxWidth: '90%', maxHeight: '90%', scalePhotos: true}); });</script>-->
 </head>
 <body>
 <div class="site_container boxed">
