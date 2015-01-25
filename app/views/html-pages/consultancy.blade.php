@@ -53,7 +53,7 @@
                             </div>
                     </div>
                     <div class="column_right" style="padding-top: 15px;">
-                        <img src="{{ asset('img/jeroen.jpg') }}">
+                        <img style="width:100%;" src="{{ asset('img/jeroen.jpg') }}">
                         <br><br>
                         <div class="details_box">
                         </div>

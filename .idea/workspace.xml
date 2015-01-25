@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" afterPath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,11 +79,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InschrijvenController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="InschrijvenController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="434" column="53" selection-start="13564" selection-end="13564" vertical-scroll-proportion="0.25200355" vertical-offset="6227" max-vertical-offset="7560">
+            <state line="434" column="53" selection-start="13564" selection-end="13564" vertical-scroll-proportion="-11.791667" vertical-offset="6227" max-vertical-offset="7560">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consultancy.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="47" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.650935" vertical-offset="94" max-vertical-offset="1875">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,15 +116,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="86" column="44" selection-start="5943" selection-end="5943" vertical-scroll-proportion="-25.0" vertical-offset="690" max-vertical-offset="1815">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/html-pages/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="90" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="2070">
               <folding />
             </state>
           </provider>
@@ -171,7 +173,6 @@
         <option value="$PROJECT_DIR$/app/views/html-pages/event-inschrijven.blade.php" />
         <option value="$PROJECT_DIR$/app/views/emails/event.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_20_171421_create_campsubscriptions_table.php" />
         <option value="$PROJECT_DIR$/app/controllers/EventController.php" />
@@ -181,6 +182,7 @@
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" />
       </list>
     </option>
   </component>
@@ -712,11 +714,6 @@
         <state line="14" column="7" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="330" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="1875" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/tenniskamp-inschrijven.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="50" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1215" />
@@ -830,8 +827,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="434" column="53" selection-start="13564" selection-end="13564" vertical-scroll-proportion="0.25200355" vertical-offset="6227" max-vertical-offset="7560">
+        <state line="434" column="53" selection-start="13564" selection-end="13564" vertical-scroll-proportion="-11.791667" vertical-offset="6227" max-vertical-offset="7560">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="47" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.650935" vertical-offset="94" max-vertical-offset="1875">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
