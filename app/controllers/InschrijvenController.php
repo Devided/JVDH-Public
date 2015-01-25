@@ -429,8 +429,6 @@ class InschrijvenController extends \BaseController {
         $excel = [];
 
         foreach($inschrijvingen as $inschrijving) {
-            $onderdeel = Part::where('id', '=', $inschrijving->part_id)->first();
-            $user = User::where('id','=', $inschrijving->user_id)->first();
 
             $excel[] = [
                 'Persoon' => $inschrijving->naam,
@@ -453,8 +451,8 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }
 
-        header("Content-Disposition: attachment; filename=\"tenniskamp.xls\"");
-        header("Content-Type: application/vnd.ms-excel");
+        //header("Content-Disposition: attachment; filename=\"tenniskamp.xls\"");
+        //header("Content-Type: application/vnd.ms-excel");
 
         return;
     }
