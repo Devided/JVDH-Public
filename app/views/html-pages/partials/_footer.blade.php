@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="copyright_area clearfix">
             <div class="copyright_left">
-                &copy; Copyright {{ date('Y') }} TSJH.nl - Tennisshool Jeroen van den Heuvel - Alle rechten voorbehouden.
+                &copy; Copyright {{ date('Y') }} TSJH.nl - Tennisschool Jeroen van den Heuvel - Alle rechten voorbehouden.
             </div>
         </div>
     </div>
