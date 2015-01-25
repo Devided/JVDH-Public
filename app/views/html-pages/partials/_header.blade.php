@@ -37,7 +37,6 @@
 
     <link rel="stylesheet" type="text/css" href="http://www.hwcc.nl/beheer/css/colorbox/colorbox.css">
     <script src="http://www.hwcc.nl/beheer/js/jquery.js"></script>
-    <script src="http://www.hwcc.nl/beheer/js/jquery.colorbox.js"></script>
     <script>$(document).ready(function(){ $("a[rel='lightbox']").colorbox({maxWidth: '90%', maxHeight: '90%', scalePhotos: true}); });</script>
 </head>
 <body>
