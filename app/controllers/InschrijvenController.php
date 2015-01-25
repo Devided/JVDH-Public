@@ -432,7 +432,7 @@ class InschrijvenController extends \BaseController {
 
             $excel[] = [
                 'Persoon' => $inschrijving->naam,
-                'Leeftijd' => $inschrijving->geboortedatum,
+                'Leeftijd' => $inschrijving->leeftijd,
                 'Club' => $inschrijving->club,
                 'Email' => $inschrijving->emailadres,
                 'Telefoon' => $inschrijving->telefoon,
@@ -471,7 +471,7 @@ class InschrijvenController extends \BaseController {
 
             $excel[] = [
                 'Persoon' => $inschrijving->naam,
-                'Leeftijd' => $inschrijving->geboortedatum,
+                'Leeftijd' => $inschrijving->leeftijd,
                 'Club' => $inschrijving->club,
                 'Email' => $inschrijving->emailadres,
                 'Telefoon' => $inschrijving->telefoon,
