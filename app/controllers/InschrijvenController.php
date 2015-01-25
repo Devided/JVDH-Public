@@ -464,7 +464,7 @@ class InschrijvenController extends \BaseController {
             return Redirect::back();
         }
 
-        $inschrijvingen = Campsubscription::where('club', '=', $club);
+        $inschrijvingen = Campsubscription::where('club', '=', $club)->get();
         $excel = [];
 
         foreach($inschrijvingen as $inschrijving) {
