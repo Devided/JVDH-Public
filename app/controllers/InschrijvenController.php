@@ -34,6 +34,8 @@ class InschrijvenController extends \BaseController {
         {
             $onderdelen = Part::all();
 
+            $campamount = count(Campsubscription::all());
+
             foreach($onderdelen as $onderdeel)
             {
                 $inschrijvingen = Subscription::where('part_id','=',$onderdeel->id)->get();
@@ -41,7 +43,7 @@ class InschrijvenController extends \BaseController {
             }
 
             $events = Tennisevent::all();
-            return View::make('html-pages.inschrijven-beheer')->with(['onderdelen' => $onderdelen, 'events' => $events]);
+            return View::make('html-pages.inschrijven-beheer')->with(['onderdelen' => $onderdelen, 'events' => $events, 'campamount' => $campamount]);
         }
 
         return Redirect::action('inschrijven');
@@ -414,5 +416,46 @@ class InschrijvenController extends \BaseController {
 
             return Redirect::action('inschrijven.beheren');
         }
+    }
+
+    public function downloadKamp()
+    {
+        if(!Auth::user()->admin)
+        {
+            return Redirect::back();
+        }
+
+        $inschrijvingen = Campsubscription::all();
+        $excel = [];
+
+        foreach($inschrijvingen as $inschrijving) {
+            $onderdeel = Part::where('id', '=', $inschrijving->part_id)->first();
+            $user = User::where('id','=', $inschrijving->user_id)->first();
+
+            $excel[] = [
+                'Persoon' => $inschrijving->naam,
+                'Leeftijd' => $inschrijving->geboortedatum,
+                'Club' => $inschrijving->club,
+                'Email' => $inschrijving->emailadres,
+                'Telefoon' => $inschrijving->telefoon,
+                'Geslacht' => $inschrijving->geslacht,
+            ];
+        }
+
+
+        $flag = false;
+        foreach($excel as $row) {
+            if(!$flag) {
+                // display field/column names as first row
+                echo implode("\t", array_keys($row)) . "\r\n";
+                $flag = true;
+            }
+            echo implode("\t", array_values($row)) . "\r\n";
+        }
+
+        header("Content-Disposition: attachment; filename=\"tenniskamp.xls\"");
+        header("Content-Type: application/vnd.ms-excel");
+
+        return;
     }
 }

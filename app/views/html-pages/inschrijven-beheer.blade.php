@@ -87,6 +87,11 @@
                                     </tbody>
                                 </table>
 
+                                <b>Tenniskamp:</b><br>
+                                <a href="{{ action('beheer.tenniskamp.download') }}">Download alle tenniskamp inschrijvingen</a> (totaal {{ $campamount }} inschrijving(en))
+
+                                <br><br>
+
                                 <a href="{{ action('inschrijven') }}">Terug naar inschrijvingen</a>
                                 </p>
                             </fieldset>
