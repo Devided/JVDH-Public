@@ -451,8 +451,8 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }
 
-        //header("Content-Disposition: attachment; filename=\"tenniskamp.xls\"");
-        //header("Content-Type: application/vnd.ms-excel");
+        header("Content-Disposition: attachment; filename=\"tenniskamp.xls\"");
+        header("Content-Type: application/vnd.ms-excel");
 
         return;
     }

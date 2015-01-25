@@ -82,7 +82,7 @@
       <file leaf-file-name="InschrijvenController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="424" column="32" selection-start="13294" selection-end="13294" vertical-scroll-proportion="0.46571684" vertical-offset="5837" max-vertical-offset="6975">
+            <state line="454" column="8" selection-start="14217" selection-end="14217" vertical-scroll-proportion="0.8664292" vertical-offset="5837" max-vertical-offset="6975">
               <folding />
             </state>
           </provider>
@@ -830,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="424" column="32" selection-start="13294" selection-end="13294" vertical-scroll-proportion="0.46571684" vertical-offset="5837" max-vertical-offset="6975">
+        <state line="454" column="8" selection-start="14217" selection-end="14217" vertical-scroll-proportion="0.8664292" vertical-offset="5837" max-vertical-offset="6975">
           <folding />
         </state>
       </provider>
