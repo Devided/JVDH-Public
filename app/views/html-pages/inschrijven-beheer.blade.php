@@ -63,6 +63,7 @@
                                     @endforeach
                                     </tbody>
                                 </table>
+                                <a href="{{ action('beheer.inschrijvingen.overzicht') }}">Inschrijvingen printen</a><br><br>
 
                                 <b>Events:</b><br>
                                 <a href="{{ action('event.add') }}">Nieuw event aanmaken</a>

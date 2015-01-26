@@ -73,3 +73,6 @@ Route::post('/beheer/add', ['uses' => 'InschrijvenController@postAdd', 'before' 
 Route::get('/beheer/download/onderdeel/{id}', ['as' => 'beheer.onderdeel.download','uses' => 'InschrijvenController@downloadOnderdeel', 'before' => 'auth']);
 Route::get('/beheer/tenniskamp/download', ['as' => 'beheer.tenniskamp.download', 'uses' => 'InschrijvenController@downloadKamp', 'before' => 'auth']);
 Route::get('/beheer/tenniskamp/download/{club}', ['as' => 'beheer.tenniskamp.download.club', 'uses' => 'InschrijvenController@downloadKampClub', 'before' => 'auth']);
+
+Route::get('/beheer/inschrijvingen/overzicht', ['as' => 'beheer.inschrijvingen.overzicht', 'uses' => 'InschrijvenController@showOverzicht', 'before' => 'auth']); //todo
+Route::get('/beheer/inschrijvingen/print/{id}', ['as' => 'beheer.inschrijvingen.print', 'uses' => 'InschrijvenController@printInschrijving', 'before' => 'auth']); //todo

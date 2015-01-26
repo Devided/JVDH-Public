@@ -495,4 +495,43 @@ class InschrijvenController extends \BaseController {
 
         return;
     }
+
+
+    public function showOverzicht()
+    {
+        $inschrijvingen = Subscription::all();
+        return View::make('html-pages.beheer-inschrijven-overzicht')->with(['inschrijvingen' => $inschrijvingen]);
+    }
+
+    public function printInschrijving($id)
+    {
+        $inschrijving = Subscription::find($id);
+        $onderdeel = Part::find($inschrijving->part_id);
+        $account = User::find($inschrijving->user_id);
+
+        ## print overview
+        echo '<body onload="window.print()">';
+        echo '<br><br><br><h1>'.$inschrijving->club.'</h1><hr>';
+        echo '<br><br></b><b>Gegevens</b><br>';
+        echo '<br>naam: '.$inschrijving->naam;
+        echo '<br>leeftijd: '.$inschrijving->geboortedatum;
+        echo '<br>geslacht: '.$inschrijving->geslacht;
+        echo '<br>telefoon: '.$inschrijving->telefoon;
+        echo '<br><br>accountnaam: '.$account->naam;
+        echo '<br>accountemail: '.$account->email;
+
+        echo '<br><br><br>';
+
+        echo '<b>Onderdeel</b><br><br>';
+        echo 'seizoen: '.$onderdeel->seizoen;
+        echo '<br>aantal: '.$onderdeel->grootte;
+        echo '<br>prijs: '.$onderdeel->prijs;
+
+        echo '<br><br><br>';
+        echo '<b>Extra</b><br><br>';
+        echo 'opmerking: '.$inschrijving->opmerking;
+        echo '<br>verhindering: '.$inschrijving->verhindering;
+        echo '<br>ervaring: '.$inschrijving->ervaring;
+        echo '</body>';
+    }
 }

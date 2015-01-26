@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/index.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/html-pages/beheer-inschrijven-overzicht.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" afterPath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="448" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="28" selection-start="3516" selection-end="3516" vertical-scroll-proportion="-31.541666" vertical-offset="1103" max-vertical-offset="2250">
+            <state line="124" column="28" selection-start="3516" selection-end="3516" vertical-scroll-proportion="0.0" vertical-offset="1103" max-vertical-offset="2250">
               <folding />
             </state>
           </provider>
@@ -46,16 +41,33 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="90" selection-start="4490" selection-end="4521" vertical-scroll-proportion="-43.666668" vertical-offset="62" max-vertical-offset="1200">
+            <state line="76" column="88" selection-start="4656" selection-end="4687" vertical-scroll-proportion="-42.416668" vertical-offset="122" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="beheer-inschrijven-overzicht.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/beheer-inschrijven-overzicht.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="27" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="690">
+            <state line="36" column="67" selection-start="1944" selection-end="1944" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="1005">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bedankt-tenniskamp.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/bedankt-tenniskamp.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="70" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -64,7 +76,7 @@
       <file leaf-file-name="InschrijvenController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="434" column="53" selection-start="13564" selection-end="13564" vertical-scroll-proportion="-11.791667" vertical-offset="6227" max-vertical-offset="7560">
+            <state line="534" column="23" selection-start="16844" selection-end="16844" vertical-scroll-proportion="-49.916668" vertical-offset="6812" max-vertical-offset="8145">
               <folding />
             </state>
           </provider>
@@ -73,10 +85,8 @@
       <file leaf-file-name="consultancy.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="47" selection-start="3024" selection-end="3024" vertical-scroll-proportion="-3.0416667" vertical-offset="752" max-vertical-offset="1875">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="55" column="47" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1875">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,19 +94,17 @@
       <file leaf-file-name="_footer.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/partials/_footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="67" selection-start="210" selection-end="210" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="255">
+            <state line="4" column="67" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="155" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.3783784" vertical-offset="510" max-vertical-offset="2070">
-              <folding>
-                <element signature="n#style#0;n#img#1;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="62" column="155" selection-start="3644" selection-end="3644" vertical-scroll-proportion="-17.5" vertical-offset="510" max-vertical-offset="2070">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,21 +112,23 @@
       <file leaf-file-name="_header.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/partials/_header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="150" selection-start="1947" selection-end="1947" vertical-scroll-proportion="-8.039216" vertical-offset="175" max-vertical-offset="1515">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="39" column="150" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1515">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inschrijven-beheer.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="inschrijven-beheer.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="44" selection-start="5943" selection-end="5943" vertical-scroll-proportion="-25.0" vertical-offset="690" max-vertical-offset="1815">
-              <folding />
+            <state line="65" column="109" selection-start="4726" selection-end="4726" vertical-scroll-proportion="0.2972973" vertical-offset="645" max-vertical-offset="1830">
+              <folding>
+                <element signature="n#style#0;n#table#0;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#1;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,12 +190,13 @@
         <option value="$PROJECT_DIR$/app/views/html-pages/bedankt-tenniskamp.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/partials/_header.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/partials/_footer.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/beheer-inschrijven-overzicht.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php" />
       </list>
     </option>
   </component>
@@ -220,6 +231,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -458,7 +470,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,6 +483,9 @@
       <recent name="$PROJECT_DIR$/app/views/html-pages" />
       <recent name="$PROJECT_DIR$/app/views/emails" />
       <recent name="$PROJECT_DIR$/app/controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/html-pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -533,11 +547,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -557,11 +571,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/Part.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="149" selection-end="149" vertical-scroll-proportion="0.13105413" vertical-offset="0" max-vertical-offset="1053" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_10_24_105106_create_subscriptions_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="989" />
@@ -737,11 +746,6 @@
         <state line="75" column="26" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="3345" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/bedankt-tenniskamp.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="70" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="720" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="43" selection-start="497" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="435">
@@ -758,16 +762,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="157" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1350">
-          <folding />
-        </state>
+        <state line="54" column="157" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1350" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env.local.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="2" column="8" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
@@ -786,64 +786,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="28" selection-start="3516" selection-end="3516" vertical-scroll-proportion="-31.541666" vertical-offset="1103" max-vertical-offset="2250">
+        <state line="124" column="28" selection-start="3516" selection-end="3516" vertical-scroll-proportion="0.0" vertical-offset="1103" max-vertical-offset="2250">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/partials/_header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="150" selection-start="1947" selection-end="1947" vertical-scroll-proportion="-8.039216" vertical-offset="175" max-vertical-offset="1515">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="90" selection-start="4490" selection-end="4521" vertical-scroll-proportion="-43.666668" vertical-offset="62" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="44" selection-start="5943" selection-end="5943" vertical-scroll-proportion="-25.0" vertical-offset="690" max-vertical-offset="1815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="434" column="53" selection-start="13564" selection-end="13564" vertical-scroll-proportion="-11.791667" vertical-offset="6227" max-vertical-offset="7560">
+        <state line="39" column="150" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1515">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="47" selection-start="3024" selection-end="3024" vertical-scroll-proportion="-3.0416667" vertical-offset="752" max-vertical-offset="1875">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="55" column="47" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1875">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/partials/_footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="67" selection-start="210" selection-end="210" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="255">
+        <state line="4" column="67" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="155" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.3783784" vertical-offset="510" max-vertical-offset="2070">
+        <state line="62" column="155" selection-start="3644" selection-end="3644" vertical-scroll-proportion="-17.5" vertical-offset="510" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/bedankt-tenniskamp.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="70" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="88" selection-start="4656" selection-end="4687" vertical-scroll-proportion="-42.416668" vertical-offset="122" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/beheer-inschrijven-overzicht.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="67" selection-start="1944" selection-end="1944" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="1005">
           <folding>
-            <element signature="n#style#0;n#img#1;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="534" column="23" selection-start="16844" selection-end="16844" vertical-scroll-proportion="-49.916668" vertical-offset="6812" max-vertical-offset="8145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="109" selection-start="4726" selection-end="4726" vertical-scroll-proportion="0.2972973" vertical-offset="645" max-vertical-offset="1830">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#1;n#fieldset#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
