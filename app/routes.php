@@ -46,7 +46,7 @@ Route::get('/events/{clubid}/tenniskamp', ['as' => 'tenniskamp', 'uses' => 'Even
 Route::post('/events/{clubid}/tenniskamp', ['uses' => 'EventController@postTenniskamp']);
 
 // lesdata
-Route::get('/lesdata/{clubid}.pdf', ['as' => 'lesdata.get']);
+//Route::get('/lesdata/{clubid}.pdf', ['as' => 'lesdata.get']);
 
 // contact
 Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);

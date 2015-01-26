@@ -54,7 +54,7 @@
                                         @else
                                         <td>{{ $inschrijving->part_seizoen }}, groep van {{ $inschrijving->part_grootte }} personen, €{{ $inschrijving->part_prijs }}</td>
                                         @endif
-                                        <td><a href="{{ action('lesdata.get',['clubid' => $inschrijving->club]) }}"><i class="fa fa-calendar"> lesdata</i></a></td>
+                                        <td><a href="/lesdata/{{ $inschrijving->club }}.pdf"><i class="fa fa-calendar"> lesdata</i></a></td>
                                         <td><a href="{{ action('uitschrijven',['id' => $inschrijving->id]) }}"><i class="fa fa-ban" style="color: darkred"> uitschrijven</i></a></td>
                                     </tr>
                                     @endforeach
