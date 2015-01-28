@@ -189,7 +189,9 @@ class EventController extends \BaseController {
     public function postInschrijven($id)
     {
         $rules = array(
-            'email'    => 'required|min:1'
+            'email'    => 'required|email',
+            'naam'     => 'required',
+            'leeftijd' => 'required'
         );
 
         $validator = Validator::make(Input::all(), $rules);
@@ -205,7 +207,9 @@ class EventController extends \BaseController {
                 'email' => Input::get('email'),
                 'club' => $event->club,
                 'eventnaam' => $event->naam,
-                'eventdatum' => $event->datum
+                'eventdatum' => $event->datum,
+                'naam'  => Input::get('naam'),
+                'leeftijd' => Input::get('leeftijd')
             ], function($message)
             {
                 $message->to('duco@devided.com', 'Duco Visbeen')->subject('[tsjh.nl] Nieuwe inschrijving tenniskamp');

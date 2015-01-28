@@ -23,6 +23,14 @@
                             @include('html-pages.partials._errors')
 
                             <fieldset class="left">
+                                <label>Uw volledige naam</label>
+                                <div class="block">
+                                    <input type="text" name="naam" placeholder="Volledige naam">
+                                </div>
+                                <label>Uw leeftijd</label>
+                                <div class="block">
+                                    <input type="text" name="leeftijd" placeholder="Leeftijd">
+                                </div>
                                 <label>Uw emailadres</label>
                                 <div class="block">
                                     <input type="text" name="email" placeholder="test@example.com">
