@@ -57,13 +57,12 @@
                                         <td>Inactief (<a href="{{ action('beheer.toggle',['id' => $onderdeel->id]) }}">wijzig</a>)</td>
                                         <td><a href="{{ action('beheer.delete',['id' => $onderdeel->id]) }}"><i class="fa fa-ban" style="color: darkred"> verwijderen</i></a></td>
                                         @endif
-                                        <td>{{ $onderdeel->inschrijvingen }}</td>
+                                        <td><a href="{{ action('beheer.inschrijvingen.overzicht', ['id' => $onderdeel->id]) }}">{{ $onderdeel->inschrijvingen }} <i class="fa fa-print"></i></i></a></td>
                                         <td><a href="{{ action('beheer.onderdeel.download', ['id' => $onderdeel->id]) }}">Download</a></td>
                                     </tr>
                                     @endforeach
                                     </tbody>
                                 </table>
-                                <a href="{{ action('beheer.inschrijvingen.overzicht') }}">Inschrijvingen printen</a><br><br>
 
                                 <b>Events:</b><br>
                                 <a href="{{ action('event.add') }}">Nieuw event aanmaken</a>

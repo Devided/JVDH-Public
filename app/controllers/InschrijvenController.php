@@ -497,9 +497,9 @@ class InschrijvenController extends \BaseController {
     }
 
 
-    public function showOverzicht()
+    public function showOverzicht($id)
     {
-        $inschrijvingen = Subscription::all();
+        $inschrijvingen = Subscription::where('part_id','=', $id)->get();
         return View::make('html-pages.beheer-inschrijven-overzicht')->with(['inschrijvingen' => $inschrijvingen]);
     }
 
