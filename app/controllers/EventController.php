@@ -212,7 +212,7 @@ class EventController extends \BaseController {
                 'leeftijd' => Input::get('leeftijd')
             ], function($message)
             {
-                $message->to('duco@devided.com', 'Duco Visbeen')->subject('[tsjh.nl] Nieuwe inschrijving tenniskamp');
+                $message->to('jeroenvandenheuvel@wxs.nl', 'Jeroen van den Heuvel')->subject('[tsjh.nl] Nieuwe inschrijving tenniskamp');
             });
 
             return View::make('html-pages.bedankt-tenniskamp');
