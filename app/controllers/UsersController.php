@@ -77,11 +77,30 @@ class UsersController extends \BaseController {
      */
     public function postForgotPassword()
     {
-        // TODO MAIL PASSWORD
+        $email = Input::get('email');
+        $user = User::where('email', '=', $email);
 
-        $email = "test@test.com";
-        $s = "Uw wachtwoord is verzonden naar <b>" . $email . "</b>.";
-        return View::action('html-pages.login')->withSuccess($s);
+        if($email == '')
+        {
+            return Redirect::back();
+        }
+
+        $newpassword = str_random(8);
+        $user->password = Hash::make($newpassword);
+        $user->save();
+
+        //send email with new password
+
+        Mail::send('emails.forgot', [
+            'wachtwoord' => $newpassword
+        ], function($message) use ($user)
+        {
+            $message->to($user->email)->subject('[tsjh.nl] Nieuw wachtwoord');
+        });
+
+        $s = "Uw nieuwe wachtwoord is verzonden naar <b>" . $email . "</b>.";
+
+        return Redirect::action('login')->withErrors($s);
     }
 
     /**
@@ -132,9 +151,6 @@ class UsersController extends \BaseController {
                 $user->password = Hash::make(Input::get('password'));
                 $user->naam = Input::get('naam');
                 $user->save();
-
-                //TODO: send activation email
-                //TODO: add email to mailchimp
 
                 Auth::loginUsingId($user->id);
 

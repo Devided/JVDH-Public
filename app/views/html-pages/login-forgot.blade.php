@@ -18,18 +18,22 @@
                                 <h2>
                                     Wachtwoord vergeten
                                 </h2>
-                                <form class="contact_form" id="contact_form" method="post" action="">
-                                    <fieldset class="left">
-                                        <label>Emailadres</label>
-                                        <div class="block">
-                                            <input class="text_input"type="text" id="emailadres" placeholder="voorbeeld@gmail.com">
-                                        </div>
-                                    </fieldset>
-                                </form>
+                                {{ Form::open(['url' => '/login/vergeten', 'class' => 'contact_form']) }}
 
-                                <a class="more blue icon_small_arrow margin_right_white" href="#" style="margin-top:20px;margin-bottom:40px;" title="Details">Versturen</a>
+                                @include('html-pages.partials._errors')
+
+                                <fieldset class="left">
+                                    <label>Emailadres</label>
+                                    <div class="block">
+                                        {{ Form::text('emailadres', null, ['id' => 'email','name' => 'email', 'class' => 'text_input', 'placeholder' => 'voorbeeld@example.com']) }}
+                                    </div>
+                                </fieldset>
 
                                 <div style="clear:both;"></div>
+
+                                {{ Form::button('Verstuur', ['class' => 'more blue icon_small_arrow margin_right_white','style' => 'margin-top:20px;margin-bottom:40px;', 'type' => 'submit']) }}
+
+                                {{ Form::close() }}
                             </div>
                         </div>
                         <div class="column_right">
