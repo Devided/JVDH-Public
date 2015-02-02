@@ -78,7 +78,7 @@ class UsersController extends \BaseController {
     public function postForgotPassword()
     {
         $email = Input::get('email');
-        $user = User::where('email', '=', $email);
+        $user = User::where('email', '=', $email)->first();
 
         if($email == '')
         {
