@@ -24,23 +24,23 @@
                         <div class="columns columns_4 page_margin_top clearfix">
                             <ul class="column">
                                 <li class="item_content clearfix">
-                                    <div class="text noicon">
-                                        <h3>
+                                    <div class="text noicon" style="text-align:center">
+                                        <h3 style="margin-left: 30px;">
                                             H.L.T.C. 't Melkhuisje
                                         </h3>
-                                        <div style="margin-top: 20px; height:190px;">
+                                        <div style="margin-top: 20px; height:190px; margin-left: 30px;">
                                             <img src="{{ asset('/img/clublogo/melkhuisje.jpg') }}" style="margin:auto; margin-top:60px; width: 80%;">
                                         </div>
                                         <br />
 
-                                        <div style="padding-left: 25%; min-width: 100%;">
+                                        <div style="padding-left: 25%; min-width: 100%; margin-left:30px;">
                                             <a class="more blue icon_small_arrow margin_right_white" href="{{ action('events.detail',['clubid' => 'melkhuisje']) }}" style="margin-bottom:40px;" title="Details">Kies</a>
                                         </div>
                                 </li>
                             </ul>
                             <ul class="column">
                                 <li class="item_content clearfix">
-                                    <div class="text noicon">
+                                    <div class="text noicon" style="text-align:center">
                                         <h3>
                                             A.L.T.C. Abcoude
                                         </h3>
@@ -56,7 +56,7 @@
                             </ul>
                             <ul class="column">
                                 <li class="item_content clearfix">
-                                    <div class="text noicon">
+                                    <div class="text noicon" style="text-align:center">
                                         <h3>
                                             T.C. Voordaan
                                         </h3>
