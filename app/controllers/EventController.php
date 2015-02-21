@@ -202,6 +202,8 @@ class EventController extends \BaseController {
                 ->withInput(Input::all()); // send back the input (not the password) so that we can repopulate the form
         } else {
             $event = Tennisevent::find($id);
+            $email = Input::get('email');
+            $naam = Input::get('naam');
 
             Mail::send('emails.event', [
                 'email' => Input::get('email'),
@@ -213,6 +215,13 @@ class EventController extends \BaseController {
             ], function($message)
             {
                 $message->to('jeroenvandenheuvel@wxs.nl', 'Jeroen van den Heuvel')->subject('[tsjh.nl] Nieuwe inschrijving event');
+            });
+
+            Mail::send('emails.klant-event', [
+                'event' => $event->naam
+            ], function($message) use ($email,$naam)
+            {
+                $message->to($email, $naam)->subject('[tsjh.nl] Inschrijving event');
             });
 
             return View::make('html-pages.bedankt-tenniskamp');
