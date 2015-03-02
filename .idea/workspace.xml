@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" afterPath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +46,7 @@
       <file leaf-file-name="InschrijvenController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="280" column="33" selection-start="9268" selection-end="9268" vertical-scroll-proportion="3.8321168" vertical-offset="0" max-vertical-offset="8430">
+            <state line="509" column="13" selection-start="15806" selection-end="15806" vertical-scroll-proportion="0.27463505" vertical-offset="7334" max-vertical-offset="8430">
               <folding />
             </state>
           </provider>
@@ -870,7 +867,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="280" column="33" selection-start="9268" selection-end="9268" vertical-scroll-proportion="3.8321168" vertical-offset="0" max-vertical-offset="8430">
+        <state line="509" column="13" selection-start="15806" selection-end="15806" vertical-scroll-proportion="0.27463505" vertical-offset="7334" max-vertical-offset="8430">
           <folding />
         </state>
       </provider>

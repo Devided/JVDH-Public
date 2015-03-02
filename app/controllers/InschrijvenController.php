@@ -278,7 +278,7 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel);
+        echo Excel::fromArray($excel);
 
         header("Content-Disposition: attachment; filename=\"inschrijvingen-". $clubid .".xls\"");
         header("Content-Type: application/vnd.ms-excel");
@@ -331,7 +331,7 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel);
+        echo Excel::fromArray($excel);
 
         header("Content-Disposition: attachment; filename=\"inschrijvingen-". $onderdeel->seizoen . "-". $onderdeel->grootte ."-". $onderdeel->clubid .".xls\"");
         header("Content-Type: application/vnd.ms-excel");
@@ -466,7 +466,7 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel);
+        echo Excel::fromArray($excel);
 
         header("Content-Disposition: attachment; filename=\"tenniskamp.xls\"");
         header("Content-Type: application/vnd.ms-excel");
@@ -507,7 +507,7 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel);
+        echo Excel::fromArray($excel);
 
         header("Content-Disposition: attachment; filename=\"tenniskamp-".$club.".xls\"");
         header("Content-Type: application/vnd.ms-excel");
