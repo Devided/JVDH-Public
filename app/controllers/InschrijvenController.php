@@ -229,18 +229,18 @@ class InschrijvenController extends \BaseController {
                 $user = User::where('id','=', $inschrijving->user_id)->first();
 
                 $excel[] = [
-                    'Persoon' => $inschrijving->naam,
-                    'Leeftijd' => $inschrijving->geboortedatum,
-                    'Ervaring' => $inschrijving->ervaring,
-                    'knltb' => $inschrijving->knltb,
-                    'Verhindering' => $inschrijving->verhindering,
-                    'Opmerking' => $inschrijving->opmerking,
-                    'Club' => $inschrijving->club,
-                    'Telefoon' => $inschrijving->telefoon,
-                    'Geslacht' => $inschrijving->geslacht,
-                    'Onderdeel' => ($onderdeel->seizoen . " (" . $onderdeel->grootte . ")"),
-                    'Accountnaam' => $user->naam,
-                    'Accountemail' => $user->email
+                    'Persoon' => htmlspecialchars($inschrijving->naam),
+                    'Leeftijd' => htmlspecialchars($inschrijving->geboortedatum),
+                    'Ervaring' => htmlspecialchars($inschrijving->ervaring),
+                    'knltb' => htmlspecialchars($inschrijving->knltb),
+                    'Verhindering' => htmlspecialchars($inschrijving->verhindering),
+                    'Opmerking' => htmlspecialchars($inschrijving->opmerking),
+                    'Club' => htmlspecialchars($inschrijving->club),
+                    'Telefoon' => htmlspecialchars($inschrijving->telefoon),
+                    'Geslacht' => htmlspecialchars($inschrijving->geslacht),
+                    'Onderdeel' => htmlspecialchars(($onderdeel->seizoen . " (" . $onderdeel->grootte . ")")),
+                    'Accountnaam' => htmlspecialchars($user->naam),
+                    'Accountemail' => htmlspecialchars($user->email)
                 ];
             }
         } else {
@@ -251,18 +251,18 @@ class InschrijvenController extends \BaseController {
                     $user = User::where('id','=', $inschrijving->user_id)->first();
 
                     $excel[] = [
-                        'Persoon' => $inschrijving->naam,
-                        'Leeftijd' => $inschrijving->geboortedatum,
-                        'Ervaring' => $inschrijving->ervaring,
-                        'knltb' => $inschrijving->knltb,
-                        'Verhindering' => $inschrijving->verhindering,
-                        'Opmerking' => $inschrijving->opmerking,
-                        'Club' => $inschrijving->club,
-                        'Telefoon' => $inschrijving->telefoon,
-                        'Geslacht' => $inschrijving->geslacht,
-                        'Onderdeel' => ($onderdeel->seizoen . " (" . $onderdeel->grootte . ")"),
-                        'Accountnaam' => $user->naam,
-                        'Accountemail' => $user->email
+                        'Persoon' => htmlspecialchars($inschrijving->naam),
+                        'Leeftijd' => htmlspecialchars($inschrijving->geboortedatum),
+                        'Ervaring' => htmlspecialchars($inschrijving->ervaring),
+                        'knltb' => htmlspecialchars($inschrijving->knltb),
+                        'Verhindering' => htmlspecialchars($inschrijving->verhindering),
+                        'Opmerking' => htmlspecialchars($inschrijving->opmerking),
+                        'Club' => htmlspecialchars($inschrijving->club),
+                        'Telefoon' => htmlspecialchars($inschrijving->telefoon),
+                        'Geslacht' => htmlspecialchars($inschrijving->geslacht),
+                        'Onderdeel' => htmlspecialchars(($onderdeel->seizoen . " (" . $onderdeel->grootte . ")")),
+                        'Accountnaam' => htmlspecialchars($user->naam),
+                        'Accountemail' => htmlspecialchars($user->email)
                     ];
                 }
             }
@@ -303,18 +303,18 @@ class InschrijvenController extends \BaseController {
             $user = User::where('id','=', $inschrijving->user_id)->first();
 
             $excel[] = [
-                'Persoon' => $inschrijving->naam,
-                'Leeftijd' => $inschrijving->geboortedatum,
-                'Ervaring' => $inschrijving->ervaring,
-                'knltb' => $inschrijving->knltb,
-                'Verhindering' => $inschrijving->verhindering,
-                'Opmerking' => $inschrijving->opmerking,
-                'Club' => $inschrijving->club,
-                'Telefoon' => $inschrijving->telefoon,
-                'Geslacht' => $inschrijving->geslacht,
-                'Onderdeel' => ($onderdeel->seizoen . " (" . $onderdeel->grootte . ")"),
-                'Accountnaam' => $user->naam,
-                'Accountemail' => $user->email
+                'Persoon' => htmlspecialchars($inschrijving->naam),
+                'Leeftijd' => htmlspecialchars($inschrijving->geboortedatum),
+                'Ervaring' => htmlspecialchars($inschrijving->ervaring),
+                'knltb' => htmlspecialchars($inschrijving->knltb),
+                'Verhindering' => htmlspecialchars($inschrijving->verhindering),
+                'Opmerking' => htmlspecialchars($inschrijving->opmerking),
+                'Club' => htmlspecialchars($inschrijving->club),
+                'Telefoon' => htmlspecialchars($inschrijving->telefoon),
+                'Geslacht' => htmlspecialchars($inschrijving->geslacht),
+                'Onderdeel' => htmlspecialchars(($onderdeel->seizoen . " (" . $onderdeel->grootte . ")")),
+                'Accountnaam' => htmlspecialchars($user->naam),
+                'Accountemail' => htmlspecialchars($user->email)
             ];
         }
 

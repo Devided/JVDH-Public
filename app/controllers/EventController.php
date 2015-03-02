@@ -75,6 +75,16 @@ class EventController extends \BaseController {
 
             $camp->save();
 
+            $email = $camp->emailadres;
+            $naam = $camp->naam;
+
+            Mail::send('emails.klant-tenniskamp', [
+                'persoon' => $camp->naam
+            ], function($message) use ($email,$naam)
+            {
+                $message->to($email,$naam)->subject('[tsjh.nl] Inschrijving tenniskamp');
+            });
+
             return View::make('html-pages.bedankt-tenniskamp');
         }
     }
