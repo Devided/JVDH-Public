@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-        "guzzlehttp/guzzle": "~4.0"
+        "guzzlehttp/guzzle": "~4.0",
+        "phpoffice/phpexcel": "1.8.0",
+        "lightshire/laravel-phpexcel-wrapper": "dev-master"
 	},
     "require-dev": {
         "way/generators": "~2.0"

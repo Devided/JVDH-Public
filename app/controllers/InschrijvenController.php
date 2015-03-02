@@ -268,7 +268,7 @@ class InschrijvenController extends \BaseController {
             }
         }
 
-        $flag = false;
+        /*$flag = false;
         foreach($excel as $row) {
             if(!$flag) {
                 // display field/column names as first row
@@ -276,7 +276,9 @@ class InschrijvenController extends \BaseController {
                 $flag = true;
             }
             echo implode("\t", array_values($row)) . "\r\n";
-        }
+        }*/
+
+        Excel::fromArray($excel);
 
         header("Content-Disposition: attachment; filename=\"inschrijvingen-". $clubid .".xls\"");
         header("Content-Type: application/vnd.ms-excel");
@@ -319,7 +321,7 @@ class InschrijvenController extends \BaseController {
         }
 
 
-        $flag = false;
+        /*$flag = false;
         foreach($excel as $row) {
             if(!$flag) {
                 // display field/column names as first row
@@ -327,7 +329,9 @@ class InschrijvenController extends \BaseController {
                 $flag = true;
             }
             echo implode("\t", array_values($row)) . "\r\n";
-        }
+        }*/
+
+        Excel::fromArray($excel);
 
         header("Content-Disposition: attachment; filename=\"inschrijvingen-". $onderdeel->seizoen . "-". $onderdeel->grootte ."-". $onderdeel->clubid .".xls\"");
         header("Content-Type: application/vnd.ms-excel");
@@ -452,7 +456,7 @@ class InschrijvenController extends \BaseController {
         }
 
 
-        $flag = false;
+        /*$flag = false;
         foreach($excel as $row) {
             if(!$flag) {
                 // display field/column names as first row
@@ -460,7 +464,9 @@ class InschrijvenController extends \BaseController {
                 $flag = true;
             }
             echo implode("\t", array_values($row)) . "\r\n";
-        }
+        }*/
+
+        Excel::fromArray($excel);
 
         header("Content-Disposition: attachment; filename=\"tenniskamp.xls\"");
         header("Content-Type: application/vnd.ms-excel");
@@ -491,7 +497,7 @@ class InschrijvenController extends \BaseController {
         }
 
 
-        $flag = false;
+        /*$flag = false;
         foreach($excel as $row) {
             if(!$flag) {
                 // display field/column names as first row
@@ -499,7 +505,9 @@ class InschrijvenController extends \BaseController {
                 $flag = true;
             }
             echo implode("\t", array_values($row)) . "\r\n";
-        }
+        }*/
+
+        Excel::fromArray($excel);
 
         header("Content-Disposition: attachment; filename=\"tenniskamp-".$club.".xls\"");
         header("Content-Type: application/vnd.ms-excel");
