@@ -93,7 +93,7 @@ Route::get('/getemails/{clubid}', function($clubid) {
         }
     }
 
-    echo substr_replace($emails, "", -1);
-    
+    echo substr_replace($emails, "", -2);
+
     return;
 });
