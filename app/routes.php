@@ -89,7 +89,7 @@ Route::get('/getemails/{clubid}', function($clubid) {
         if($sub->club == $clubid)
         {
             $user = User::find($sub->user_id)->first();
-            $emails = $emails . $user->emailadres . ", ";
+            $emails = $emails . $user->email . ", ";
         }
     }
 
