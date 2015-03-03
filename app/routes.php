@@ -76,3 +76,23 @@ Route::get('/beheer/tenniskamp/download/{club}', ['as' => 'beheer.tenniskamp.dow
 
 Route::get('/beheer/inschrijvingen/overzicht/{id}', ['as' => 'beheer.inschrijvingen.overzicht', 'uses' => 'InschrijvenController@showOverzicht', 'before' => 'auth']); //todo
 Route::get('/beheer/inschrijvingen/print/{id}', ['as' => 'beheer.inschrijvingen.print', 'uses' => 'InschrijvenController@printInschrijving', 'before' => 'auth']); //todo
+
+
+// temp
+Route::get('/getemails/{clubid}', function($clubid) {
+
+    $subscriptions = Subscription::all();
+    $emails = "";
+
+    foreach($subscriptions as $sub)
+    {
+        if($sub->club == $clubid)
+        {
+            $user = User::find($sub->user_id)->first();
+            $emails = $emails . $user->emailadres . ", ";
+        }
+    }
+
+    echo $emails;
+    return;
+});
