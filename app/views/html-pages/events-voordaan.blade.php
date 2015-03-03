@@ -25,7 +25,7 @@
                                 <p>
                                     Voor kinderen van 6 t/m 11 jaar<br>
                                     Maandag,woensdag en vrijdag van 09:00-17:00 Dinsdag en donderdag van 09:00-12:00<br>
-                                    Week 30 (maandag 13 juli t/m vrijdag 17 juli)<br><br>
+                                    Week 31 (maandag 20 juli t/m vrijdag 24 juli)<br><br>
 
                                     <b>Onderdelen:</b><br>
                                     3 uur per dag tennissen<br>
