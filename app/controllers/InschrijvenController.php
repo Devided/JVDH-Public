@@ -278,7 +278,7 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel)->save('/home/vagrant/Code/TSJH/public/temp/inschrijvingen-'. $clubid .'.xls');
+        Excel::fromArray($excel)->save('/home/forge/tsjh.nl/public/temp/inschrijvingen-'. $clubid .'.xls');
 
         return Redirect::to('/temp/inschrijvingen-'. $clubid .'.xls');
 
@@ -328,7 +328,7 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel)->save('/home/vagrant/Code/TSJH/public/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'.xls');
+        Excel::fromArray($excel)->save('/home/forge/tsjh.nl/public/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'.xls');
 
         return Redirect::to('/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'.xls');
 
@@ -498,7 +498,7 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel)->save('/home/vagrant/Code/TSJH/public/temp/tenniskamp-'.$club.'.xls');
+        Excel::fromArray($excel)->save('/home/forge/tsjh.nl/public/temp/tenniskamp-'.$club.'.xls');
 
         return Redirect::to('/temp/tenniskamp-'.$club.'.xls');
     }

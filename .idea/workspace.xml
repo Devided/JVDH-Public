@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" afterPath="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +46,7 @@
       <file leaf-file-name="InschrijvenController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="506" column="38" selection-start="15965" selection-end="15966" vertical-scroll-proportion="5.0014577" vertical-offset="4159" max-vertical-offset="8250">
+            <state line="513" column="5" selection-start="16205" selection-end="16205" vertical-scroll-proportion="0.409621" vertical-offset="7414" max-vertical-offset="8250">
               <folding />
             </state>
           </provider>
@@ -860,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="506" column="38" selection-start="15965" selection-end="15966" vertical-scroll-proportion="5.0014577" vertical-offset="4159" max-vertical-offset="8250">
+        <state line="513" column="5" selection-start="16205" selection-end="16205" vertical-scroll-proportion="0.409621" vertical-offset="7414" max-vertical-offset="8250">
           <folding />
         </state>
       </provider>
