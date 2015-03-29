@@ -77,6 +77,9 @@ Route::get('/beheer/tenniskamp/download/{club}', ['as' => 'beheer.tenniskamp.dow
 Route::get('/beheer/inschrijvingen/overzicht/{id}', ['as' => 'beheer.inschrijvingen.overzicht', 'uses' => 'InschrijvenController@showOverzicht', 'before' => 'auth']); //todo
 Route::get('/beheer/inschrijvingen/print/{id}', ['as' => 'beheer.inschrijvingen.print', 'uses' => 'InschrijvenController@printInschrijving', 'before' => 'auth']); //todo
 
+Route::get('/edit/{id}', ['as' => 'beheer.edit', 'uses' => 'EditController@show', 'before' => 'auth']);
+Route::post('/edit/{id}', ['as' => 'beheer.edit.post', 'uses' => 'EditController@post', 'before' => 'auth']);
+
 
 // temp
 Route::get('/getemails/{clubid}', function($clubid) {

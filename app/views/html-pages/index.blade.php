@@ -55,14 +55,14 @@
         </ul>
         <div class="page_layout page_margin_top clearfix">
             <div class="page_left">
-                <h3 class="box_header">OVER DE TENNISSCHOOL</h3>
+                <h3 class="box_header">OVER DE TENNISSCHOOL @if(Auth::user()) @if(Auth::user()->admin == 1) <a href="{{ action('beheer.edit', ['id' => '1']) }}">(edit)</a>@endif @endif</h3>
                 <div class="columns clearfix">
                     <img style="margin-top:30px; width:100%;" src="{{ asset('img/home_bal_nw.jpg') }}">
-                    <p>Tennisschool Jeroen van den Heuvel verzorgt sinds 2005 tennislessen voor een aantal verenigingen in 't Gooi en omstreken.<br>Verder organiseren wij tenniskampen,clinics, leveren wij leraren aan diverse verenigingen en adviseren wij tennisclubs. Kortom, wij bieden tennisclubs een totale service ten aanzien van zowel recreatief als prestatief tennis.<br><br>Tennisschool Jeroen van den Heuvel staat voor kwaliteit (d.w.z. gekwalificeerde en ervaren tennisleraren die in het bezit zijn van een KNLTB A t/m C licentie).
+                    {{ Content::find(1)->body }}
                     <br><br>
                     <img src="{{ asset('img/fb.png') }}" height="20"> <a href="https://www.facebook.com/tennisschooljvandenh">Volg TSJH op Facebook</a><br>
                     <img src="{{ asset('img/tw.png') }}" height="20" style="margin-left:0px;"> <a href="https://www.twitter.com/tsjhjeroenvand1">Volg TSJH op Twitter</a>
-                    </p>
+                    <br>
                 </div>
             </div>
             <div class="page_right">
