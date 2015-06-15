@@ -460,7 +460,7 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel)->save('/home/vagrant/Code/TSJH/public/temp/tenniskamp.xls');
+        Excel::fromArray($excel)->save('/home/forge/tsjh.nl/public/temp/tenniskamp.xls');
 
         return Redirect::to('/temp/tenniskamp.xls');
     }
