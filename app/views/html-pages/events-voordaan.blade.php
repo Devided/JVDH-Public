@@ -42,7 +42,8 @@
                                     149,-  Euro p.p (hier zit alles bij inbegrepen)<br>
                                     Minimaal 14 cursisten<br><br>
 
-                                    <a href="{{ action('tenniskamp', ['clubid' => $clubid]) }}">Klik hier</a> om in te schrijven.
+                                    <!--<a href="{{ action('tenniskamp', ['clubid' => $clubid]) }}">Klik hier</a> om in te schrijven.-->
+                                    <b>update: inschrijven is niet meer mogelijk, het tenniskamp is vol.</b>
                                 </p>
                                 <h2>Aankomende events</h2>
                                 <table class="table table-striped" style="width:100%; margin-top:0px; margin-bottom: 75px;">

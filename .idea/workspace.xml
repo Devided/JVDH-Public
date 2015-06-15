@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/index.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tsjh.iws" />
@@ -30,81 +31,7 @@
       <file leaf-file-name="InschrijvenController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="469" column="8" selection-start="14816" selection-end="14897" vertical-scroll-proportion="0.0" vertical-offset="6767" max-vertical-offset="8250">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2015_03_23_110638_create_contents_table.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_03_23_110638_create_contents_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/html-pages/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="24" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.26676384" vertical-offset="777" max-vertical-offset="2070">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="58" selection-start="7625" selection-end="7625" vertical-scroll-proportion="0.0" vertical-offset="2865" max-vertical-offset="3030">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="49" selection-start="3966" selection-end="3966" vertical-scroll-proportion="-13.583333" vertical-offset="724" max-vertical-offset="1605">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/EditController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="25" selection-start="935" selection-end="935" vertical-scroll-proportion="-24.125" vertical-offset="201" max-vertical-offset="945">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editview.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/html-pages/editview.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="58" selection-start="1511" selection-end="1511" vertical-scroll-proportion="-18.583334" vertical-offset="109" max-vertical-offset="975">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beheer-add.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/html-pages/beheer-add.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="54" selection-start="0" selection-end="3946" vertical-scroll-proportion="-12.5" vertical-offset="480" max-vertical-offset="1290">
+            <state line="410" column="0" selection-start="12890" selection-end="12890" vertical-scroll-proportion="-7.7083335" vertical-offset="5965" max-vertical-offset="8250">
               <folding />
             </state>
           </provider>
@@ -113,7 +40,72 @@
       <file leaf-file-name="events-voordaan.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="43" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1245">
+            <state line="44" column="36" selection-start="2962" selection-end="3171" vertical-scroll-proportion="-22.875" vertical-offset="111" max-vertical-offset="1260">
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events-melkhuisje.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="108" selection-start="3326" selection-end="3326" vertical-scroll-proportion="-23.5" vertical-offset="156" max-vertical-offset="1305">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events-abcoude.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="108" selection-start="3311" selection-end="3311" vertical-scroll-proportion="0.5081081" vertical-offset="141" max-vertical-offset="1290">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="60" selection-start="2763" selection-end="2887" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2070">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consultancy.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="28" selection-start="5300" selection-end="5300" vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="1875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/hello.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainingen.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/html-pages/trainingen.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="24" selection-start="3869" selection-end="4027" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/EditController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="25" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
@@ -141,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/html-pages/inschrijven-new-1.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Part.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/models/Subscription.php" />
@@ -158,8 +149,6 @@
         <option value="$PROJECT_DIR$/app/views/html-pages/beheer-add.blade.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_18_104312_create_events_table.php" />
         <option value="$PROJECT_DIR$/app/models/Event.php" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php" />
         <option value="$PROJECT_DIR$/app/views/emails/tenniskamp.blade.php" />
         <option value="$PROJECT_DIR$/.env.local.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/event-add.blade.php" />
@@ -185,20 +174,23 @@
         <option value="$PROJECT_DIR$/app/controllers/EventController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/InschrijvenController.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_03_23_110638_create_contents_table.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/EditController.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/editview.blade.php" />
         <option value="$PROJECT_DIR$/app/views/html-pages/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/trainingen.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -254,20 +246,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -309,232 +287,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="html-pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html-pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsjh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TSJH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,7 +299,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
     <property name="SearchEverywhereHistory" value="}&#10;onde" />
-    <property name="last_opened_file_path" value="$USER_HOME$/webtemp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../speedly-nl" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -602,7 +354,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -642,16 +394,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1147" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-new-1.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="377" selection-end="377" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="1620" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_12_105937_update_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="40" selection-start="585" selection-end="585" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="630" />
@@ -692,16 +434,6 @@
         <state line="34" column="34" selection-start="575" selection-end="575" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="645" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="32" selection-start="3339" selection-end="4366" vertical-scroll-proportion="-14.708333" vertical-offset="397" max-vertical-offset="1290" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="40" selection-start="4351" selection-end="4351" vertical-scroll-proportion="-17.333334" vertical-offset="574" max-vertical-offset="1275" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/emails/tenniskamp.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="23" selection-start="393" selection-end="393" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="390" />
@@ -740,11 +472,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/partials/_header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="150" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="47" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/partials/_footer.blade.php">
@@ -839,42 +566,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/emails/klant-tenniskamp.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="5" column="20" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="8" column="38" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="58" selection-start="7625" selection-end="7625" vertical-scroll-proportion="0.0" vertical-offset="1892" max-vertical-offset="3030">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="43" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1245">
-          <folding />
-        </state>
+        <state line="191" column="58" selection-start="7625" selection-end="7625" vertical-scroll-proportion="0.0" vertical-offset="1892" max-vertical-offset="3030" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_03_23_110638_create_contents_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="630">
+        <state line="24" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/beheer-add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="54" selection-start="0" selection-end="3946" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="469" column="8" selection-start="14816" selection-end="14897" vertical-scroll-proportion="0.0" vertical-offset="6767" max-vertical-offset="8250">
+        <state line="70" column="49" selection-start="3966" selection-end="3966" vertical-scroll-proportion="0.0" vertical-offset="724" max-vertical-offset="1605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/editview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="58" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/hello.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/EditController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="25" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/trainingen.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="24" selection-start="3869" selection-end="4027" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="60" selection-start="2763" selection-end="2887" vertical-scroll-proportion="0.0" vertical-offset="1182" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/consultancy.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="28" selection-start="5300" selection-end="5300" vertical-scroll-proportion="0.0" vertical-offset="1165" max-vertical-offset="1875">
           <folding />
         </state>
       </provider>
@@ -886,49 +647,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/beheer-add.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/InschrijvenController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="54" selection-start="0" selection-end="3946" vertical-scroll-proportion="-12.5" vertical-offset="480" max-vertical-offset="1290">
+        <state line="410" column="0" selection-start="12890" selection-end="12890" vertical-scroll-proportion="-7.7083335" vertical-offset="5965" max-vertical-offset="8250">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-voordaan.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="49" selection-start="3966" selection-end="3966" vertical-scroll-proportion="-13.583333" vertical-offset="724" max-vertical-offset="1605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/EditController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="25" selection-start="935" selection-end="935" vertical-scroll-proportion="-24.125" vertical-offset="201" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/editview.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="58" selection-start="1511" selection-end="1511" vertical-scroll-proportion="-18.583334" vertical-offset="109" max-vertical-offset="975">
+        <state line="44" column="36" selection-start="2962" selection-end="3171" vertical-scroll-proportion="-22.875" vertical-offset="111" max-vertical-offset="1260">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="24" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.26676384" vertical-offset="777" max-vertical-offset="2070">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="48" column="108" selection-start="3326" selection-end="3326" vertical-scroll-proportion="-23.5" vertical-offset="156" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="108" selection-start="3311" selection-end="3311" vertical-scroll-proportion="0.5081081" vertical-offset="141" max-vertical-offset="1290">
+          <folding />
         </state>
       </provider>
     </entry>
