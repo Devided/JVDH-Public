@@ -15,8 +15,8 @@ return array(
 	*/
 
 	'mailgun' => array(
-		'domain' => '',
-		'secret' => '',
+		'domain' => 'tsjh.nl',
+		'secret' => 'key-65cd5e9bcf1836d5271efb8a61f76666',
 	),
 
 	'mandrill' => array(
