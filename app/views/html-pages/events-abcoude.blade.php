@@ -25,7 +25,7 @@
                                 <p>
                                     Voor kinderen van 6 t/m 12 jaar<br>
                                     Maandag t/m vrijdag van 09:00-17:00<br>
-                                    Week 28 (maandag 6 juli t/m vrijdag 10 juli)<br><br>
+                                    Maandag 18 juli t/m vrijdag 22 juli<br><br>
 
                                     <b>Onderdelen:</b><br>
                                     3 uur per dag tennissen<br>

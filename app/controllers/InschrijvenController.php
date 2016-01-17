@@ -119,12 +119,12 @@ class InschrijvenController extends \BaseController {
             $email = Auth::user()->email;
             $naam = Auth::user()->naam;
 
-            Mail::send('emails.klant-tennisles', [
-                'persoon' => $subscription->naam
-            ], function($message) use ($email,$naam)
-            {
-                $message->to($email,$naam)->subject('[tsjh.nl] Inschrijving tennisles');
-            });
+            //Mail::send('emails.klant-tennisles', [
+            //    'persoon' => $subscription->naam
+            //], function($message) use ($email,$naam)
+            //{
+            //    $message->to($email,$naam)->subject('[tsjh.nl] Inschrijving tennisles');
+            //});
 
             return Redirect::action('inschrijven');
         }
