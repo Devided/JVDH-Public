@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df587ea-4818-4c36-ae25-dace072237bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/html-pages/events-park.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/beheer-add.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/beheer-add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/events-overzicht.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/events-overzicht.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/inschrijven-beheer.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/inschrijven-new-1.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/inschrijven-new-1.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/html-pages/events-park.blade.php" afterPath="$PROJECT_DIR$/app/views/html-pages/events-park.blade.php" />
     </list>
     <ignored path="tsjh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,44 +25,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="events-overzicht.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-overzicht.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="131" selection-start="5332" selection-end="5332" vertical-scroll-proportion="-34.166668" vertical-offset="440" max-vertical-offset="1545">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="events-park.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-park.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="81" selection-start="4079" selection-end="4090" vertical-scroll-proportion="0.800905" vertical-offset="30" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inschrijven-index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="91" selection-start="3455" selection-end="3455" vertical-scroll-proportion="-26.333334" vertical-offset="208" max-vertical-offset="1350">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inschrijven-new-1.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-new-1.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="37" selection-start="4421" selection-end="5424" vertical-scroll-proportion="-34.541668" vertical-offset="461" max-vertical-offset="1590">
+            <state line="44" column="64" selection-start="2922" selection-end="2922" vertical-scroll-proportion="0.54298645" vertical-offset="60" max-vertical-offset="1305">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -315,7 +281,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.209375" sideWeight="0.9043552" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.209375" sideWeight="0.9043552" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.209375" sideWeight="0.09479078" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -575,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="59" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.13122173" vertical-offset="200" max-vertical-offset="1305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-melkhuisje.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="108" selection-start="3310" selection-end="3310" vertical-scroll-proportion="0.45701358" vertical-offset="215" max-vertical-offset="1320">
@@ -610,25 +569,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-abcoude.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="91" selection-start="3455" selection-end="3455" vertical-scroll-proportion="-26.333334" vertical-offset="208" max-vertical-offset="1350">
+        <state line="39" column="55" selection-start="0" selection-end="4671" vertical-scroll-proportion="0.37013575" vertical-offset="176" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-new-1.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="37" selection-start="4421" selection-end="5424" vertical-scroll-proportion="-34.541668" vertical-offset="461" max-vertical-offset="1590">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="45" column="22" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.41771019" vertical-offset="208" max-vertical-offset="1350">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-overzicht.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="131" selection-start="5332" selection-end="5332" vertical-scroll-proportion="-34.166668" vertical-offset="440" max-vertical-offset="1545">
+        <state line="84" column="131" selection-start="5332" selection-end="5332" vertical-scroll-proportion="0.74208146" vertical-offset="440" max-vertical-offset="1545">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -638,10 +595,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/html-pages/inschrijven-new-1.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="37" selection-start="4421" selection-end="5424" vertical-scroll-proportion="0.75022626" vertical-offset="461" max-vertical-offset="1590">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/html-pages/events-park.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="81" selection-start="4079" selection-end="4090" vertical-scroll-proportion="0.800905" vertical-offset="30" max-vertical-offset="1275">
-          <folding />
+        <state line="44" column="64" selection-start="2922" selection-end="2922" vertical-scroll-proportion="0.54298645" vertical-offset="60" max-vertical-offset="1305">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
