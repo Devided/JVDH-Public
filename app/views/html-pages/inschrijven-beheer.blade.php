@@ -26,7 +26,7 @@
                                     <a href="{{ action('beheer.download', ['clubid' => 'melkhuisje']) }}">Download alle inschrijvingen (melkhuisje)</a><br>
                                     <a href="{{ action('beheer.download', ['clubid' => 'abcoude']) }}">Download alle inschrijvingen (abcoude)</a><br>
                                     <a href="{{ action('beheer.download', ['clubid' => 'voordaan']) }}">Download alle inschrijvingen (voordaan)</a><br>
-                                    <a href="{{ action('beheer.download', ['clubid' => 'overig']) }}">Download alle inschrijvingen (overig)</a><br>
+                                    <a href="{{ action('beheer.download', ['clubid' => 'park']) }}">Download alle inschrijvingen (PARK Tennis)</a><br>
                                     <a href="{{ action('beheer.download', ['clubid' => 'all']) }}">Download alle inschrijvingen (alle clubs)</a><br><br>
                                     <b>Onderdelen:</b><br>
                                     <a href="{{ action('beheer.add') }}">Nieuw onderdeel aanmaken</a>
@@ -92,6 +92,7 @@
                                 <a href="{{ action('beheer.tenniskamp.download.club', ['club' => 'abcoude']) }}">Download abcoude inschrijvingen</a><br>
                                 <a href="{{ action('beheer.tenniskamp.download.club', ['club' => 'melkhuisje']) }}">Download melkhuisje inschrijvingen</a><br>
                                 <a href="{{ action('beheer.tenniskamp.download.club', ['club' => 'voordaan']) }}">Download voordaan inschrijvingen</a><br>
+                                <a href="{{ action('beheer.tenniskamp.download.club', ['club' => 'park']) }}">Download PARK Tennis inschrijvingen</a><br>
 
                                 <br><br>
 

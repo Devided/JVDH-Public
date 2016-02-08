@@ -29,7 +29,7 @@
                                         <option value="melkhuisje">H.L.T.C. 't Melkhuisje</option>
                                         <option value="abcoude">Abcoude</option>
                                         <option value="voordaan">T.C. Voordaan</option>
-                                        <option value="overig">overig</option>
+                                        <option value="park">PARK Tennis</option>
                                     </select>
                                 </div>
                                 <label>Seizoen</label>

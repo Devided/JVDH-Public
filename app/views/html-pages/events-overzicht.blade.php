@@ -70,6 +70,22 @@
                                         </div>
                                 </li>
                             </ul>
+                            <ul class="column">
+                                <li class="item_content clearfix">
+                                    <div class="text noicon">
+                                        <h3>
+                                            PARK Tennis
+                                        </h3>
+                                        <div style="margin-left:20px; margin-top: 20px; height: 190px;">
+                                            <img src="{{ asset('/img/clublogo/park.gif') }}" style="margin:auto; margin-top:25px;">
+                                        </div>
+                                        <br />
+
+                                        <div style="padding-left: 25%; min-width: 100%; margin-top:-40px;">
+                                            <a class="more blue icon_small_arrow margin_right_white" href="{{ action('events.detail',['clubid' => 'park']) }}" style="margin-top:40px; margin-bottom:40px;" title="Details">Kies</a>
+                                        </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
