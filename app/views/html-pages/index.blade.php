@@ -18,11 +18,11 @@
         <ul class="home_box_container clearfix">
             <li class="home_box light_blue">
                 <h2>
-                    <a href="?page=contact" title="Emergency Case">Klaar voor het nieuwe seizoen?</a>
+                    <a href="?page=contact" title="Emergency Case">Inschrijven wintertraining</a>
                 </h2>
                 <div class="news clearfix" style="height:106px;">
                     <p class="text">
-                       Schrijf je alvast in voor tennisles voor het aankomende seizoen.
+                       Schrijf je alvast in voor de wintertraining.
                         <br>
                     </p>
                     <a class="more light icon_small_arrow margin_right_white" href="{{ action('inschrijven') }}" title="Contactgegevens" style="margin-top:38px;">Inschrijven</a>

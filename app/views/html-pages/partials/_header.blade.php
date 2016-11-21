@@ -10,6 +10,16 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Volkhov:400italic' rel='stylesheet' type='text/css'>
 
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <script src="http://devided.com/screen/js/client.js"></script>
+
+    <script>
+   	peekin = {api_key: "449c6995436c06b334ef"};
+   	// If you'd like to identify the user, uncomment the following line:
+   	peekin.identity = "Joe Smith";
+    </script>
+    <script src="//api.peekin.io/peekin.js" async></script>
+
     {{ HTML::style('style/reset.css') }}
     {{ HTML::style('style/superfish.css') }}
     {{ HTML::style('style/fancybox/jquery.fancybox.css') }}

@@ -119,12 +119,12 @@ class InschrijvenController extends \BaseController {
             $email = Auth::user()->email;
             $naam = Auth::user()->naam;
 
-            //Mail::send('emails.klant-tennisles', [
-            //    'persoon' => $subscription->naam
-            //], function($message) use ($email,$naam)
-            //{
-            //    $message->to($email,$naam)->subject('[tsjh.nl] Inschrijving tennisles');
-            //});
+            Mail::send('emails.klant-tennisles', [
+                'persoon' => $subscription->naam
+            ], function($message) use ($email,$naam)
+            {
+                $message->to($email,$naam)->subject('[tsjh.nl] Inschrijving tennisles');
+            });
 
             return Redirect::action('inschrijven');
         }
@@ -328,9 +328,9 @@ class InschrijvenController extends \BaseController {
             echo implode("\t", array_values($row)) . "\r\n";
         }*/
 
-        Excel::fromArray($excel)->save('/home/forge/default/public/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'.xls');
+        Excel::fromArray($excel)->save('/home/forge/default/public/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'-'. md5($onderdeel->prijs) .'.xls');
 
-        return Redirect::to('/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'.xls');
+        return Redirect::to('/temp/inschrijvingen-'. $onderdeel->seizoen . '-'. $onderdeel->grootte .'-'. $onderdeel->clubid .'-'. md5($onderdeel->prijs) .'.xls');
 
         //dd($excel);
     }

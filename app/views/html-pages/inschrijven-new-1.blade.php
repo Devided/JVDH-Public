@@ -70,7 +70,7 @@
                                         </div>
                                 </li>
                             </ul>
-                            <ul class="column">
+                            <ul class="column" style="display:none">
                                 <li class="item_content clearfix">
                                     <div class="text noicon">
                                         <h3>

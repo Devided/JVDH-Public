@@ -40,9 +40,9 @@
                                 <b>Leraren:</b><br>
                                 Koen en nog 3 andere leraren<br><br>
 
-                                <!--<b>Kosten:</b><br>
-                                265 Euro p.p  ( hier zit alles bij inbegrepen)<br>
-                                Minimaal 20 cursisten<br><br>-->
+                                <b>Kosten:</b><br>
+                                299 Euro p.p  ( hier zit alles bij inbegrepen)<br>
+                                Minimaal 20 cursisten<br><br>
 
                                 <a href="{{ action('tenniskamp', ['clubid' => $clubid]) }}">Klik hier</a> om in te schrijven.
                                 <!--<b>update: inschrijven is niet meer mogelijk, het tenniskamp is vol.</b>-->

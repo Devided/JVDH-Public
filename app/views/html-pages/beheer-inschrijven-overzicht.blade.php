@@ -28,6 +28,7 @@
                                     <tr>
                                         <th>Club</th>
                                         <th>Naam</th>
+					<th>Datum</th>
                                         <th>Print</th>
                                     </tr>
                                     </thead>
@@ -36,6 +37,7 @@
                                     <tr>
                                         <td>{{{ $inschrijving->club }}}</td>
                                         <td>{{{ $inschrijving->naam }}}</td>
+					<td>{{{ $inschrijving->created_at }}}</td>
                                         <td><a href="{{ action('beheer.inschrijvingen.print', ['id' => $inschrijving->id]) }}">Print inschrijving</a></td>
                                     </tr>
                                     @endforeach
